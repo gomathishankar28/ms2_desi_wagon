@@ -1,0 +1,53 @@
+/*----------Google font----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+/*----------------CSS variables-------------------*/
+:root {
+  --yellow: #ce1a35;
+  --white: #fdf9fd;
+  --black: #333541;
+}
+
+/*------------Generic styles------------------------*/
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Akaya Telivigala', cursive, sans-serif;
+    font-size: 20px;  
+}
+/*------title and nav bar styles----------------------*/
+.navbar {
+    align-items: unset;
+}
+.bg-navbar {
+   background-color: var(--yellow)!important;
+   color: var(--white)!important;
+}
+.navbar-brand {
+    padding-left: 2rem;
+}
+.navbar-item {
+    margin-right: 15px;  
+      
+}
+.navbar-item a {
+    font-size: 20px;  
+}
+.active,.nav-link:hover  {
+    background-color: var(--black);
+    color: var(--white)!important;
+}
+.toggler-btn {
+    margin-bottom: 3px;
+}
+
+/*------------------------carousel------------------------------*/
+
+.carousel-caption {
+    top: 150px!important;
+}
+.carousel-image {
+    height: 500px;
+}
