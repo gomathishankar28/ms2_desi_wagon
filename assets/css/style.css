@@ -3,7 +3,7 @@
 
 /*----------------CSS variables-------------------*/
 :root {
-  --yellow: #ce1a35;
+  --yellow: #f03562;
   --white: #fdf9fd;
   --black: #333541;
 }
@@ -51,3 +51,58 @@ body {
 .carousel-image {
     height: 500px;
 }
+
+/*------------------Schedule-------------------------------*/
+
+#schedule-header {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.schedule_table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.schedule_table td, #schedule_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  
+}
+
+.schedule_table tr:nth-child(even){
+    background-color: #ddd;
+}
+
+.schedule_table tr:hover {
+    background-color: #ddd;
+}
+
+.schedule_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f03562;
+  color: white;
+}
+
+.today {
+    
+    color: blue;
+    
+}
+
+/*---------------location---------------------------*/
+#location-header {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#map {
+    widows: 100%;
+    height: 500px;
+}
+.hide{
+    display: none;
+    }

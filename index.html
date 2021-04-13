@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body onload="highlighttoday()">
     <!-- Title and Navbar -->
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-dark ml-auto bg-navbar">
@@ -33,14 +33,14 @@
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="about.html" class="nav-item nav-link">Schedule</a>
+                            <a href="#schedule" class="nav-item nav-link">Schedule</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="menu.html" class="nav-item nav-link">Location</a>
+                            <a href="#location" class="nav-item nav-link">Location</a>
                         </li>
                         
                         <li class="navbar-item">
-                            <button class="btn jumbotron-btn btn-danger btn-order shadow-none" onclick="window.location.href='place_order.html';">
+                            <button class="btn jumbotron-btn btn-dark btn-order shadow-none" onclick="window.location.href='place_order.html';">
                             Place Order</button>
                         </li>
                     </ul>
@@ -50,7 +50,7 @@
         </header>
     <!--./ title and navbar--> 
 
-
+        <!-- Hero image --> 
     <!-- Quote Carousel Code from Bootstrap with modifications --> 
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="false" >
             <ol class="carousel-indicators">
@@ -63,22 +63,22 @@
                     <div class="carousel-caption">
                     <h2>Indian Grocery On Wheels now in Netherlands</h2>
                     </div>
-                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image" alt="sailboat on ocean" >
+                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image"  >
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d d-md-block">
-                    <h2>We bring all your favourite Indian Veggies and Fruits to your access</h2>
+                    <h2>You can buy all your favourite Indian Veggies,Fruits,spices and much more in one stop</h2>
                     </div>
-                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image" alt="sailboat on ocean" >
+                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image"  >
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption">
                     <h2>Place your order and pick them at your desired location</h2>
                     </div>
-                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image" alt="sailboat on ocean" >
+                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image"  >
                 </div>
-                </div>
-            </div>
+             </div>
+            
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -88,11 +88,140 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <!-- Quote Carousel End --> 
+    
+        <!-- ./Quote Carousel End --> 
+        <!-- ./Hero image --> 
+        <section id="schedule">
+            <div class="container-fluid schedule">
+        <div class="row">
+            <div class="col">
+                <div id="schedule-header">
+                   <h2>Know our Schedule</h2>
+                    <p>We visit 5 places in Netherlands every week.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="schedule-table">
+                    <table class ="schedule_table">
+                        <tr>
+                            <th>SNO</th>
+                            <th>Day</th>
+                            <th>Timings</th>
+                            <th>Place</th>
+                        </tr>
+                        <tr class="tablerow">
+                            <td>1</td>
+                            <td class="weekday">Monday</td>
+                            <td>6-9pm</td>
+                            <td>Amsterdam</td>
+                        </tr>
+                        <tr class="tablerow">
+                            <td>2</td>
+                            <td class="weekday">Tuesday</td>
+                            <td>6-9pm</td>
+                            <td>Uterecht</td>
+                        </tr>
+                        <tr class="tablerow">
+                            <td>3</td>
+                            <td class="weekday">Wednesday</td>
+                            <td>6-9pm</td>
+                            <td>Den Bosch</td>
+                        </tr>
+                        <tr class="tablerow">
+                            <td>4</td>
+                            <td class="weekday">Thursday</td>
+                            <td>6-9pm</td>
+                            <td>Eindhoven</td>
+                        </tr>
+                        <tr class="tablerow">
+                            <td>5</td>
+                            <td class="weekday">Friday</td>
+                            <td>6-9pm</td>
+                            <td>Mastricht</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+     </div>
+        </section>
+        <section id="Google_map_location">
+            <div class="container map-wrapper">
+                        <div class="row">
+                            <div class="col-12 col-lg-6" id="map">Location</div>
+                            <div class="col-12 col-lg-6">
+                                <div id="map-info">
+                                    <!-- Location Amsterdam --> 
+                                    <div class="card location hide" id="Amsterdam">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Amsterdam</h4>
+                                            <p class="card-text"> 128, sliffersestraat, grasbloem 2345AG</p>   
+                                            <p class="card-text">Landmark: opp to Basis School</p>
+                                            <p class="card-text">we are at this Location on Monday from 6 to 9pm.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Location Amsterdam end --> 
+                                    <!-- Uterecht --> 
+                                    <div class="card location hide" id="Uterecht">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Uterecht</h4>
+                                            <p class="card-text"> 128, sliffersestraat, grasbloem 2345AG</p>   
+                                            <p class="card-text">Landmark: opp to Jumbo food market</p>
+                                            <p class="card-text">we are at this Location on Tuesday from 6 to 9pm.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Location Uterecht end -->
+                                    <!-- Location Den Bosch --> 
+                                     <div class="card location hide" id="DenBosch">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Den Bosch</h4>
+                                            <p class="card-text"> 128, sliffersestraat, grasbloem 2345AG</p>   
+                                            <p class="card-text">Landmark: opp to Bijnkorf</p>
+                                            <p class="card-text">we are at this Location on Wednesday from 6 to 9pm.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Location Den Bosch end -->
+                                    <!-- Location Eindhoven --> 
+                                   <div class="card location hide" id="Eindhoven">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Eindhoven</h4>
+                                            <p class="card-text"> 128, sliffersestraat, grasbloem 2345AG</p>   
+                                            <p class="card-text">Landmark: opp to SGE Kinderijk</p>
+                                            <p class="card-text">we are at this Location on Thurdsday from 6 to 9pm.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Location Eindhoven end -->
+                                    <!-- Location Mastricht -->
+                                    <div class="card location hide" id="Mastricht">
+                                        <div class="card-info">
+                                            <h4 class="card-title">Mastricht</h4>
+                                            <p class="card-text"> 128, sliffersestraat, grasbloem 2345AG</p>   
+                                            <p class="card-text">Landmark: opp to Bijnkorf</p>
+                                            <p class="card-text">we are at this Location on Friday from 6 to 9pm.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Location Maastricht end -->
+                                </div>
+                            </div> 
+                        </div>       
+                    </div>
+                
+                </section>
 <!-- jQuery script --> 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- Bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Bootstrap script for carousel -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <!-- marker clusterer script --> 
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS6qDBY6PgD4n2NEVJUq06qtgA-1RoeKQ&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="assets/js/schedule.js"></script>
     
     </body>
     </html>
