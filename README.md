@@ -1,45 +1,68 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Desi Wagon
+## Introduction
+Desi Wagon is a mobile grocery truck which delivers indian groceries, fruts, vegetables and spices to people in Netherlands. BentoVanIndia offers a subscription based home-food delivery every week day.This Wagon aims to woo Indian expats who are searching for indian stuff in affordable price.
 
-Welcome gomathishankar28,
+The reason to promote this business model in Netheralands is due to the scarce availability of indian stores with a large pool of expats, 
+mostly from Indian origin.The mobility of the truck allows for outreach to multiple neighborhoods at a time.
+ Mobile grocery units are more effective to deploy than storefronts, especially in vulnerable neighborhoods,
+and has lower barriers to entry and lower costs to maintain, retrofit and operate.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+The Purpose of this website is to leverage on the familiarity of this kind of offering. This site provides information about our value proposition 
+and what we deliver, their schedule, location at which the wagon is stationed.
 
-## Gitpod Reminders
+## Business Goals
+*   To target the growing Indian expat community who are looking for indian stuff.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+*   To focus this offering to all indian people across Netherlands.
 
-`python3 -m http.server`
+*   To evince interest in customers who prefer to have Indian groceries every week.
 
-A blue button should appear to click: *Make Public*,
+*   Build a brand image for a Indian mobile grocery store.
 
-Another blue button should appear to click: *Open Browser*.
+*   Showcase the Schedule that the wagon would follow every week.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+*   To display the location at which the wagon would be stationed.
 
-A blue button should appear to click: *Make Public*,
+*   To help customers place their orders online.
 
-Another blue button should appear to click: *Open Browser*.
+*   To receive an email from the customer for every order that they place.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+##  User stories
+*   As a prospective customer to the website, I want to easily navigate the site, so that I can easily find the required details.
 
-## Updates Since The Instructional Video
+*   As a prospective customer to the website, I want to precisely know what they offer so that I have enough infromation about their service.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+*   As a new customer to the website, I want to know the schedule of the wagon so that i would know on what day is wagon in my city.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+*   As a customer to the website, I want to know the location or address details where the wagon would be stationed.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+*   As a customer to the website, I would like to make a list of the grocery items that i would like to buy in advance.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+*   As a prospective customer to the website,, I also want a copy of my list in my personal mail for reference and future use.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Features
+Each page in the website features a responsive navigation bar on the right with conventional placing of Brand Name on the top left. Each page has a footer with copyright information, contact details of the Desi Wagon and links to social media.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Home
+The Home page features 3 sections areas apart from the header and footer.
+The first section (call out section)- which features a carousel of 3 images which talks about, what this Desi Wagon does, What they deliver and a call to action for placing the orders respectively.
+The second section (Schedule Section) 
+The third section(Location Section) t
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Schedule
+This is a section of the Home page. As the wagon is scheduled to visit 1 city in a day, accounting to 5 different cities in a week. This section showcases a table that would detail the scheduled visits of th wagon on each week day. This also inlcudes timing details.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Location
+This is also a section of the Home page. The wagon visit 5 cities in a week. This section gives the address details of each location at which the wagon will be stationed. This is acheived with the help of Google Maps API.
 
---------
-
-Happy coding!
+### Place order
+This page presents a frm to the user which helps them to send in their grocery list in advance. An email will be sent to desiwagon and copy of it will be sent to the user as well. 
+the form has the folowing fields.
+1.  Name - Text input field for the name of the user initiating the request.
+2.  Email - Text input field for themaild of the user. a copy of their grocery list is sent to this mailID.
+3.  Mobile - Text input field for the Mobile number of the user.
+4.  Grocery List - A text area input for the grocery list with item name and quantity.
+5.  Location -  A drop down box showing 5 cities the Wagon visits.
+6.  Address  - Text Input field which auto populates the address on choosing a specific location from the above field.
+7. Send Button - A send button which sends an email with the username and thier grocery list to desiwagon and a copy of it is send to the user as well.
+    This is acheived by using EmailJs API.
