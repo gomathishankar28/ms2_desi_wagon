@@ -19,6 +19,8 @@ function highlighttoday(event) {
       if (rows[i].cells[1].innerHTML === today) {
          console.log(rows[i].cells[1].innerHTML);
         rows[i].classList.add("today");
+        rows[i].cells[3].childNodes[1].classList.remove("hide");
+        
        
    }
 }

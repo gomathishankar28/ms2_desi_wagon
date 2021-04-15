@@ -48,13 +48,5 @@ function initMap() {
     var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
         
-function displayMarkerInfo() {
-    var cards = document.querySelectorAll(".location");
-    [].forEach.call(cards, function(c) {
-        c.classList.add("hide");
-    });
-    // Remove class to display element
-    document.getElementById(this.city).classList.remove('hide');
-}
 
     

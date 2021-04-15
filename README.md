@@ -27,6 +27,18 @@ and what we deliver, their schedule, location at which the wagon is stationed.
 
 *   To receive an email from the customer for every order that they place.
 
+## user Goals
+
+As a customer, I would like 
+
+*   To know what the wagon can deliver.
+
+*   To know the schedule of the wagon.
+
+*   To know the address where the wagon would be stationed.
+
+*   Place my weekly orders online in advance.
+
 ##  User stories
 *   As a prospective customer to the website, I want to easily navigate the site, so that I can easily find the required details.
 
