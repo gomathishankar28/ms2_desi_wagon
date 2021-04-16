@@ -130,4 +130,9 @@ body {
     }
 }
 
-
+/*------------Place order------------------*/
+.form {
+    margin: 5% 20%;
+    padding: 10px;
+    background-color: grey;
+}

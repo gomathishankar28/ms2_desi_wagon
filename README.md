@@ -1,6 +1,6 @@
 # Desi Wagon
 ## Introduction
-Desi Wagon is a mobile grocery truck which delivers indian groceries, fruts, vegetables and spices to people in Netherlands. BentoVanIndia offers a subscription based home-food delivery every week day.This Wagon aims to woo Indian expats who are searching for indian stuff in affordable price.
+Desi Wagon is a mobile grocery truck which delivers indian groceries, fruits, vegetables and spices to people in Netherlands.This Wagon aims to woo Indian expats who are searching for indian stuff in affordable price.
 
 The reason to promote this business model in Netheralands is due to the scarce availability of indian stores with a large pool of expats, 
 mostly from Indian origin.The mobility of the truck allows for outreach to multiple neighborhoods at a time.

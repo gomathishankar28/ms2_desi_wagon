@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Wagon</title>
+   <!-- Bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <!-- Hover.css CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" />
+        <!-- Fontawesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script >
+        (function() {
+        emailjs.init("user_9Og1qPhpHFriM0WppMjQ6");
+        })();
+        </script>
+</head>
+<body>
+    <!-- Title and Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark ml-auto bg-navbar">
+            <!-- Brand Title on top left -->
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="brandname">Desi Wagon</h1>
+                </a>
+            <!-- Navigation menu bar on top right -->
+                <div class="col toggler-nav">
+                    <button type="button" class="navbar-toggler toggler-collapsed navbar-toggler-right toggler-btn" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse toggler-nav" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto navright">
+                        <li class="navbar-item active">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#schedule" class="nav-item nav-link">Schedule</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#location" class="nav-item nav-link">Location</a>
+                        </li>
+                        
+                        <li class="navbar-item">
+                            <button class="btn jumbotron-btn btn-dark btn-order shadow-none" onclick="window.location.href='place_order.html';">
+                            Place Order</button>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+    <!--./ title and navbar--> 
+ <div id="acknowledgement"></div>
+        
+    
+        <h3>Send your order Today!!!! </h3>
+            <!-- Form Code from Bootstrap -->
+            <div class ="form">
+            <form onsubmit="return sendMail(this);" id="orderform">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="emailaddress" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="number" class="form-control" id="mobile" name="mobile" placeholder="687241357">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select class="form-control" id="location">
+                        <option>Amsterdam</option>
+                        <option>Uterecht</option>
+                        <option>DenBosch</option>
+                        <option>Eindhoven</option>
+                        <option>Mastricht</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" name="address" value="134 zanddreef Amsterdam">
+                </div>
+                <div class="form-group">
+                    <label for="groceryList">Grocery List</label>
+                    <textarea class="form-control" id="groceryList" name="grocerylist" rows="10" placeholder="Item name - Qty"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="assets/js/getAddress.js"></script>
+        <script src="assets/js/sendMail.js"></script> 
+        
+        </body>
+        </html>
