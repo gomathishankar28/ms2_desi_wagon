@@ -1,6 +1,7 @@
 function highlighttoday(event) {
-    var d = new Date();
-    var weekday = new Array(7);
+    
+    let date = new Date();
+    const weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
     weekday[2] = "Tuesday";
@@ -9,8 +10,8 @@ function highlighttoday(event) {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
-    var n = d.getDay();
-   var today = (weekday[n]);
+    let day = date.getDay();
+   let today = (weekday[day]);
    console.log(today);
    var rows = document.getElementsByClassName("tablerow");
    console.log(rows);

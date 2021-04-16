@@ -106,3 +106,28 @@ body {
 .hide{
     display: none;
     }
+/*---------------accordion styles-----------------*/
+#schedule-rtable {
+   display: none;
+}
+
+/*show for small screens */
+@media only screen and (max-width: 540px) { /* I've given 1023px but you can change to proper width */
+    #schedule-rtable {
+        display: block;
+    }
+    #schedule-table {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 780px) { /* I've given 1023px but you can change to proper width */
+    #schedule-table {
+        display: block;
+    }
+    #schedule-rtable {
+        display: none;
+    }
+}
+
+

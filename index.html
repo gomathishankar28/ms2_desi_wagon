@@ -103,7 +103,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="schedule-table">
+                <div id="schedule-table">
                     <table class ="schedule_table">
                         <tr>
                             <th>SNO</th>
@@ -143,7 +143,50 @@
                         </tr>
                     </table>
                 </div>
-            </div>
+           
+
+     <!-- responsive table -->
+     <div id="schedule-rtable">
+                    <table class ="schedule_rtable">
+                        <tr>
+                            
+                            <th>Day</th>
+                            <th>Timings</th>
+                            <th>Place</th>
+                        </tr>
+                        <tr class="tablerow">
+                            
+                            <td class="weekday">Monday</td>
+                            <td>6-9pm</td>
+                            <td>Amsterdam<span class="truck hide">  <i class="fas fa-truck"></i></span></td>
+                        </tr>
+                        <tr class="tablerow">
+                            
+                            <td class="weekday">Tuesday</td>
+                            <td>6-9pm</td>
+                            <td>Uterecht<span class="truck hide">  <i class="fas fa-truck"></i></span></td>
+                        </tr>
+                        <tr class="tablerow">
+                            
+                            <td class="weekday">Wednesday</td>
+                            <td>6-9pm</td>
+                            <td>Den Bosch<span class="truck hide">  <i class="fas fa-truck"></i></span></td>
+                        </tr>
+                        <tr class="tablerow">
+                            
+                            <td class="weekday">Thursday</td>
+                            <td>6-9pm</td>
+                            <td>Eindhoven  <span class="truck hide"><i class="fas fa-truck"></i></span></td>
+                        </tr>
+                        <tr class="tablerow">
+                            
+                            <td class="weekday">Friday</td>
+                            <td>6-9pm</td>
+                            <td>Mastricht  <span class="truck hide"><i class="fas fa-truck"></i></span></td>
+                        </tr>
+                    </table>
+                </div>
+             </div>
         </div>
      </div>
         </section>
@@ -221,6 +264,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS6qDBY6PgD4n2NEVJUq06qtgA-1RoeKQ&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    
     <script src="assets/js/schedule.js"></script>
     
     </body>
