@@ -13,16 +13,25 @@ function highlighttoday(event) {
     let day = date.getDay();
    let today = (weekday[day]);
    console.log(today);
-   var rows = document.getElementsByClassName("tablerow");
-   console.log(rows);
+   let rows = document.getElementsByClassName("tablerow");
+   
    
    for (let i=0; i<rows.length; i++) {
       if (rows[i].cells[1].innerHTML === today) {
          console.log(rows[i].cells[1].innerHTML);
         rows[i].classList.add("today");
-        rows[i].cells[3].childNodes[1].classList.remove("hide");
+        rows[i].cells[3].childNodes[1].classList.remove("hide"); 
+   }
+}
+let accordionbuttons = document.getElementById("schedule-rtable").getElementsByTagName("button");
+
+for (let i=0; i<accordionbuttons.length; i++) {
+    
+    if (accordionbuttons[i].name === today) {
         
+    accordionbuttons[i].childNodes[1].classList.remove("hide");
        
    }
+     
 }
 }
