@@ -11,6 +11,7 @@ function sendMail(contactForm) {
             acknowledgement ();
             //reset form
             resetForm();
+            
         }, 
         function(error) {
             console.log("FAILED", error);
@@ -20,8 +21,11 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
 }
 function acknowledgement() {
-    document.getElementById("acknowledgement").innerHTML = `<h2>ThankYou for placing your order with us. You can pick your orders at the chosen place on sechedule day.Please refer the schedule to know your day and time for pick up.</h2>`
+    document.getElementById("place_order").classList.add("hide");
+    document.getElementById("acknowledgement").classList.remove("hide");
+    
 }
+
 function resetForm() {
     document.getElementById("orderform").reset();
 }

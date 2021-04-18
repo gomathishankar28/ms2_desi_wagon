@@ -41,10 +41,10 @@
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#schedule" class="nav-item nav-link">Schedule</a>
+                            <a href="index.html#schedule" class="nav-item nav-link">Schedule</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#location" class="nav-item nav-link">Location</a>
+                            <a href="index.html#location" class="nav-item nav-link">Location</a>
                         </li>
                         
                         <li class="navbar-item">
@@ -57,24 +57,31 @@
             </nav>
         </header>
     <!--./ title and navbar--> 
- <div id="acknowledgement"></div>
+ <div id="acknowledgement" class="hide">
+     <h2> Desi Wagon has received Your order!!!</h2>
+     <h3>You can pick your orders at the chosen place on sechedule day.
+     Please refer the schedule to know your day and time of pick up.</h3>
+    <img src="assets/images/acknowledgement.jpg" alt=thankyoupic">
+     
+ </div>
         
     
-        <h3>Send your order Today!!!! </h3>
+        
             <!-- Form Code from Bootstrap -->
-            <div class ="form">
+            <div id = "place_order">
+                <h3>Send your order Today!!!! </h3>
             <form onsubmit="return sendMail(this);" id="orderform">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname">
+                    <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="emailaddress" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="email" name="emailaddress" placeholder="name@example.com" required>
                 </div>
                 <div class="form-group">
                     <label for="mobile">Mobile Number</label>
-                    <input type="number" class="form-control" id="mobile" name="mobile" placeholder="687241357">
+                    <input type="number" maxlength="10" class="form-control" id="mobile" name="mobile" placeholder="687241357" required>
                 </div>
                 <div class="form-group">
                     <label for="location">Location</label>
@@ -92,7 +99,7 @@
                 </div>
                 <div class="form-group">
                     <label for="groceryList">Grocery List</label>
-                    <textarea class="form-control" id="groceryList" name="grocerylist" rows="10" placeholder="Item name - Qty"></textarea>
+                    <textarea class="form-control" id="groceryList" name="grocerylist" rows="10" placeholder="Item name - Qty" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

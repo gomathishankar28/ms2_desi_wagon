@@ -38,7 +38,7 @@
                             <a href="#schedule" class="nav-item nav-link">Schedule</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#location" class="nav-item nav-link">Location</a>
+                            <a href="#Google_map_location" class="nav-item nav-link">Location</a>
                         </li>
                         
                         <li class="navbar-item">
@@ -64,20 +64,24 @@
                 <div class="carousel-item active">
                     <div class="carousel-caption">
                     <h2>Indian Grocery On Wheels now in Netherlands</h2>
+                    <i class="fas fa-truck"></i>
                     </div>
-                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image"  >
+                    <img src="assets/images/carouselgreen.jpg" class="d-block w-100 carousel-image"  >
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d d-md-block">
                     <h2>You can buy all your favourite Indian Veggies,Fruits,spices and much more in one stop</h2>
+                    <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image"  >
+                    <img src="assets/images/carouselgreen.jpg" class="d-block w-100 carousel-image"  >
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption">
                     <h2>Place your order and pick them at your desired location</h2>
+                    <button class="btn jumbotron-btn btn-dark btn-order shadow-none" onclick="window.location.href='place_order.html';">
+                            Place Order</button>
                     </div>
-                    <img src="assets/images/img1.jpg" class="d-block w-100 carousel-image"  >
+                    <img src="assets/images/carouselgreen.jpg" class="d-block w-100 carousel-image"  >
                 </div>
              </div>
             
@@ -153,7 +157,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Monday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseMon" aria-expanded="true" aria-controls="collapseOne" name="Monday">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseMon" aria-expanded="true" aria-controls="collapseOne" name="Monday">
                             Monday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -161,7 +165,7 @@
                                 <div class="card-body">
                                     <p class="card-text">Place: Amsterdam</p>
                                     <p class="card-text">Timings: 6 to 9 pm</p>
-                                    <a href="#Google_map_location" class="btn btn-primary">Address</a>
+                                    <a href="#Google_map_location" class="btn btn-dark">Address</a>
                                 </div>
                             </div>
                     </div>
@@ -170,7 +174,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Tuesday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTue" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseTue" aria-expanded="true" aria-controls="collapseOne">
                             Tuesday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -178,7 +182,7 @@
                                 <div class="card-body">
                                     <p class="card-text">Place: Uterecht</p>
                                     <p class="card-text">Timings: 6 to 9 pm</p>
-                                    <a href="#Google_map_location" class="btn btn-primary">Address</a>
+                                    <a href="#Google_map_location" class="btn btn-dark">Address</a>
                                 </div>
                             </div>
                     </div>
@@ -186,7 +190,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Wednesday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseWed" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseWed" aria-expanded="true" aria-controls="collapseOne">
                             Wednesday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -194,7 +198,7 @@
                                 <div class="card-body">
                                     <p class="card-text">Place: DenBosch</p>
                                     <p class="card-text">Timings: 6 to 9 pm</p>
-                                    <a href="#Google_map_location" class="btn btn-primary">Address</a>
+                                    <a href="#Google_map_location" class="btn btn-dark">Address</a>
                                 </div>
                             </div>
                     </div>
@@ -202,7 +206,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Thursday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThu" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseThu" aria-expanded="true" aria-controls="collapseOne">
                             Thursday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -210,7 +214,7 @@
                                 <div class="card-body">
                                     <p class="card-text">Place: Eindhoven</p>
                                     <p class="card-text">Timings: 6 to 9 pm</p>
-                                    <a href="#Google_map_location" class="btn btn-primary">Address</a>
+                                    <a href="#Google_map_location" class="btn btn-dark">Address</a>
                                 </div>
                             </div>
                     </div>
@@ -218,7 +222,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Friday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFri" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseFri" aria-expanded="true" aria-controls="collapseOne">
                             Friday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -226,7 +230,7 @@
                                 <div class="card-body">
                                     <p class="card-text">Place: Mastricht</p>
                                     <p class="card-text">Timings: 6 to 9 pm</p>
-                                    <a href="#Google_map_location" class="btn btn-primary">Address</a>
+                                    <a href="#Google_map_location" class="btn btn-dark">Address</a>
                                 </div>
                             </div>
                     </div>

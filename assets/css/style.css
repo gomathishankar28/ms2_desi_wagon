@@ -22,7 +22,7 @@ body {
     align-items: unset;
 }
 .bg-navbar {
-   background-color: var(--yellow)!important;
+   background-color: #ff8b36!important;
    color: var(--white)!important;
 }
 .navbar-brand {
@@ -46,14 +46,24 @@ body {
 /*------------------------carousel------------------------------*/
 
 .carousel-caption {
-    top: 150px!important;
+    top: 75px!important;
+    color: black;
 }
 .carousel-image {
     height: 500px;
 }
-
+.carousel-caption i {
+    font-size: 175px;
+    margin-top: 20px;
+}
+.carousel-control-next, .carousel-control-prev {
+    color: black!important;
+}
+    
 /*------------------Schedule-------------------------------*/
-
+.schedule {
+    background-color: #e9ecef;
+}
 #schedule-header {
     text-align: center;
     margin-left: 30%;
@@ -83,7 +93,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #f03562;
+  background-color: #1e2021;
   color: white;
 }
 
@@ -91,6 +101,13 @@ body {
     
     color: blue;
     
+}
+#scheduleaccordion {
+    text-align: center;
+    
+}
+.weekdaybtn {
+    color: black;
 }
 
 /*---------------location---------------------------*/
@@ -131,8 +148,26 @@ body {
 }
 
 /*------------Place order------------------*/
-.form {
+#place_order {
     margin: 5% 20%;
     padding: 10px;
-    background-color: grey;
+    background-color: #fae1c9 ;
+}
+#acknowledgement {
+    background-color: #fae1c9;
+}
+#acknowledgement h2 {
+    background-color: #f03562;
+}
+#acknowledgement h2,h3 {
+    text-align: center;
+    margin: 20px;
+}
+#acknowledgement img {
+    height: 500px;
+    width: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+
 }
