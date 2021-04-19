@@ -12,8 +12,8 @@ function displayMarkerInfo(){
 /** Declare a function to create a map - initMap function original code https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-javascript with modifications for project */
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 10,
-        center: { lat: 52.373170, lng: 4.890660}, /*to find lat and lng of an address-https://www.latlong.net/convert-address-to-lat-long.html*/
+        zoom: 6,
+        center: { lat: 51.8949715, lng: 4.9876543}, /*to find lat and lng of an address-https://www.latlong.net/convert-address-to-lat-long.html*/
     });
 
     //Add marker locations and storeIds
@@ -55,3 +55,5 @@ function initMap() {
     });
 }
     
+marker.addListener('mouseover', () => infoWindow.open(map, marker))
+marker.addListener('mouseout', () => infoWindow.close())

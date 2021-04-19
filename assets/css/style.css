@@ -82,7 +82,7 @@ body {
 }
 
 .schedule_table tr:nth-child(even){
-    background-color: #ddd;
+    background-color: #99d66e;
 }
 
 .schedule_table tr:hover {
@@ -93,7 +93,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #1e2021;
+  background-color: #ff8b36;
   color: white;
 }
 
@@ -111,10 +111,12 @@ body {
 }
 
 /*---------------location---------------------------*/
-#location-header {
+#Google_map_location {
+    background-color: #e9ecef;
+}
+.location-header h2,p {
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    
 }
 #map {
     widows: 100%;
@@ -123,6 +125,19 @@ body {
 .hide{
     display: none;
     }
+#map-info {
+    margin-top: 125px;
+    
+}
+.card-title {
+    text-align: center;
+    background-color: orange;
+}
+
+.bg-text {
+    background-color: yellowgreen;
+    
+}
 /*---------------accordion styles-----------------*/
 #schedule-rtable {
    display: none;
@@ -153,12 +168,8 @@ body {
     padding: 10px;
     background-color: #fae1c9 ;
 }
-#acknowledgement {
-    background-color: #fae1c9;
-}
-#acknowledgement h2 {
-    background-color: #f03562;
-}
+
+
 #acknowledgement h2,h3 {
     text-align: center;
     margin: 20px;
@@ -170,4 +181,20 @@ body {
     margin-right: 20%;
     text-align: center;
 
+}
+.ack-schedule {
+    text-decoration: none;
+}
+/*----------footer--------------------*/
+#footer {
+background-color: #212529;
+    color: white;
+}
+.footer-contact {
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+}
+.footer-ul {
+    list-style-type: none;
 }
