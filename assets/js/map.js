@@ -31,7 +31,7 @@ function initMap() {
         'city': 'Eindhoven'
         },
         {'location': { lat: 51.1487336, lng: 5.4255067 }, 
-        'city': 'Mastricht'
+        'city': 'Maastricht'
         }
     ];
 
@@ -55,5 +55,3 @@ function initMap() {
     });
 }
     
-marker.addListener('mouseover', () => infoWindow.open(map, marker))
-marker.addListener('mouseout', () => infoWindow.close())

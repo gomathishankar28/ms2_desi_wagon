@@ -3,7 +3,7 @@
 
 /*----------------CSS variables-------------------*/
 :root {
-  --yellow: #f03562;
+  --orange: orange;
   --white: #fdf9fd;
   --black: #333541;
 }
@@ -15,45 +15,57 @@ body {
     padding: 0;
     background: transparent;
     font-family: 'Akaya Telivigala', cursive, sans-serif;
-    font-size: 20px;  
+    font-size: 24px;  
 }
 /*------title and nav bar styles----------------------*/
 .navbar {
     align-items: unset;
 }
 .bg-navbar {
-   background-color: #ff8b36!important;
+   background-color: var(--orange)!important;
    color: var(--white)!important;
 }
-.navbar-brand {
-    padding-left: 2rem;
-}
-.navbar-item {
-    margin-right: 15px;  
-      
-}
-.navbar-item a {
-    font-size: 20px;  
-}
-.active,.nav-link:hover  {
-    background-color: var(--black);
-    color: var(--white)!important;
+.logo {
+    margin-left: 10px;
 }
 .toggler-btn {
-    margin-bottom: 3px;
+    margin-right: 10px;
+    padding-left: 10px;
+    margin-left: 30px;
 }
+.navbar-item {
+    margin: 5px;
+    padding: 2px;
+}
+.navbar-item a {
+    font-size: 20px;
+    font-weight: 500;
+    color: black!important;
+}
+.active,.nav-link:hover  {
+    border: 1px solid black;
+}
+.nav-menu {
+    width: 150px;
+    padding:0;
+}
+
 
 /*------------------------carousel------------------------------*/
 
 .carousel-caption {
-    top: 75px!important;
+    top: 125px!important;
     color: black;
 }
+.carousel-item {
+    border: 0;
+}
+
 .carousel-image {
-    height: 500px;
+    height: 600px;
 }
 .carousel-caption i {
-    font-size: 175px;
+    font-size: 100px;
     margin-top: 20px;
 }
 .carousel-control-next, .carousel-control-prev {
@@ -63,11 +75,12 @@ body {
 /*------------------Schedule-------------------------------*/
 .schedule {
     background-color: #e9ecef;
+    padding-bottom: 20px;
+    
 }
 #schedule-header {
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 5px;
 }
 .schedule_table {
   font-family: Arial, Helvetica, sans-serif;
@@ -78,11 +91,12 @@ body {
 .schedule_table td, #schedule_table th {
   border: 1px solid #ddd;
   padding: 8px;
+  text-align: center;
   
 }
 
 .schedule_table tr:nth-child(even){
-    background-color: #99d66e;
+    background-color: #c9deba;
 }
 
 .schedule_table tr:hover {
@@ -92,27 +106,42 @@ body {
 .schedule_table th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
-  background-color: #ff8b36;
+  text-align: center;
+  background-color: #6da13c;
   color: white;
 }
 
 .today {
     
-    color: blue;
+  color: blue;
     
 }
 #scheduleaccordion {
     text-align: center;
+}
+#scheduleaccordion p {
+    
+    font-size: 18px;
+    color: black;
     
 }
+
 .weekdaybtn {
     color: black;
+    text-align: center;
+}
+#schedule span {
+    padding-left: 15px;
 }
 
 /*---------------location---------------------------*/
 #Google_map_location {
-    background-color: #e9ecef;
+    background-color: #c9deba;
+    margin: 5px;
+    
+}
+.map-container {
+    height: 700px;
 }
 .location-header h2,p {
     text-align: center;
@@ -125,19 +154,22 @@ body {
 .hide{
     display: none;
     }
-#map-info {
-    margin-top: 125px;
-    
+
+.card {
+    background-color: lightblue;
 }
 .card-title {
     text-align: center;
-    background-color: orange;
-}
-
-.bg-text {
-    background-color: yellowgreen;
+    font-weight: 700;
+    font-size: 28px;
     
 }
+.card-text {
+    text-align: left;
+    padding: 0 2px;
+}
+
+
 /*---------------accordion styles-----------------*/
 #schedule-rtable {
    display: none;
@@ -151,6 +183,9 @@ body {
     #schedule-table {
         display: none;
     }
+    .map-container {
+    height: 1100px;
+}
 }
 
 @media only screen and (min-width: 780px) { /* I've given 1023px but you can change to proper width */
@@ -160,15 +195,21 @@ body {
     #schedule-rtable {
         display: none;
     }
+    #map-info {
+    margin-top: 125px;
+    
+}
 }
 
 /*------------Place order------------------*/
 #place_order {
-    margin: 5% 20%;
+    margin: 20px 10px;
     padding: 10px;
     background-color: #fae1c9 ;
 }
-
+.btn-success {
+    margin-left:100px;
+}
 
 #acknowledgement h2,h3 {
     text-align: center;
@@ -186,15 +227,24 @@ body {
     text-decoration: none;
 }
 /*----------footer--------------------*/
-#footer {
+.footer {
 background-color: #212529;
-    color: white;
+    color: #ff8b36;
+    font-size: 14px;
 }
 .footer-contact {
     text-align: left;
     padding: 5px;
     padding-left: 20px;
 }
+.col-footer {
+    margin: 5px;
+    
+}
 .footer-ul {
     list-style-type: none;
+}
+.list-inline-item a {
+    color: #ff8b36;
+    
 }

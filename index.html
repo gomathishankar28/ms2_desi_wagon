@@ -21,18 +21,20 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-dark ml-auto bg-navbar">
             <!-- Brand Title on top left -->
+            <div class="logo">
                 <a class="navbar-brand" href="index.html">
                     <h1 class="brandname">Desi Wagon</h1>
                 </a>
+                </div>
             <!-- Navigation menu bar on top right -->
-                <div class="col toggler-nav">
+                <div class="col toggler-nav nav-menu">
                     <button type="button" class="navbar-toggler toggler-collapsed navbar-toggler-right toggler-btn" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 <div class="collapse navbar-collapse toggler-nav" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto navright">
                         <li class="navbar-item active">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="index.html" class="nav-item nav-link">Home</a>
                         </li>
                         <li class="navbar-item">
                             <a href="#schedule" class="nav-item nav-link">Schedule</a>
@@ -47,6 +49,7 @@
                         </li>
                     </ul>
                 </div>
+                
                 </div>
             </nav>
         </header>
@@ -66,14 +69,14 @@
                     <h2>Indian Grocery On Wheels now in Netherlands</h2>
                     <i class="fas fa-truck"></i>
                     </div>
-                    <img src="assets/images/carouselgreen.jpg" class="d-block w-100 carousel-image"  >
+                    <img src="assets/images/carousel-img.jpg" class="d-block w-100 carousel-image"  >
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d d-md-block">
                     <h2>You can buy all your favourite Indian Veggies,Fruits,spices and much more in one stop</h2>
                     <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <img src="assets/images/carouselgreen.jpg" class="d-block w-100 carousel-image"  >
+                    <img src="assets/images/carousel-img.jpg" class="d-block w-100 carousel-image"  >
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption">
@@ -81,7 +84,7 @@
                     <button class="btn jumbotron-btn btn-dark btn-order shadow-none" onclick="window.location.href='place_order.html';">
                             Place Order</button>
                     </div>
-                    <img src="assets/images/carouselgreen.jpg" class="d-block w-100 carousel-image"  >
+                    <img src="assets/images/carousel-img.jpg" class="d-block w-100 carousel-image"  >
                 </div>
              </div>
             
@@ -174,7 +177,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Tuesday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseTue" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseTue" aria-expanded="true" aria-controls="collapseOne" name="Tuesday">
                             Tuesday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -190,7 +193,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Wednesday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseWed" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseWed" aria-expanded="true" aria-controls="collapseOne name="Wednesday">
                             Wednesday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -206,7 +209,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Thursday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseThu" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseThu" aria-expanded="true" aria-controls="collapseOne name="Thursday">
                             Thursday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -222,7 +225,7 @@
                 <div class="card">
                     <div class="card-header weekday" id="Friday">
                         <h2 class="mb-0">
-                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseFri" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link weekdaybtn" type="button" data-toggle="collapse" data-target="#collapseFri" aria-expanded="true" aria-controls="collapseOne name="Friday">
                             Friday<span class="truck hide"><i class="fas fa-truck"></i></span>
                             </button>
                         </h2>
@@ -242,6 +245,7 @@
     </div>
         </section>
         <section id="Google_map_location">
+            <div class ="container map-container">
             <div class="location-header">
                 <h2>Location</h2> 
                 <p>We station at specific location in each city. Please check for the address that we would be statoned at in each city.</p>
@@ -255,8 +259,8 @@
                                     <div class="card location hide" id="Amsterdam">
                                         <div class="card-info">
                                             <h4 class="card-title">Amsterdam</h4>
-                                            <p class="card-text"><strong>ADDRESS</strong>: Jan van Galenstraat 4, 1051 KM Amsterdam</p>   
-                                            <p class="card-text"><strong>LANDMARK</strong>: opp to Basis School</p>
+                                            <p class="card-text">ADDRESS: Jan van Galenstraat 4, 1051 KM Amsterdam</p>   
+                                            <p class="card-text">LANDMARK: opp to Basis School</p>
                                             <p class="card-text bg-text">we are at this Location on Monday from 6 to 9pm.</p>
                                         </div>
                                     </div>
@@ -265,8 +269,8 @@
                                     <div class="card location hide" id="Uterecht">
                                         <div class="card-info">
                                             <h4 class="card-title">Uterecht</h4>
-                                            <p class="card-text"><strong>ADDRESS</strong>: Vredenburg, 3511 CW Utrecht</p>   
-                                            <p class="card-text"><strong>LANDMARK</strong>: opp to Jumbo food market</p>
+                                            <p class="card-text">ADDRESS: Vredenburg, 3511 CW Utrecht</p>   
+                                            <p class="card-text">LANDMARK: opp to Jumbo food market</p>
                                             <p class="card-text bg-text">we are at this Location on Tuesday from 6 to 9pm.</p>
                                         </div>
                                     </div>
@@ -275,8 +279,8 @@
                                      <div class="card location hide" id="DenBosch">
                                         <div class="card-info">
                                             <h4 class="card-title">Den Bosch</h4>
-                                            <p class="card-text"><strong>ADDRESS</strong>: Markt, 5211 GA 's-Hertogenbosch</p>   
-                                            <p class="card-text"><strong>LANDMARK</strong>: opp to Bijnkorf</p>
+                                            <p class="card-text">ADDRESS: Markt, 5211 GA 's-Hertogenbosch</p>   
+                                            <p class="card-text">LANDMARK: opp to Bijnkorf</p>
                                             <p class="card-text bg-text">we are at this Location on Wednesday from 6 to 9pm.</p>
                                         </div>
                                     </div>
@@ -285,18 +289,18 @@
                                    <div class="card location hide" id="Eindhoven">
                                         <div class="card-info">
                                             <h4 class="card-title">Eindhoven</h4>
-                                            <p class="card-text"><strong>ADDRESS</strong>: Wilhelminaplein, 5611 JC Eindhoven</p>   
-                                            <p class="card-text"><strong>LANDMARK</strong>: opp to SGE Kinderijk</p>
+                                            <p class="card-text">ADDRESS: Wilhelminaplein, 5611 JC Eindhoven</p>   
+                                            <p class="card-text">LANDMARK: opp to SGE Kinderijk</p>
                                             <p class="card-text bg-text">we are at this Location on Thurdsday from 6 to 9pm.</p>
                                         </div>
                                     </div>
                                     <!-- Location Eindhoven end -->
                                     <!-- Location Mastricht -->
-                                    <div class="card location hide" id="Mastricht">
+                                    <div class="card location hide" id="Maastricht">
                                         <div class="card-info">
-                                            <h4 class="card-title">Mastricht</h4>
-                                            <p class="card-text"><strong>ADDRESS</strong>: Mosae Forum 99, 6211 DW Maastricht</p>   
-                                            <p class="card-text"><strong>LANDMARK</strong>: opp to Bijnkorf</p>
+                                            <h4 class="card-title">Maastricht</h4>
+                                            <p class="card-text">ADDRESS: Mosae Forum 99, 6211 DW Maastricht</p>   
+                                            <p class="card-text">LANDMARK: opp to Bijnkorf</p>
                                             <p class="card-text bg-text">we are at this Location on Friday from 6 to 9pm.</p>
                                         </div>
                                     </div>
@@ -305,25 +309,28 @@
                             </div> 
                         </div>       
                     </div>
-                
+                </div>
                 </section>
-                <section id="footer">
+                <footer class="footer">
                 <div class="container-fluid footer-container">
                     <div class="row footer-details">
                 <!-- Copyrgiht -->
 	            <div class="col-md-12 col-lg-4 col-footer">
-                    <h5 class="text-center footer-copyright">copyright 2021</h5>
-                    <h6 class="text-center"><u>Opening Hours</u><br>
+                    <div>
+                        <h5 class="text-center footer-copyright">copyright 2021</h5>
+                        <h6 class="text-center"><u>Opening Hours</u><br>
                         Mon-Fri from 6 pm to 9 pm<br>
                         Closed on Weekends<br>
                     </h6>
+                    </div>
                 </div>
 
                 <!-- Reach out to us -->
                 <div class="col-md-12 col-lg-4 col-footer">
-                    <h5 class="text-center">Reach out to us</h5>
-                        <div class="footer-contact">
-                        <ul class="footer-ul text-left">
+                    <div>
+                        <h5 class="text-center">Reach out to us</h5>
+                            <div class="footer-contact">
+                            <ul class="footer-ul text-left">
                              <li>
                                 <span><i class="fas fa-phone"></i> :  +31 (0) 5551241357</span> 
                             </li>
@@ -333,47 +340,50 @@
                             <li>
                                 <span><i class="fas fa-map-marker-alt"></i> :   Netherlands</span>
                             </li>
-                        </ul>
-                        </div>
+                            </ul>
+                            </div>
+                    </div>
                 </div>
 
                 <!-- Social Links -->
                 <div class="col-md-12 col-lg-4 col-footer">
-                    <h5 class="text-center footer-social">Follow us</h5>
-                        <ul class="list-inline social-links text-center">
-                            <li class="list-inline-item">
+                    <div>
+                        <h5 class="text-center footer-social">Follow us</h5>
+                            <ul class="list-inline social-links text-center">
+                                <li class="list-inline-item">
                                 <a target="_blank" href="https://www.instagram.com/">
                                     <i class="fab fa-instagram" aria-hidden="true"></i>
                                         <span class="sr-only">Instagram</span>
                                 </a>
-                            </li>
-                            <li class="list-inline-item">
+                                </li>
+                                <li class="list-inline-item">
                                 <a target="_blank" href="https://www.facebook.com/">
                                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                         <span class="sr-only">Facebook</span>
                                 </a>
-                            </li>
-                            <li class="list-inline-item">
+                                </li>
+                                <li class="list-inline-item">
                                 <a target="_blank" href="https://www.twitter.com/">
                                     <i class="fab fa-twitter" aria-hidden="true"></i>
                                         <span class="sr-only">Twitter</span>
                                 </a>
-                            </li>
-                            <li class="list-inline-item">
+                                </li>
+                                <li class="list-inline-item">
                                 <a target="_blank" href="https://www.pinterest.com/">
                                     <i class="fab fa-pinterest" aria-hidden="true"></i>
                                         <span class="sr-only">Pinterest</span>
                                 </a>
-                            </li>
-                            <li class="list-inline-item">
+                                </li>
+                                <li class="list-inline-item">
                                 <a target="_blank" href="https://www.linkedin.com/">
                                     <i class="fab fa-linkedin" aria-hidden="true"></i>
                                         <span class="sr-only">Linkedin</span>
                                 </a>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+            </div>
             </div>
         </footer>
 <!-- /.Footer -->
