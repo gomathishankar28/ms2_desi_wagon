@@ -19,7 +19,7 @@
 <body onload="highlighttoday()">
     <!-- Title and Navbar -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark ml-auto bg-navbar">
+            <nav class="navbar navbar-expand-md navbar-light bg-dark ml-auto bg-navbar">
             <!-- Brand Title on top left -->
             <div class="logo">
                 <a class="navbar-brand" href="index.html">
@@ -29,7 +29,7 @@
             <!-- Navigation menu bar on top right -->
                 <div class="col toggler-nav nav-menu">
                     <button type="button" class="navbar-toggler toggler-collapsed navbar-toggler-right toggler-btn" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
+                        <span><i class="fas fa-bars"></i></span>
                     </button>
                 <div class="collapse navbar-collapse toggler-nav" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto navright">
@@ -44,7 +44,7 @@
                         </li>
                         
                         <li class="navbar-item">
-                            <button class="btn jumbotron-btn btn-dark btn-order shadow-none" onclick="window.location.href='place_order.html';">
+                            <button class="btn btn-order shadow-none" onclick="window.location.href='place_order.html';">
                             Place Order</button>
                         </li>
                     </ul>
@@ -317,9 +317,9 @@
                 <!-- Copyrgiht -->
 	            <div class="col-md-12 col-lg-4 col-footer">
                     <div>
-                        <h5 class="text-center footer-copyright">copyright 2021</h5>
-                        <h6 class="text-center"><u>Opening Hours</u><br>
-                        Mon-Fri from 6 pm to 9 pm<br>
+                        <h5 class="text-center footer-copyright">copyright 2021<br>
+                        <u>Opening Hours</u></h5>
+                        <h6 class="text-center">Mon-Fri from 6 pm to 9 pm<br>
                         Closed on Weekends<br>
                     </h6>
                     </div>
@@ -328,7 +328,7 @@
                 <!-- Reach out to us -->
                 <div class="col-md-12 col-lg-4 col-footer">
                     <div>
-                        <h5 class="text-center">Reach out to us</h5>
+                        <h5 class="text-center"><u>Reach out to us</u></h5>
                             <div class="footer-contact">
                             <ul class="footer-ul text-left">
                              <li>
@@ -348,7 +348,7 @@
                 <!-- Social Links -->
                 <div class="col-md-12 col-lg-4 col-footer">
                     <div>
-                        <h5 class="text-center footer-social">Follow us</h5>
+                        <h5 class="text-center footer-social"><u>Follow us</u></h5>
                             <ul class="list-inline social-links text-center">
                                 <li class="list-inline-item">
                                 <a target="_blank" href="https://www.instagram.com/">
@@ -383,8 +383,9 @@
                             </ul>
                         </div>
                     </div>
+                    </div>
             </div>
-            </div>
+            
         </footer>
 <!-- /.Footer -->
 <!-- jQuery script --> 

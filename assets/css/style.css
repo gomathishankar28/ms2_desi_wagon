@@ -3,7 +3,7 @@
 
 /*----------------CSS variables-------------------*/
 :root {
-  --orange: orange;
+  --orange: #ff8b36;
   --white: #fdf9fd;
   --black: #333541;
 }
@@ -25,14 +25,36 @@ body {
    background-color: var(--orange)!important;
    color: var(--white)!important;
 }
+.navbar-brand {
+    color: navy!important;
+}
+.btn-order {
+    background-color: darkgreen!important;
+    color: white;
+    word-wrap: none!important;
+    border: 0;
+    margin-left: 5px!important;
+}
 .logo {
     margin-left: 10px;
+    
+}
+.logo h1 {
+    font-weight: 700;
+    
 }
 .toggler-btn {
     margin-right: 10px;
     padding-left: 10px;
     margin-left: 30px;
+    
 }
+.toggler-btn i {
+    color: navy!important;
+    font-size: 28px;
+    margin-top: 7px;
+}
+
 .navbar-item {
     margin: 5px;
     padding: 2px;
@@ -40,14 +62,41 @@ body {
 .navbar-item a {
     font-size: 20px;
     font-weight: 500;
-    color: black!important;
+    color: navy!important;
 }
 .active,.nav-link:hover  {
-    border: 1px solid black;
+    
+    text-decoration-line: underline;
 }
 .nav-menu {
-    width: 150px;
+    width: 60px;
     padding:0;
+}
+/*---------media queries for nav bar----------*/
+@media (min-width: 320px) {
+    .toggler-btn {
+    padding-left: 50px;
+    }
+}
+@media (min-width: 360px) {
+    .toggler-btn {
+    padding-left: 80px;
+    }
+}
+@media (min-width: 375px) {
+    .toggler-btn {
+    padding-left: 100px;
+    }
+}
+@media (min-width: 411px) {
+    .toggler-btn {
+    padding-left: 120px;
+    }
+}
+@media (min-width: 540px) {
+    .toggler-btn {
+    padding-left: 240px;
+    }
 }
 
 
@@ -55,7 +104,7 @@ body {
 
 .carousel-caption {
     top: 125px!important;
-    color: black;
+    color: navy;
 }
 .carousel-item {
     border: 0;
@@ -65,8 +114,9 @@ body {
     height: 600px;
 }
 .carousel-caption i {
-    font-size: 100px;
+    font-size: 150px;
     margin-top: 20px;
+    color: navy;
 }
 .carousel-control-next, .carousel-control-prev {
     color: black!important;
@@ -237,14 +287,92 @@ background-color: #212529;
     padding: 5px;
     padding-left: 20px;
 }
-.col-footer {
-    margin: 5px;
-    
-}
+
 .footer-ul {
     list-style-type: none;
 }
 .list-inline-item a {
     color: #ff8b36;
     
+}
+/*---------media queries for footer----------*/
+@media (max-width: 280px) {
+    .footer-ul {
+        font-size: 16px;
+        padding-left: 20px;
+       
+    }
+    .footer-ul i {
+        font-size: 14px;
+    }
+    .social-links i {
+        font-size: 18px;
+    }
+}
+@media (min-width: 320px) {
+    .footer-ul {
+        margin-left: 15px;
+    }
+}
+@media (min-width: 360px) {
+    .footer-ul {
+        margin-left: 25px;
+    }
+}
+@media (min-width: 375px) {
+    .footer-ul {
+        margin-left:40px;
+    }
+}
+@media (min-width: 411px) {
+    .footer-ul {
+        margin-left: 60px;
+    }
+}
+@media (min-width: 414px) {
+    .footer-ul {
+        margin-left: 75px;
+    }
+}
+@media (min-width: 540px) {
+    .footer-ul {
+        margin-left: 120px;
+    }
+}
+@media (min-width: 360px) and (max-width: 540px) {
+    .footer-ul {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .col-footer h5 {
+        font-size: 34px;
+    }
+    .col-footer h6 {
+        font-size: 30px;
+    }
+    .footer-ul {
+        margin-left: 190px;
+        font-size: 30px;
+    }
+    .footer-ul i {
+        font-size: 24px;
+    }
+    .social-links i {
+        font-size: 36px;
+    }
+}
+@media (min-width: 1024px) {
+    .footer-ul {
+        margin-left: 0;
+        padding-left: 70px;
+}
+    }
+
+@media (min-width: 1200px) {
+    .footer-ul {
+        margin-left: 100px;
+        padding-left: 50px;
+        font-size: 20px;
+    }
 }
