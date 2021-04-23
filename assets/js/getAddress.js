@@ -1,3 +1,5 @@
+//To auto-populate the address field based on the location(city) chosen in the place order form.
+
 document.getElementById('location').addEventListener('change', function() {
     var location = this.value;
     if(location === "Eindhoven") {
@@ -12,6 +14,6 @@ document.getElementById('location').addEventListener('change', function() {
         document.getElementById("address").value = "Markt, 5211 GA 's-Hertogenbosch";
     } else {
         document.getElementById("address").value = "Mosae Forum 99, 6211 DW Maastricht";
-    }
-  
+    } 
 });
+//There is no need to test for empty string here as the default value is set to "Amsterdam"

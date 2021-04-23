@@ -1,5 +1,6 @@
+// Code to hightlight the row in the Schedule table to indicate where the wagon is on current date.
+
 function highlighttoday(event) {
-    
     let date = new Date();
     const weekday = new Array(7);
     weekday[0] = "Sunday";

@@ -1,5 +1,5 @@
+
 function sendMail(contactForm) {
-    console.log("function entered");
     emailjs.send("send_list", "desi_wagon", {
         "from_name": contactForm.fname.value,
         "from_email": contactForm.emailaddress.value,
@@ -16,10 +16,11 @@ function sendMail(contactForm) {
         function(error) {
             console.log("FAILED", error);
         }
-    );
+        );
     
     return false;  // To block from loading a new page
 }
+
 function acknowledgement() {
     document.getElementById("place_order").classList.add("hide");
     document.getElementById("acknowledgement").classList.remove("hide");

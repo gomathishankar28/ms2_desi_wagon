@@ -271,6 +271,7 @@ body {
 }
 
 /*------------Place order------------------*/
+
 #place_order {
     margin: 50px 10px;
     padding: 10px;
@@ -286,6 +287,7 @@ body {
 }
 #acknowledgement {
     align-items: center;
+    height: 800px;
 }
 #acknowledgement h2,h3 {
     text-align: center;
