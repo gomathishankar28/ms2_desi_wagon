@@ -110,26 +110,27 @@ The navigation bar is also categorized accordingly.
 
 **Wireframe mockups**
 
-Please find attached Wireframe for all the 2 pages Home and Place Order for Large, medium and Small devices. 
+Please find attached Wireframe for all the 2 pages Home , place order and acknowledgement page for Large, medium and Small devices. 
 
 Wirefame mockups
 Surface
 Colors
 
-The color palette chosen, symbolically references to the Indian culture and its emphasis on the color yellow. Traditionally attributed to health and prosperity, this dominant color is chosen to represent a unique spice, turmeric, which is an irreplaceable ingredient in all the Indian curries. This aims to establish a connect with the target Indian clientele and serve as a metaphor for BVI’s offering, just like Turmeric, the Lunch is- Simple, rustic and healthy!
+The color palette chosen, symbolically references to the Indian Flag which emphasises on color orange, green, white and navy.
+ This aims to establish a connect with the target Indian clientele and serve as a metaphor for Indian Grocery store, as this Wagon carries only ALL Indian stuff.
 Typography
 
 Two fonts were used for this project, Akaya Telivigala', cursive, and sans-serif with a sans-serif being fallback font. The cursive style fonts are a well-known typography choice, and are particularly popular on the web. Cursive writing fonts can give the website a more personal feel and approach
 Media
 
-The hero image displays a wide range of spices of India
+The hero image displays carousel with an indian flag background and the wagon with wheels represents the ashok chakra of the flag.
 All the other images used throughout the website are relative to our service.
 All images have been resized and compressed in order to boost the UX flow.
 Iconography
 
 Icons have been used throughout the website to improve the efficiency of UX.
 
-## Features
+## **Features**
 Each page in the website features a responsive navigation bar on the right with conventional placing of Brand Name on the top left. Each page has a footer with copyright information, contact details of the Desi Wagon and links to social media.
 
 ### Home
@@ -140,9 +141,13 @@ The third section(Location Section) t
 
 ### Schedule
 This is a section of the Home page. As the wagon is scheduled to visit 1 city in a day, accounting to 5 different cities in a week. This section showcases a table that would detail the scheduled visits of th wagon on each week day. This also inlcudes timing details.
+This is displayed in a table for large and medium screens. However table is not being advised as a good UX for smaller screens, this section is displayed as accordion in smaller screens for better reponsiveness, good UX and readability.
 
 ### Location
 This is also a section of the Home page. The wagon visit 5 cities in a week. This section gives the address details of each location at which the wagon will be stationed. This is acheived with the help of Google Maps API.
+This section contains 2 columns on large and medium screens(col-lg-6, col-md-6) on which one column displays the map with markers on 5 different cities this wagon would visit every week.
+The second column displaying a card with details of address, landmark , timings and day when each marker is clicked for better usability.
+This is done in smaller screen with 2 (col-12) columns.
 
 ### Place order
 This page presents a frm to the user which helps them to send in their grocery list in advance. An email will be sent to desiwagon and copy of it will be sent to the user as well. 
@@ -159,3 +164,61 @@ the form has the folowing fields.
 ### Acknowledgement
 This page is seen on successful completion of placing the order. It displays a Thankyou image from Desi Wagon to the user for placing the order with them.
 It also contains text to say that order has been received successfully and the user needs to check the schedule to pick his orders up. A link to the schedule is also provided for convenience.
+
+### Footer
+The footer displays the following:
+*   copyright information 
+*   additional details to say that they are closed on weekends and timings they ar availale on weekdays.
+*   Contact Information - with mobilenumber, e-mail and country details.
+*   links Social media like facebook, linkedln, twitter , instagram and pinInterest.
+
+##  **Existing Features**
+
+*   **Title** - Allows the user to easily recognise the brand of “Voyage”. If the user clicks on the logo, it will return the users to the “Home” section as they would expect.
+*   **Navigation Bar** - Allows the user to easily navigate the website's sections and find what they are looking for with ease 
+*   **Landing Page** - Allows the user to know about Desiwagon. carousel with 3 slides showing who they are, what they offer and a CTA button to place the order respectively.
+*   **Schedule** - Allows user to know the Schedule of the wagon for a week.
+*   **Location** - Allows the user to know the  the address details of the stationed wagon.
+*   **Place Order** - Allows the user to place prior orders for their groceries. Also enables the user to send an email to desiwagon with their grocery list.
+*   **Acknowledgement** - Provides the user with an acknowledgement message on successful placement of the order
+*   **Footer**  -   Allows user to access contact info and Social links.
+
+## **Features to be implemented in future**
+*   A google sign in to place the  order for user validation.
+*   Autocomplete option for form fields in place_order form.
+*   Specific data validation for all the input fields in the form.
+
+## **Technologies used**
+### **Languages**
+*   HTML
+*   CSS
+*   Javascript
+
+### **Libraries & Frameworks**
+* [Bootstrap](https://getbootstrap.com/) was used for its incredible responsiveness ,carousels and accordions..
+
+* [Font Awesome](https://fontawesome.com/) icons were used to improve aesthetics and UX
+
+* [Google Fonts](https://fonts.google.com/) was also used to enhance the user experience
+
+* [Emailjs API](https://www.emailjs.com/) was used for place order form for sending orders to desiwagon.
+
+* [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) was used in Location section for the map interaction and map markers
+
+### **Tools**
+* **Gitpod** - This is the IDE used for building the website.
+* **Github** - The project uses Github for hosting and version control.
+* **Balsamiq** for creating the wireframes.
+* **Am I Responsive** - The project used Am I Responsive to create a Demo image of the website.
+* **Chrome DevTools** - This project used developer tools to test responsiveness across different sized devices and to add new styles.
+* **W3C Markup Validator** - For testing HTML code
+* **W3C CSS Validator** - For testing CSS code
+* **JSHint Validator** - For detecting errors and potential problems in your JavaScript code
+* **Link Checker** - For checking all links on the website and see if all links work
+* **Lighthouse** - For testing the performance of the website
+* **TestProject** - For automated testing of website
+* **[BeFunky](https://www.befunky.com/ )** for resizing and editing images. 
+* **[unsplash](https://unsplash.com/)** for carousel image in Home page.
+
+## **Testing**
+Please find the testing document in testing.md file

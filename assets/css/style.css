@@ -139,6 +139,7 @@ body {
 }
     
 /*------------------Schedule-------------------------------*/
+/*------------------code reference w3schools------------------------------*/
 .schedule {
     background-color: #fae1c9;
     /*#e9ecef;*/
@@ -244,8 +245,8 @@ body {
    display: none;
 }
 
-/*show for small screens */
-@media only screen and (max-width: 540px) { /* I've given 1023px but you can change to proper width */
+/*show accordion only for small screens and hide them for bigger and medium screen */
+@media only screen and (max-width: 540px) { 
     #schedule-rtable {
         display: block;
     }
@@ -256,8 +257,8 @@ body {
     height: 1100px;
 }
 }
-
-@media only screen and (min-width: 780px) { /* I've given 1023px but you can change to proper width */
+/*show table only for medium and large screens and hide them for smaller screens */
+@media only screen and (min-width: 768px) {
     #schedule-table {
         display: block;
     }

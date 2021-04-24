@@ -1,19 +1,19 @@
-// Function display and hide store info if click on marker
+// Function to dispay the name of the city, address and additional info on click of the marker.
 function displayMarkerInfo(){
-    /** add class to hide all elements with store class - orginal code with modification from: https://stackoverflow.com/questions/22270664/how-to-remove-a-class-from-elements-in-pure-javascript */
+    /* add hide class to hide all elements with location class - code reference from stackoverflow */
     var elems = document.querySelectorAll(".location");
     [].forEach.call(elems, function(el) {
         el.classList.add("hide");
     });
-    // Remove class to display element
+    // Remove hide class to display element
     document.getElementById(this.city).classList.remove('hide');
 }
 
-/** Declare a function to create a map - initMap function original code https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-javascript with modifications for project */
+/** code reference code institute documentationa and google map markers documentation */
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
-        center: { lat: 51.8949715, lng: 4.9876543}, /*to find lat and lng of an address-https://www.latlong.net/convert-address-to-lat-long.html*/
+        center: { lat: 51.8949715, lng: 4.9876543}, /*to find lat and lng of Netherlands-https://www.latlong.net/convert-address-to-lat-long.html*/
     });
 
     //Add marker locations and storeIds
@@ -42,13 +42,13 @@ function initMap() {
             city: marker.city
             
         });
-        // when marker clicked then display info
+        // when marker clicked then display the card
         newMarker.addListener("click", displayMarkerInfo);
         return newMarker;
     });
 
-    /** New MarkerClusterer - initMap function original code https://developers.google.com/maps/documentation/javascript/marker-clustering */
-    // Add a marker clusterer to manage the markers
+    /** code reference code Institute documentation and google map marker cluster documentation*/
+    // New marker clusterer for a group of 5 markers
     new MarkerClusterer(map, markers, {
         imagePath:
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",

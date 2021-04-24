@@ -10,6 +10,7 @@
         <!-- Fontawesome Icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+        <!-- Link to css file-->
         <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body onload="highlighttoday()">
@@ -99,8 +100,8 @@
         </section>
 
     <!-- Schedule Section -->
-    <!-- Table for Large and medium screens-->
         <section id="schedule">
+            <!-- Table for Large and medium screens-->
             <div class="container-fluid schedule">
         <div class="row">
             <div class="col">
@@ -152,11 +153,13 @@
                         </tr>
                     </table>
                 </div>
-           
+           <!-- End of Table for Large and medium screens-->
 
      <!-- Accordion for smaller screens-->
+     <!-- code reference from Bootstrap accordion with modifications-->
     <div id="schedule-rtable">
             <div class="accordion" id="scheduleaccordion">
+                <!-- Monday accordion-->
                 <div class="card">
                     <div class="card-header weekday" id="Monday">
                         <h2 class="mb-0">
@@ -173,7 +176,7 @@
                             </div>
                     </div>
                 </div>
-                
+                <!-- Tuesday accordion-->
                 <div class="card">
                     <div class="card-header weekday" id="Tuesday">
                         <h2 class="mb-0">
@@ -190,6 +193,7 @@
                             </div>
                     </div>
                 </div>
+                <!-- Wednesday accordion-->
                 <div class="card">
                     <div class="card-header weekday" id="Wednesday">
                         <h2 class="mb-0">
@@ -206,6 +210,7 @@
                             </div>
                     </div>
                 </div>
+                <!-- Thursday accordion-->
                 <div class="card">
                     <div class="card-header weekday" id="Thursday">
                         <h2 class="mb-0">
@@ -222,6 +227,7 @@
                             </div>
                     </div>
                 </div>
+                <!-- Friday accordion-->
                 <div class="card">
                     <div class="card-header weekday" id="Friday">
                         <h2 class="mb-0">
@@ -242,9 +248,15 @@
             </div>
     </div>
     </div>
+    <!-- End of Accordion for smaller screens-->
     </div>
         </section>
+    <!-- End of Schedule section-->
+
+
+    <!-- Location Section -->
         <section id="Google_map_location">
+            <!-- code reference Google Maps marker Documentation with modifications-->
             <div class ="container map-container">
             <div class="location-header">
                 <h2>Location</h2> 
@@ -310,8 +322,11 @@
                         </div>       
                     </div>
                 </div>
-                </section>
-                <footer class="footer">
+        </section>
+    <!-- End of Location Section-->
+
+    <!-- Footer -->
+        <footer class="footer">
                 <div class="container-fluid footer-container">
                     <div class="row footer-details">
                 <!-- Copyrgiht -->
@@ -388,16 +403,19 @@
             
         </footer>
 <!-- /.Footer -->
-<!-- jQuery script --> 
+
+<!-- Script files --> 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>    
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap script for carousel -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    
     <!-- marker clusterer script --> 
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script src="assets/js/map.js"></script>
@@ -408,5 +426,5 @@
     
     <script src="assets/js/schedule.js"></script>
     
-    </body>
-    </html>
+</body>
+</html>

@@ -1,4 +1,4 @@
-
+//code reference code institute and  emailJS documentation with modifications
 function sendMail(contactForm) {
     emailjs.send("send_list", "desi_wagon", {
         "from_name": contactForm.fname.value,
@@ -20,7 +20,7 @@ function sendMail(contactForm) {
     
     return false;  // To block from loading a new page
 }
-
+//To display acknowledgement after successfull completion of placing the order.
 function acknowledgement() {
     document.getElementById("place_order").classList.add("hide");
     document.getElementById("acknowledgement").classList.remove("hide");
