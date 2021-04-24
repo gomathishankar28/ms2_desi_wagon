@@ -206,19 +206,152 @@ The footer displays the following:
 * [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) was used in Location section for the map interaction and map markers
 
 ### **Tools**
-* **Gitpod** - This is the IDE used for building the website.
-* **Github** - The project uses Github for hosting and version control.
-* **Balsamiq** for creating the wireframes.
-* **Am I Responsive** - The project used Am I Responsive to create a Demo image of the website.
-* **Chrome DevTools** - This project used developer tools to test responsiveness across different sized devices and to add new styles.
-* **W3C Markup Validator** - For testing HTML code
-* **W3C CSS Validator** - For testing CSS code
-* **JSHint Validator** - For detecting errors and potential problems in your JavaScript code
-* **Link Checker** - For checking all links on the website and see if all links work
-* **Lighthouse** - For testing the performance of the website
-* **TestProject** - For automated testing of website
-* **[BeFunky](https://www.befunky.com/ )** for resizing and editing images. 
-* **[unsplash](https://unsplash.com/)** for carousel image in Home page.
+* **[Gitpod](https://www.gitpod.io/)** - This is the **IDE** used for building the website.
+* **[Github](https://github.com/)** - The project uses Github for **hosting and version control**.
+* **[Balsamiq](https://balsamiq.com/wireframes/desktop/docs/intro/)** for creating the **wireframes**.
+* **[Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)** - This project used developer tools to **test responsiveness** across different sized devices and to add new styles.
+* **[W3C Markup Validator](https://validator.w3.org/)** - For **testing HTML code.**
+* **[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)** - For **testing CSS code.**
+* **[JSHint Validator](https://jshint.com/)** - For detecting errors and potential problems in your **JavaScript code.**
+* **[Lighthouse](https://developers.google.com/web/tools/lighthouse)** - For testing the **performance of the website.**
+* **[Am I Responsive](http://ami.responsivedesign.is/)** - The project used Am I Responsive to create a **Demo image of the website**.
+### **Media**
+* **[BeFunky](https://www.befunky.com/ )** for **resizing and editing images**. 
+* **[unsplash](https://unsplash.com/)** for **carousel image** in Home page.
 
 ## **Testing**
-Please find the testing document in testing.md file
+Please find the testing document in testing.md file.
+
+## **Deployment**
+
+* 	**GitHub Pages**
+
+    The project is hosted by GitHub Pages. To deploy it, follow the below steps.
+
+	1. Log in to GitHub and locate your project Repository.
+    2. At the top of the Repository, click on the "Settings" Button on the menu.
+    3. Scroll down the Settings page and find the "GitHub Pages" Section.
+	4. Under "Source", click on the dropdown called "None" and select "main" branch and subsequently choose the next folder as root and click on Save.
+	  The page will automatically refresh.""
+	5. Scroll back down through the page to locate the now published site link In the "GitHub Pages" section, you should see  ""Your site is published at"with the link highlighted in green.
+
+*	**To fork the GitHub Repository**
+
+    By forking the GitHub Repository we make a copy of the original repository
+    on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+    1. Log in to GitHub and locate your project Repository.
+    2. At the top right of the Repository just above the "Settings" Button on the menu, locate and click the "Fork" Button.
+    3. You should now have a copy of the original repository in your GitHub account.
+
+*	**To make a Local Clone**
+
+    1.	Log in to GitHub and locate your project Repository.
+
+    2.	Alternatively, to clone your repository in Desktop, click Set up in Desktop and follow the prompts to complete the clone.
+
+    3.	To clone the repository using HTTPS, under "Clone", make sure "HTTPS" is selected and copy the link.
+
+    4.	Open Git Bash.
+
+    5.	Change the current working directory to the location where you want the cloned directory to be made.
+
+    6.	Type git clone, and then paste the URL you copied in Step 3.
+
+                $ git clone https://github.com/gomathishankar28/ms2_desiwagon.git
+
+    7.	Press Enter. Your local clone will be created.
+
+## **How to access Google Maps API**
+Google requires you to register and to get an API key which is like a unique identifier that authorizes your website to use the API.
+Every API has documentation about how to use it and google maps is no exception.The main thing that we need to do is to
+get what's called an API key as you must have at least one API key associated with your project. 
+
+### **To create an API key**
+ 1. Go to [google maps documentation] https://developers.google.com/maps/gmp-get-started#quickstart
+ 2. In the Google Cloud Console, on the project selector page, click Create Project to begin creating a new Cloud project.
+ 3. click on create and give a project name and hit create.
+ 4. Make sure that billing is enabled for your Cloud project.
+ 5. Go to Maps API library page to see Google provides a lot of API's. but here we would just enable the Maps javascrip API. 
+ 6. Go to the APIs & Services > Credentials page.
+ 7. On the Credentials page, click Create credentials > API key.The API key created dialog displays your newly created API key.
+ 8. Click Close.The new API key is listed on the Credentials page under API keys.(Remember to restrict the API key before using it in production.) 
+
+### **Restricting API keys**
+1. Go to the APIs & Services > Credentials page from the given URL(https://developers.google.com/maps/documentation/javascript/get-api-key)
+2. Select the API key that you want to set a restriction on. The API key property page appears.
+3. Under Key restrictions, set the following restrictions
+
+*   **Application restrictions**
+
+1.  To accept requests from the list of website that you supply, select HTTP referrers (web sites) from the list of Application restrictions.
+2.  Specify one or more referrer web sites. For example, *.google.com accepts all sites ending in google.com, such as https://developers.google.com.
+
+*   **API restrictions**
+1.  Click Restrict key.
+2.  Select Maps JavaScript API from Select APIs dropdown.
+3.  If the Maps JavaScript API is not listed, you need to enable it.
+4.  If your project uses Places Library, also select Places API. Similarly, if your project uses other services in the JavaScript API (Directions Service, Distance Matrix Service, Elevation Service, and/or Geocoding Service), you must also enable and select the corresponding API in this list.
+
+* **Adding the API key to your request**
+You must include an API key with every Maps JavaScript API request. In the following example, replace YOUR_API_KEY with your API key.
+paste the below script file in your html file before the closing body tag.
+    
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+        type="text/javascript"></script>
+
+## **How to use EmailJS API**
+To use a service called EmailJS, we need to Set up an EmailJS account. Go to [Emailjs](https://www.emailjs.com/)
+and Create an EmailJS account.Then it involves the following steps.
+1.  **Add an email service** - An email service provides integration between EmailJS and your email server. First open the Email Services (opens new window)tab where you will see two sections: Transactional email services and Personal email services.
+    Personal email services allow connecting personal email providers that offer basic email functionality – an email address and an inbox. These include providers like Gmail, Fastmail, Outlook 365, etc'. 
+    we choose to use the Gmail service. The name we are giving is send_list, and the service ID is desi_wagon. We then need to connect our account with Gmail by hitting the "Connect account" button and then pressing the Add Service button to complete the process.
+
+2.  **Create an email template**
+*   Click Create new template up at the top
+*   Choose the blank template 
+*   Fill in the subject, from , to and message fields with dynamic variables.
+*   save the email template by pressing the Save button
+
+3.  **Create a form in HTML** 
+Use the code from the given url(https://www.emailjs.com/docs/tutorial/creating-contact-form/) as reference.
+
+4.  **Connecting to EmailJS**
+*   Go to the EmailJS website then documentation
+*   Click on installation and copy the EmailJS SDK
+*   Copy the code and paste the code in before the closing/head tag
+*   Get your user ID - you can get this from the Instructions page in the EmailJS dashboard.
+*   Paste it into your emailjs.init(). You can copy your custom EmailJS code (relating to parameters) and paste it into your JavaScript.
+
+### **Credits**
+* **Content**
+
+	* [popupcity](https://popupcity.net/observations/this-startup-brings-a-mobile-grocery-store-to-your-neighborhood/)  as a general inspiration.
+
+* **Media**
+
+    * [unsplash](https://unsplash.com/) for the carousel image.
+
+* **Code**
+
+	* [Bootstrap](https://getbootstrap.com/) for navbar, carousel and accordions.
+
+	* [W3Schools](https://www.w3schools.com/) as a general source.
+
+    * [tutorialrepublic](https://www.tutorialrepublic.com/) as a general source.
+
+    * [stackoverflow](https://stackoverflow.com/) for displaying marker information for google maps location.
+
+    * [code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) for Google maps and emailJS as general reference
+
+    * [Google maps markers](https://developers.google.com/maps/documentation/javascript/markers) as code reference for Location section.
+
+    * [emailJs](https://www.emailjs.com/docs/tutorial/overview/) for sendMail.js.
+
+	
+### **Acknowledgements**
+    
+* **My mentor: Nishant kumar** by giving lot of inputs and useful tips to improve.
+* **The Slack community** of Code Institute for a peer code review
+* **My partner Shankar** for creating the text content for the website.
+* **My Family and Friends** who provided their honest feedback by testing the website across different devices and different OS.

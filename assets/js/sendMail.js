@@ -22,8 +22,8 @@ function sendMail(contactForm) {
 }
 //To display acknowledgement after successfull completion of placing the order.
 function acknowledgement() {
-    document.getElementById("place_order").classList.add("hide");
-    document.getElementById("acknowledgement").classList.remove("hide");
+    document.getElementById("place_order").classList.add("hide"); /* hide the place_order form*/
+    document.getElementById("acknowledgement").classList.remove("hide");/* display the acknowledgement div*/
     
 }
 
