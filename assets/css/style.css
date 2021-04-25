@@ -36,12 +36,13 @@ body {
     border: 0;
     margin-left: 10px!important;
     margin-right: -5px;
+    padding: 10px;
 }
-.logo {
+.brand {
     margin-left: 10px;
     
 }
-.logo h1 {
+.brandname {
     font-weight: 700;
     
 }
@@ -61,7 +62,7 @@ body {
 .toggler-btn i {
     color: navy!important;
     font-size: 28px;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .navbar-item {
@@ -88,6 +89,14 @@ body {
     padding:0;
 }
 /*---------media queries for nav bar----------*/
+@media (max-width: 320px) {
+    .brandname {
+        font-size: 24px;
+    }
+    .btn-order {
+        white-space: nowrap;
+    }
+}
 @media (min-width: 320px) {
     .toggler-btn {
     margin-left: 30px;
@@ -98,12 +107,19 @@ body {
     margin-left: 80px;
     }
     
+    
 }
 @media (min-width: 375px) {
     .toggler-btn {
     margin-left: 100px;
     }
 }
+@media (min-width: 360px) and (max-width: 375px) {
+    .brandname {
+        font-size: 28px;
+    }
+}    
+
 @media (min-width: 411px) {
     .toggler-btn {
     margin-left: 120px;
@@ -136,6 +152,12 @@ body {
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
     background-color: navy;
+}
+/*---------------media queries for carousel--------------------*/
+@media (max-width: 540px) {
+    .carousel-caption h2 {
+        margin-top: 75px;
+    }
 }
     
 /*------------------Schedule-------------------------------*/
@@ -206,8 +228,6 @@ body {
 /*---------------location---------------------------*/
 #Google_map_location {
     background-color: #c9deba;
-     /*#c9deba;*/
-    margin: 5px;
     
 }
 .map-container {
@@ -387,7 +407,12 @@ background-color: #212529;
     
 }
 /*---------media queries for footer----------*/
-@media (max-width: 280px) {
+@media (min-width: 280px) and (max-width: 360px) {
+    .footer-copyright {
+        padding-top: 10px;
+    }
+}
+ @media (max-width: 280px) {
     .footer-ul {
         font-size: 16px;
         padding-left: 20px;
@@ -457,7 +482,10 @@ background-color: #212529;
     .footer-ul {
         margin-left: 0;
         padding-left: 70px;
-}
+}   
+    .col-footer {
+        padding-top: 30px;
+    }
     }
 
 @media (min-width: 1200px) {

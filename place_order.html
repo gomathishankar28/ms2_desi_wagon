@@ -24,40 +24,44 @@
         </script>
 </head>
 <body>
-    <!-- Title and Navbar -->
-        <header>
+    <!-- title and navbar--> 
+    <header>
             <nav class="navbar navbar-expand-md navbar-light bg-dark ml-auto bg-navbar">
             <!-- Brand Title on top left -->
+            <div class="brand">
                 <a class="navbar-brand" href="index.html">
                     <h1 class="brandname">Desi Wagon</h1>
                 </a>
+                </div>
             <!-- Navigation menu bar on top right -->
-                <div class="col toggler-nav">
+                <div class="col toggler-nav nav-menu">
                     <button type="button" class="navbar-toggler toggler-collapsed navbar-toggler-right toggler-btn" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
+                        <span><i class="fas fa-bars"></i></span>
                     </button>
                 <div class="collapse navbar-collapse toggler-nav" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto navright">
-                        <li class="navbar-item">
+                        <li class="navbar-item active">
                             <a href="index.html" class="nav-item nav-link">Home</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="index.html#schedule" class="nav-item nav-link">Schedule</a>
+                            <a href="#schedule" class="nav-item nav-link">Schedule</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="index.html#location" class="nav-item nav-link">Location</a>
+                            <a href="#Google_map_location" class="nav-item nav-link">Location</a>
                         </li>
                         
-                        <li class="navbar-item active">
-                            <button class="btn jumbotron-btn btn-dark btn-order shadow-none" onclick="window.location.href='place_order.html';">
+                        <li class="navbar-item">
+                            <button class="btn btn-order shadow-none" onclick="window.location.href='place_order.html';">
                             Place Order</button>
                         </li>
                     </ul>
                 </div>
+                
                 </div>
             </nav>
-        </header>
+    </header>
     <!--./ title and navbar--> 
+
     <!-- acknowledgement message made visible only after the successful submission of the order-->
         <div id="acknowledgement" class="hide">
             <img src="assets/images/acknowledgement-img.jpg" alt="thankyoupic">
