@@ -16,14 +16,14 @@ body {
     background: transparent;
     font-family: 'Akaya Telivigala', cursive, sans-serif;
     font-size: 20px;  
-    color: navy;
+    color: navy!important;
 }
 /*------title and nav bar styles----------------------*/
 .navbar {
     align-items: unset;
 }
 .bg-navbar {
-   background-color: var(--orange)!important;
+   background-color: #f16a19!important;
    color: var(--white)!important;
 }
 .navbar-brand {
@@ -137,6 +137,10 @@ body {
 .carousel-caption {
     top: 125px!important;
     color: navy;
+    
+}
+.carousel_caption3 {
+    top: 160px!important;
 }
 .carousel-item {
     border: 0;
@@ -163,7 +167,7 @@ body {
 /*------------------Schedule-------------------------------*/
 /*------------------code reference w3schools------------------------------*/
 .schedule {
-    background-color: #fae1c9;
+    background-color: #ffffff;
     /*#e9ecef;*/
     padding-bottom: 20px;
     
@@ -190,7 +194,7 @@ body {
 }
 
 .schedule_table tr:hover {
-    background-color: #e8a908;;
+    background-color: gainsboro;
 }
 
 .schedule_table th {
@@ -212,22 +216,30 @@ body {
 #scheduleaccordion p {
     
     font-size: 18px;
-    color: black;
+    color: navy;
     text-align: center;
     
 }
+.card_accordion {
+    background-color: #6da13c!important;
+}
 
 .weekdaybtn {
-    color: black;
+    color: navy;
     text-align: center;
+    
 }
-#schedule span {
+.btn-address {
+    background-color: navy;
+    color: white;
+}
+/*#schedule span {
     margin-right: -20px;
-}
+}*/
 
 /*---------------location---------------------------*/
 #Google_map_location {
-    background-color: #c9deba;
+    background-color: #bbdc8b;
     
 }
 .map-container {
@@ -246,7 +258,7 @@ body {
     }
 
 .card {
-    background-color: lightblue;
+    background-color: #bbdc8b;
 }
 .card-title {
     text-align: center;
