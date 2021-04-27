@@ -6,31 +6,31 @@ function displayMarkerInfo(){
         el.classList.add("hide");
     });
     // Remove hide class to display element
-    document.getElementById(this.city).classList.remove('hide');
+    document.getElementById(this.title).classList.remove('hide');
 }
 
 /** code reference code institute documentationa and google map markers documentation */
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
-        center: { lat: 51.8949715, lng: 4.9876543}, /*to find lat and lng of Netherlands-https://www.latlong.net/convert-address-to-lat-long.html*/
+        center: { lat: 52.1326, lng: 5.2913}, /*to find lat and lng of Netherlands-https://www.latlong.net/convert-address-to-lat-long.html*/
     });
 
     //Add marker locations and storeIds
     var markerList = [
-        {'location': { lat: 51.9082773, lng: 4.60036 }, 
+        {'location': { lat: 52.377956, lng: 4.897070 }, 
          'city': 'Amsterdam'
         },
-        {'location': { lat: 51.7640606, lng: 4.7718492 }, 
+        {'location': { lat: 52.092876, lng: 5.104480 }, 
         'city': 'Uterecht'
         },
-        {'location': { lat: 51.5631166, lng: 5.2608243 }, 
+        {'location': { lat: 51.69917, lng: 5.30417 }, 
         'city': 'DenBosch'
         },
-        {'location': { lat: 51.4430834, lng: 5.4019321 }, 
+        {'location': { lat: 51.44083, lng: 5.47778 }, 
         'city': 'Eindhoven'
         },
-        {'location': { lat: 51.1487336, lng: 5.4255067 }, 
+        {'location': { lat: 50.851368, lng: 5.690973 }, 
         'city': 'Maastricht'
         }
     ];
@@ -39,7 +39,7 @@ function initMap() {
      var markers = markerList.map((marker, i) => {
         newMarker= new google.maps.Marker({
             position: marker.location,
-            city: marker.city
+            title: marker.city
             
         });
         // when marker clicked then display the card
