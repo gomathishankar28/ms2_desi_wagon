@@ -1,22 +1,32 @@
 // Function to dispay the name of the city, address and additional info on click of the marker.
-function displayMarkerInfo(){
-    /* add hide class to hide all elements with location class - code reference from stackoverflow */
-    var elems = document.querySelectorAll(".location");
-    [].forEach.call(elems, function(el) {
-        el.classList.add("hide");
+
+    function displayMarkerInfo(){
+
+// Add hide class to hide all elements with location class - code reference from stackoverflow.
+
+    let elements = document.getElementsByClassName("location");
+
+//let elems = document.querySelectorAll(".location");
+
+    [].forEach.call(elements, function(element) {
+        element.classList.add("hide");
     });
-    // Remove hide class to display element
+
+// Remove hide class to display address of the marker that is clicked.
+
     document.getElementById(this.title).classList.remove('hide');
 }
 
-/** code reference code institute documentationa and google map markers documentation */
-function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 6,
-        center: { lat: 52.1326, lng: 5.2913}, /*to find lat and lng of Netherlands-https://www.latlong.net/convert-address-to-lat-long.html*/
-    });
+// Code reference code institute documentation and google map markers documentation.
 
-    //Add marker locations and storeIds
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 6,
+            center: { lat: 52.1326, lng: 5.2913}, // To find lat and lng of Netherlands-https://www.latlong.net/convert-address-to-lat-long.html
+        });
+
+// Add marker locations and name of the city.
+
     var markerList = [
         {'location': { lat: 52.377956, lng: 4.897070 }, 
          'city': 'Amsterdam'
@@ -35,6 +45,7 @@ function initMap() {
         }
     ];
 
+// To create new marker with position and title.
 
      var markers = markerList.map((marker, i) => {
         newMarker= new google.maps.Marker({
@@ -42,13 +53,16 @@ function initMap() {
             title: marker.city
             
         });
-        // when marker clicked then display the card
+
+// when marker is clicked then display the card
+
         newMarker.addListener("click", displayMarkerInfo);
         return newMarker;
     });
 
-    /** code reference code Institute documentation and google map marker cluster documentation*/
-    // New marker clusterer for a group of 5 markers
+// New marker clusterer for a group of 5 markers.
+// Code reference code Institute Google maps section.
+
     new MarkerClusterer(map, markers, {
         imagePath:
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
