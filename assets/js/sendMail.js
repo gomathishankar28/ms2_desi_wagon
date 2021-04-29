@@ -1,9 +1,3 @@
-function validateForm(event) {
-    var x = document.forms["contactForm"]["fname"].value;
-    if (x == "") {
-     alert("Name must be filled out");
-    return false;
-  }
 
 
 // code reference code institute and  emailJS documentation with modifications
