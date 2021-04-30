@@ -36,7 +36,7 @@ body {
     color: white;
     word-wrap: none!important;
     border: 0;
-    margin-left: 10px!important;
+    /*margin-left: 10px!important;*/
     margin-right: -5px;
     padding: 10px;
 }
@@ -150,7 +150,7 @@ body {
 
 .carousel-image {
     height: 600px;
-    
+    width: 100vh;
     
     
 }
@@ -170,10 +170,10 @@ body {
 }
     
 /*------------------Schedule-------------------------------*/
-/*------------------code reference w3schools------------------------------*/
+
 .schedule-container {
-    background-color: #ffffff;
-    margin: 20px;
+    background-color: #ffffff; /*code reference w3schools*/
+    
       
 }
 #schedule-header {
@@ -243,16 +243,46 @@ body {
     background-color: navy;
     color: white;
 }
-/*--------media queries for schedule-------*/
+#schedule-rtable {
+   display: none;
+}
 
+
+/*---------------accordion styles-----------------*/
+
+
+/*show accordion only for small screens and hide them for bigger and medium screen */
+@media only screen and (max-width: 540px) { 
+    #schedule-rtable {
+        display: block;
+    }
+    #schedule-table {
+        display: none;
+    }
+   
+}
+/*show table only for medium and large screens and hide them for smaller screens */
+@media only screen and (min-width: 768px) {
+    #schedule-table {
+        display: block;
+    }
+    #schedule-rtable {
+        display: none;
+    }
+    
+}
 
 /*---------------location---------------------------*/
 #Google_map_location {
     background-color: #bbdc8b;
+    height: 1100px;
     
 }
 .map-container {
     height: 700px;
+}
+.location-header {
+    padding-top: 50px;
 }
 .location-header h2,p {
     text-align: center;
@@ -282,44 +312,27 @@ body {
     padding: 0 2px;
 }
 
-
-/*---------------accordion styles-----------------*/
-#schedule-rtable {
-   display: none;
+/*-----------media queries for location-------*/
+@media (min-width: 768px) {
+#Google_map_location {
+    height: 900px;
+    }
 }
-
-/*show accordion only for small screens and hide them for bigger and medium screen */
-@media only screen and (max-width: 540px) { 
-    #schedule-rtable {
-        display: block;
+@media (min-width: 1024px) {
+#Google_map_location {
+    height: 700px;
     }
-    #schedule-table {
-        display: none;
+}
+@media (min-width: 1024px) {
+#map-info {
+        margin-top: 125px;   
     }
-    .map-container {
+}
+@media (min-width: 540px) { 
+.map-container {
     height: 1100px;
 }
 }
-/*show table only for medium and large screens and hide them for smaller screens */
-@media only screen and (min-width: 768px) {
-    #schedule-table {
-        display: block;
-    }
-    #schedule-rtable {
-        display: none;
-    }
-    #Google_map_location {
-    height: 900px;
-    
-}
-}
-@media only screen and (min-width: 1024px) {
-     #map-info {
-    margin-top: 125px;
-    
-}
-}
-
 /*------------Place order------------------*/
 
 #place_order {
