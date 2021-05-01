@@ -75,7 +75,7 @@
     <!--code reference from Bootstrap with modifications-->
             <div id = "place_order">
                 <h3>Send your order Today!!!! </h3>
-                <form onsubmit="return sendMail(this);" id="orderform" name="contactForm">
+                <form id="orderform" name="contactForm">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname" oninput="return validateForm();" required="">
@@ -106,31 +106,67 @@
                 
                 <label for="items">Add items</label>
                 <div class="form-group row">
-                    <div class="col-sm-10">
-                            <select class="form-control col-sm-6" id="items">
-                                <option>Rice-1kg</option>
-                                <option>dal-500gms</option>
-                                <option>fruits-1kg</option>
-                                <option>spices-100gms</option>
-                                <option>veggies-1kg</option>
+                    <div class="col-sm-7">
+                            <select class="form-control" name="grocery_items" id="grocery_items">
+                                <optgroup label="Fruits">
+                                    <option value="Guava">Guava</option>
+                                    <option value="Mango">Mango</option>
+                                    <option value="papaya">papaya</option>
+                                    <option value="pineapple">pineapple</option>
+                                    <option value="jackfruit">jackfruit</option>
+                                </optgroup>
+                                <optgroup label="Veggies">
+                                    <option value="ladysfinger-250gms">ladysfinger-250gms</option>
+                                    <option value="clusterbeans-250gms">clusterbeans</option>
+                                    <option value="bottlegourd-250gms">bottlegaurd</option>
+                                    <option value="bittergourd-250gms">bittergaurd</option>
+                                    <option value="ivygourd-250gms">ivygourd</option>
+                                </optgroup>
+                                <optgroup label="spices">
+                                    <option value="pepper-50gms">ladysfinger</option>
+                                    <option value="jeera-50gms">clusterbeans</option>
+                                    <option value="fenugreek-50gms">bottlegaurd</option>
+                                    <option value="corrianderseeds-100gms">bittergaurd</option>
+                                    <option value="mustard-50gms">bananaflower</option>
+                                </optgroup>
+                                <optgroup label="Grains">
+                                    <option value="Rawrice-5kg">Rawrice-5kg</option>
+                                    <option value="Aata-5kg">Aata-5kg</option>
+                                    <option value="poha-1kg">poha-1kg</option>
+                                    <option value="Thoordhal-1kg">Thoordhal-1kg</option>
+                                    <option value="Moongdhal-1kg">Moongdhal-1kg</option>
+                                    <option value="channadhal-1kg">channadhal-1kg</option>
+                                    <option value="Idlyrice-1kg">Idlyrice-1kg</option>
+                                    <option value="Besan-1kg">Besan-1kg</option>
+                                    <option value="Masoordhal-1kg">Masoordhal-1kg</option>
+                                    <option value="Roastedgram-1kg">Roastedgram-1kg</option>
+                                </optgroup>
                             </select>
                     </div>
+                    <div class="col-sm-3">
+                        <select class="form-control" id="quantity" name="quantity">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                </div>
                     <div class="col-sm-2">
-                            <button class="btn btn-primary col-sm-2" onclick="return addItem();">+</button>
+                            <input type="button" value="add" onclick="addItem();">
                     </div>
                 </div>
-                
-                    
-                
-                
                 <div class="form-group">
                     <label for="groceryList">Grocery List</label>
-                    <textarea class="form-control" id="groceryList" name="grocerylist"></textarea>
+                    <textarea class="form-control" id="groceryList" name="grocerylist" rows="20"></textarea>
                     
                 </div>
-                <div class="form-btn">
-                <button type="submit" class="btn btn-form">Submit</button>
-                </div>
+                
             </form>
         </div>
     <!-- End of  Place order form-->  
