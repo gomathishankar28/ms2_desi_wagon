@@ -21,7 +21,7 @@
 
     function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 6,
+            zoom: 8,
             center: { lat: 52.1326, lng: 5.2913}, // To find lat and lng of Netherlands-https://www.latlong.net/convert-address-to-lat-long.html
         });
 

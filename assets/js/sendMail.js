@@ -1,17 +1,38 @@
-function validateForm() {
-    console.log("hello");
-    let name = document.getElementById("name").value;
-    
-    let mobile = document.getElementById("mobile").value;
-    let email = document.getElementById("email").value;
-    let address = document.getElementById("address").value;
-    let groceryList = document.getElementById("groceryList").value;
+// code reference code institute and  emailJS documentation with modifications
+// To send email using emailJs API
 
-    if(name === '') {
-        alert("name field cannot be empty. Please enter you name");
-    }
-   name.oninvalid = function(event) {
-   event.target.setCustomValidity('Username should only contain lowercase letters. e.g. john');
-   }
-    return true;
+function sendMail(contactForm) {
+    emailjs.send("send_list", "desi_wagon", {
+        "from_name": contactForm.fname.value,
+        "from_email": contactForm.emailaddress.value,
+        "grocerylist": contactForm.grocerylist.value
+        })
+        .then(
+           function(response) {
+            console.log("SUCCESS", response);
+            acknowledgement ();
+            //reset form
+            resetForm();
+            
+        }, 
+        function(error) {
+            console.log("FAILED", error);
+        }
+        );
+    
+    return false;  // To block from loading a new page
+}
+
+//To display acknowledgement after successfull completion of placing the order.
+
+function acknowledgement() {
+    document.getElementById("place_order").classList.add("hide"); /* hide the place_order form*/
+    document.getElementById("acknowledgement").classList.remove("hide");/* display the acknowledgement div*/
+    
+}
+
+// To reset the form after the order is placed.
+
+function resetForm() {
+    document.getElementById("orderform").reset();
 }

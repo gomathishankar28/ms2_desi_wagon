@@ -297,9 +297,10 @@ body {
     
 }
 #map {
-    widows: 100%;
+    width: 100%;
     height: 500px;
 }
+
 .hide{
     display: none;
     }
@@ -333,14 +334,10 @@ body {
 }
 @media (min-width: 1024px) {
 #map-info {
-        margin-top: 125px;   
+        margin-top: 5px;   
     }
 }
-@media (min-width: 540px) { 
-.map-container {
-    height: 1100px;
-}
-}
+
 /*------------Place order------------------*/
 
 #place_order {

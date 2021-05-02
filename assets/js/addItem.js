@@ -13,7 +13,7 @@ function addItem() {
         alert("You must choose the quantity");
     } 
     else {
-            document.contactForm.grocerylist.value +='\ \n' + list;
+            document.contactForm.grocerylist.value +=list + '\ \n';
   }
   return;
 }

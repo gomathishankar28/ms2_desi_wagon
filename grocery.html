@@ -78,7 +78,7 @@
                 <form onsubmit="return validateForm();" id="orderform" name="contactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname" pattern="[a-zA-z]{1,25}" title="Name field cannot be empty should only contain letters. e.g. john" required>
+                        <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname" pattern="[a-zA-z]{1,25}" required oninvalid="validateForm()">  
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="form-group">
                         <label for="mobile">Mobile Number</label>
-                        <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="6872413575" pattern="[0-9]{10}" title="Mobile number cannot be empty and can only be 10 digit number e.g.6789051234" required>
+                        <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="6872413575" pattern="[0-9]{10}" required>
                     </div>
                     <div class="form-group">
                         <label for="location">Location</label>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="form-group">
                         <label for="address">Address</label>
-                        <input type="text" class="form-control" id="address" name="address" value="134 zanddreef Amsterdam" title="Address cannot be empty.pls choose the location to get the address" required>>
+                        <input type="text" class="form-control" id="address" name="address" value="134 zanddreef Amsterdam" required>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-7">
@@ -115,10 +115,10 @@
                                 </optgroup>
                                 <optgroup label="Veggies">
                                     <option value="ladysfinger-250gms">ladysfinger-250gms</option>
-                                    <option value="clusterbeans-250gms">clusterbeans</option>
-                                    <option value="bottlegourd-250gms">bottlegaurd</option>
-                                    <option value="bittergourd-250gms">bittergaurd</option>
-                                    <option value="ivygourd-250gms">ivygourd</option>
+                                    <option value="clusterbeans-250gms">clusterbeans-250gms</option>
+                                    <option value="bottlegourd-250gms">bottlegourd-250gms</option>
+                                    <option value="bittergourd-250gms">bittergourd-250gms</option>
+                                    <option value="ivygourd-250gms">ivygourd-250gms</option>
                                 </optgroup>
                                 <optgroup label="spices">
                                     <option value="pepper-50gms">pepper-50gms</option>
@@ -162,7 +162,7 @@
                     </div>
                     <div class="form-group">
                         <label for="groceryList">Grocery List</label>
-                        <textarea class="form-control" id="groceryList" name="grocerylist" rows="20" title="list cannot be empty.please add items to your list" required></textarea>
+                        <textarea class="form-control" id="groceryList" name="grocerylist" rows="20" required></textarea>
                     </div>
                     <div class="form-btn">
                         <button type="submit" class="btn btn-form">Submit</button>
