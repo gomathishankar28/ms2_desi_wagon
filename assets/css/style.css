@@ -344,6 +344,9 @@ body {
 .form-btn {
     text-align: center;
 }
+.btn-add {
+    margin-top: 40px;
+}
 .btn-form {
     background-color: #ff8b36;
     

@@ -51,7 +51,7 @@
                         </li>
                         
                         <li class="navbar-item">
-                            <button class="btn btn-order shadow-none" onclick="window.location.href='place_order.html';">
+                            <button class="btn btn-order shadow-none" onclick="window.location.href='grocery.html';">
                             Place Order</button>
                         </li>
                     </ul>
@@ -73,41 +73,39 @@
 
     <!-- Place order form-->  
     <!--code reference from Bootstrap with modifications-->
-            <div id = "place_order">
+            <div id="place_order">
                 <h3>Send your order Today!!!! </h3>
-                <form id="orderform" name="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname" oninput="return validateForm();" required="">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="emailaddress" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
-                </div>
-                <div class="form-group">
-                    <label for="mobile">Mobile Number</label>
-                    <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="0687241357" pattern="[0 0-9]{10}" oninvalid="return validateInput();" required="required">
-               
-                </div>
-                <div class="form-group">
-                    <label for="location">Location</label>
-                    <select class="form-control" id="location">
-                        <option>Amsterdam</option>
-                        <option>Uterecht</option>
-                        <option>DenBosch</option>
-                        <option>Eindhoven</option>
-                        <option>Maastricht</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" name="address" value="134 zanddreef Amsterdam">
-                </div>
-                
-                <label for="items">Add items</label>
-                <div class="form-group row">
-                    <div class="col-sm-7">
-                            <select class="form-control" name="grocery_items" id="grocery_items">
+                <form onsubmit="return validateForm();" id="orderform" name="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="fname" placeholder="Fullname" pattern="[a-zA-z]{1,25}" title="Name field cannot be empty should only contain letters. e.g. john" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="emailaddress" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="6872413575" pattern="[0-9]{10}" title="Mobile number cannot be empty and can only be 10 digit number e.g.6789051234" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select class="form-control" id="location">
+                            <option>Amsterdam</option>
+                            <option>Uterecht</option>
+                            <option>DenBosch</option>
+                            <option>Eindhoven</option>
+                            <option>Maastricht</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" value="134 zanddreef Amsterdam" title="Address cannot be empty.pls choose the location to get the address" required>>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-7">
+                            <label for="items">Add items</label>
+                            <select class="form-control" name="grocery_items" id="grocery_items" required>
                                 <optgroup label="Fruits">
                                     <option value="Guava">Guava</option>
                                     <option value="Mango">Mango</option>
@@ -123,11 +121,11 @@
                                     <option value="ivygourd-250gms">ivygourd</option>
                                 </optgroup>
                                 <optgroup label="spices">
-                                    <option value="pepper-50gms">ladysfinger</option>
-                                    <option value="jeera-50gms">clusterbeans</option>
-                                    <option value="fenugreek-50gms">bottlegaurd</option>
-                                    <option value="corrianderseeds-100gms">bittergaurd</option>
-                                    <option value="mustard-50gms">bananaflower</option>
+                                    <option value="pepper-50gms">pepper-50gms</option>
+                                    <option value="jeera-50gms">jeera-50gms</option>
+                                    <option value="fenugreek-50gms">fenugreek-50gms</option>
+                                    <option value="corrianderseeds-100gms">corrianderseeds-100gms</option>
+                                    <option value="mustard-50gms">mustard-50gms</option>
                                 </optgroup>
                                 <optgroup label="Grains">
                                     <option value="Rawrice-5kg">Rawrice-5kg</option>
@@ -142,9 +140,10 @@
                                     <option value="Roastedgram-1kg">Roastedgram-1kg</option>
                                 </optgroup>
                             </select>
-                    </div>
-                    <div class="col-sm-3">
-                        <select class="form-control" id="quantity" name="quantity">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="items">Qty</label>
+                            <select class="form-control" id="quantity" name="quantity" required>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -156,19 +155,20 @@
                                 <option>9</option>
                                 <option>10</option>
                             </select>
-                </div>
-                    <div class="col-sm-2">
-                            <input type="button" value="add" onclick="addItem();">
+                        </div>
+                        <div class="col-md-2 btn-add">
+                            <input type="button" value="Add to list" onclick="addItem();">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="groceryList">Grocery List</label>
-                    <textarea class="form-control" id="groceryList" name="grocerylist" rows="20"></textarea>
-                    
-                </div>
-                
-            </form>
-        </div>
+                    <div class="form-group">
+                        <label for="groceryList">Grocery List</label>
+                        <textarea class="form-control" id="groceryList" name="grocerylist" rows="20" title="list cannot be empty.please add items to your list" required></textarea>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit" class="btn btn-form">Submit</button>
+                    </div>
+                </form>
+             </div>
     <!-- End of  Place order form-->  
 
     <!-- Footer-->
@@ -254,9 +254,10 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="assets/js/sendMail.js"></script> 
         <script src="assets/js/getAddress.js"></script>
         <script src="assets/js/addItem.js"></script> 
-        <script src="assets/js/sendMail.js"></script> 
+        
     <!-- end of Script files-->    
 </body>
 </html>

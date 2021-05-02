@@ -1,10 +1,11 @@
 function addItem() {
     event.preventDefault();
-    console.log("goms");
+    
   var groceryItem = document.contactForm.grocery_items.value;
   var quantity = document.contactForm.quantity.value;
-  var list = groceryItem + " " +  "-"  + " " + quantity;
-      list = list.replace(/\r?\n/g, '<br />');
+  var groceryList = document.contactForm.grocerylist;
+  var list = groceryItem + " " +  "-"  + " " + quantity;  
+    
     if (groceryItem === '') {
         alert("You must choose atleast one item!");
     } 
@@ -12,7 +13,7 @@ function addItem() {
         alert("You must choose the quantity");
     } 
     else {
-        document.contactForm.grocerylist.value +=list;
+            document.contactForm.grocerylist.value +='\ \n' + list;
   }
   return;
 }
