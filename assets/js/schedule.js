@@ -44,10 +44,12 @@
     for (let i=0; i<accordionbuttons.length; i++) {
         if (accordionbuttons[i].name === today) {
         accordionbuttons[i].childNodes[1].classList.remove("hide"); // remove hide class from the span element having truck icon to display truck*/
-        this.childNodes[2].classList.add("show");
+        accordionbuttons[i].parentElement.nextElementSibling.classList.add("show");    
+        
         }
         else {
            console.log("we are closed on weekends"); // No updates made on weekends.
-       }    
+       } 
+       
     }
 }
