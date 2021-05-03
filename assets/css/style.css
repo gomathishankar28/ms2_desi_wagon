@@ -17,6 +17,7 @@ body {
     font-family: 'Akaya Telivigala', cursive, sans-serif;
     font-size: 20px;  
     color: navy!important;
+    overflow-x: hidden;
     
     
 }
@@ -91,6 +92,11 @@ body {
     padding:0;
 }
 /*---------media queries for nav bar----------*/
+@media (max-width: 280px) {
+    .btn-order {
+        margin-left: -10px;
+    }
+}
 @media (max-width: 320px) {
     .brandname {
         font-size: 24px;
@@ -163,6 +169,13 @@ body {
     background-color: navy;
 }
 /*---------------media queries for carousel--------------------*/
+
+@media (max-width: 280px) {
+.carousel-caption {
+    top: 50px!important;
+    
+}
+}
 @media (max-width: 540px) {
     .carousel-caption h2 {
         margin-top: 75px;
@@ -172,8 +185,16 @@ body {
 /*------------------Schedule-------------------------------*/
 
 .schedule-container {
-    background-color: #ffffff; /*code reference w3schools*/
-    color: darkgreen;
+    background-image: url(../images/schedule/schedule5.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: 0
       
 }
 #schedule-header {
@@ -217,10 +238,7 @@ body {
 }
 
 .today {
-    
-  color: darkgreen;
-  
-    
+    color: darkgreen;
 }
 .today td {
     font-size: 20px;
@@ -254,6 +272,10 @@ body {
 #schedule-rtable {
    display: none;
 }
+.btn-address:hover {
+    background-color: navy!important;
+    color: white!important;
+}
 
 
 /*---------------accordion styles-----------------*/
@@ -282,13 +304,17 @@ body {
 
 /*---------------location---------------------------*/
 #Google_map_location {
+    height: auto;
     background-color: #bbdc8b;
-    height: 1100px;
-    
 }
 .map-container {
-    height: 700px;
+    background-color: #bbdc8b;
+    height: auto; 
+    width: 100%; 
+    padding-bottom: 50px;
+    
 }
+
 .location-header {
     padding-top: 50px;
 }
@@ -305,10 +331,10 @@ body {
     display: none;
     }
 
-.card {
+.location {
     background-color: #bbdc8b;
     padding: 5px;
-    margin: 5px;
+    margin: 10px -20px;
 }
 .card-title {
     text-align: center;
@@ -316,13 +342,22 @@ body {
     font-size: 28px;
     
 }
+.card-info img {
+    padding-bottom: 10px;
+}
 .card-text {
     text-align: left;
     padding: 0 2px;
+    font-size: 20px;
 }
 
 /*-----------media queries for location-------*/
-@media (min-width: 768px) {
+@media (max-width:540px){
+    .card-info img {
+        display: none;
+}
+}
+/*@media (min-width: 768px) {
 #Google_map_location {
     height: 900px;
     }
@@ -331,7 +366,7 @@ body {
 #Google_map_location {
     height: 700px;
     }
-}
+}*/
 @media (min-width: 1024px) {
 #map-info {
         margin-top: 5px;   
