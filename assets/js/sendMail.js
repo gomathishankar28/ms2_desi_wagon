@@ -1,42 +1,38 @@
-function validateFormElements() {
+function validateFormElements(event) {
     
-    let name = document.getElementById("name").value;
-    let mobile = document.getElementById("mobile").value;
-    let email = document.getElementById("email").value;
-    let address = document.getElementById("address").value;
-    let groceryList = document.getElementById("groceryList").value;
+   const name = document.getElementById("name");
+    const mobile = document.getElementById("mobile");
+    const email = document.getElementById("email");
+    const address = document.getElementById("address");
+    const groceryList = document.getElementById("groceryList");
 
-    return console.log("hello");
     
     name.oninvalid = function(event) {
     event.target.setCustomValidity('name should only contain letters. e.g. John');
-        return false;
-    }
+        
 
     mobile.oninvalid = function(event) {
     event.target.setCustomValidity('mobile should only contain a 10 digit number. e.g. 0687241357');
-    return false;
+    
     }
 
     email.oninvalid = function(event) {
     event.target.setCustomValidity('please enter a valid email-ID. e.g. john@gmail.com');
-    return false;
+    
     }
 
     address.oninvalid = function(event) {
     event.target.setCustomValidity('Address cannot be empty.please choose a desired location to get the corresponding address');
-    return false;
+    
     }
 
     groceryList.oninvalid = function(event) {
     event.target.setCustomValidity('Grocery List cannot be empty.Please atleast add 1 item to the list');
-    return false;
+    
     }
     
     
 }
-
-
 // code reference code institute and  emailJS documentation with modifications
 // To send email using emailJs API
 
