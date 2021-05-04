@@ -208,6 +208,7 @@ body {
   width: 100%;
   padding: 10px;
   margin: 10px;
+  color: darkgreen;
   
 }
 .truck {
@@ -240,9 +241,19 @@ body {
 .today {
     color: darkgreen;
 }
+
+/*---To create a blinking text- code reference-https://html-online.com/articles/blinking-text-css-animation/--- */
+
 .today td {
-    font-size: 20px;
     font-weight: 700;
+     animation:blinkingText 1.2s infinite; 
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
 }
 #scheduleaccordion {
     text-align: center;
