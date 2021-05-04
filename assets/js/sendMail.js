@@ -1,43 +1,44 @@
-function validateFormElements(event) {
+function validateFormElements() {
     
-   const name = document.getElementById("name");
+    const name = document.getElementById("name");
     const mobile = document.getElementById("mobile");
     const email = document.getElementById("email");
     const address = document.getElementById("address");
     const groceryList = document.getElementById("groceryList");
 
-    
+    console.log("hello");
     name.oninvalid = function(event) {
-    event.target.setCustomValidity('name should only contain letters. e.g. John');
-        
-
-    mobile.oninvalid = function(event) {
-    event.target.setCustomValidity('mobile should only contain a 10 digit number. e.g. 0687241357');
-    
+        event.target.setCustomValidity('name cannot be empty and should only contain letters. e.g. John');
+        return false;
     }
 
+    mobile.oninvalid = function(event) {
+        event.target.setCustomValidity('mobile cannot be empty and should only contain a 10 digit number. e.g. 0687241357');
+        return false;
+
     email.oninvalid = function(event) {
-    event.target.setCustomValidity('please enter a valid email-ID. e.g. john@gmail.com');
-    
+        event.target.setCustomValidity('Email cannot be empty. please enter a valid email-ID. e.g. john@gmail.com');
+        return false;
     }
 
     address.oninvalid = function(event) {
-    event.target.setCustomValidity('Address cannot be empty.please choose a desired location to get the corresponding address');
-    
+        event.target.setCustomValidity('Address cannot be empty.please choose a desired location to get the corresponding address');
+        return false;
     }
 
     groceryList.oninvalid = function(event) {
-    event.target.setCustomValidity('Grocery List cannot be empty.Please atleast add 1 item to the list');
-    
+        event.target.setCustomValidity('Grocery List cannot be empty.Please atleast add 1 item to the list');
+        return false;
     }
     
-    
+    return true;
 }
 // code reference code institute and  emailJS documentation with modifications
 // To send email using emailJs API
 
 function sendMail(contactForm) {
-     if(validateFormElements(contactForm)){
+    event.preventDefault();
+     if (validateFormElements(contactForm)) {
     emailjs.send("send_list", "desi_wagon", {
         "from_name": contactForm.fname.value,
         "from_email": contactForm.emailaddress.value,
@@ -55,10 +56,10 @@ function sendMail(contactForm) {
             console.log("FAILED", error);
         }
         );
-    
-    return false;  // To block from loading a new page
-}
-else{
+        return false; //to block from loading a new page
+    }
+        
+    else {
         console.log("Form validation failed");
     }
 }
