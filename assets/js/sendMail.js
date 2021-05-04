@@ -1,12 +1,14 @@
+// Validate Form Elements 
+
 function validateFormElements() {
-    
     const name = document.getElementById("name");
     const mobile = document.getElementById("mobile");
     const email = document.getElementById("email");
     const address = document.getElementById("address");
     const groceryList = document.getElementById("groceryList");
 
-    console.log("hello");
+    console.log("validation entered");
+
     name.oninvalid = function(event) {
         event.target.setCustomValidity('name cannot be empty and should only contain letters. e.g. John');
         return false;
@@ -33,13 +35,16 @@ function validateFormElements() {
     
     return true;
 }
+
 // code reference code institute and  emailJS documentation with modifications
 // To send email using emailJs API
 
-function sendMail(contactForm) {
-    event.preventDefault();
-     if (validateFormElements(contactForm)) {
-    emailjs.send("send_list", "desi_wagon", {
+window.onload = function() {
+            document.getElementById('orderForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // To validate form before sending an email.
+                if (validateFormElements(contactForm)) {
+    emailjs.sendForm("send_list", "desi_wagon", {
         "from_name": contactForm.fname.value,
         "from_email": contactForm.emailaddress.value,
         "grocerylist": contactForm.grocerylist.value
@@ -53,16 +58,15 @@ function sendMail(contactForm) {
             
         }, 
         function(error) {
-            console.log("FAILED", error);
+                        console.log('FAILED...', error);
+                    });
+                }
+                else {
+                    console.log("form validation failed");
+                }
+            });
         }
-        );
-        return false; //to block from loading a new page
-    }
-        
-    else {
-        console.log("Form validation failed");
-    }
-}
+    
 //To display acknowledgement after successfull completion of placing the order.
 
 function acknowledgement() {
@@ -74,5 +78,6 @@ function acknowledgement() {
 // To reset the form after the order is placed.
 
 function resetForm() {
-    document.getElementById("orderform").reset();
+    document.getElementById("orderForm").reset();
 }
+
