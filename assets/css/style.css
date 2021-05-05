@@ -249,11 +249,11 @@ body {
      animation:blinkingText 1.2s infinite; 
 }
 @keyframes blinkingText{
-    0%{     color: #000;    }
-    49%{    color: #000; }
+    0%{     color: darkgreen;    }
+    49%{    color: darkgreen; }
     60%{    color: transparent; }
     99%{    color:transparent;  }
-    100%{   color: #000;    }
+    100%{   color: darkgreen;    }
 }
 #scheduleaccordion {
     text-align: center;
@@ -590,4 +590,20 @@ background-color: #212529;
         padding-left: 50px;
         font-size: 20px;
     }
+}
+/*-------------close btn-------------*/
+.inputlist {
+    cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  margin: 10px;
+}
+
+.delete {
+    margin-left: 20px;
+    background-color: #6da13c;
+    color: white;
+    border: 1px solid black;
+    font-style: normal;
+    position: relative;
 }

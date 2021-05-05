@@ -51,7 +51,7 @@
                         </li>
                         
                         <li class="navbar-item">
-                            <button class="btn btn-order shadow-none" onclick="window.location.href='place_order.html';">
+                            <button class="btn btn-order shadow-none" onclick="window.location.href='grocery.html';">
                             Place Order</button>
                         </li>
                     </ul>
@@ -157,12 +157,15 @@
                             </select>
                         </div>
                         <div class="col-md-2 btn-add">
-                            <input type="button" value="Add to list" onclick="addItem();">
+                            <input type="button" value="Add to list" onclick="gaddItem()">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="groceryList">Grocery List</label>
-                        <textarea class="form-control" id="groceryList" name="grocerylist" rows="20" required title="Grocery List cannot be empty.Please atleast add 1 item to the list"></textarea>
+                    <div id="groceryList">
+                    </div>
+                    <div class="form-group">
+                        <label for="grocList">Grocery List</label>
+                        <textarea class="form-control" id="grocList" name="grocerylist" rows="20" required title="Grocery List cannot be empty.Please atleast add 1 item to the list"></textarea>
                     </div>
                     <div class="form-btn">
                         <input type="submit" class="btn btn-form" value="submit">
@@ -258,7 +261,7 @@
         
         <!--custom JS files -->
         <script src="assets/js/getAddress.js"></script>
-        <script src="assets/js/addItem.js"></script>
+        <script src="assets/js/gaddItem.js"></script>
         <script src="assets/js/sendMail.js"></script> 
     <!-- end of Script files-->    
 </body>
