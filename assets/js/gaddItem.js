@@ -1,5 +1,4 @@
 function gaddItem() {
-
   var x = document.getElementById("groceryList");
    
 var new_field = document.createElement("input"); 
@@ -26,32 +25,44 @@ var groceryItem = document.contactForm.grocery_items.value;
   x.appendChild(span1);
   x.appendChild(lb);    
 
+  
 
 var del = document.getElementsByClassName("delete");
 var i;
 for (i = 0; i < del.length; i++) {
   del[i].onclick = function() {
-    var div = this.previousSibling;
-    div.remove();
-    this.remove();
+      
+    var item = this.previousSibling;
+    var delItem = item.value;
+    
+     item.remove();
+     this.remove();
     /*div.style.display = "none";
     this.style.display = "none";*/
-    
+    console.log(grocList.textContent);
+    var newlist = grocList.textContent.replace(delItem, " ");
+    console.log(newlist);
   }
+  
 }
-var grocList = document.getElementById("grocList");
+    
+
+    var grocList = document.getElementById("grocList");
     var listInput = document.getElementsByClassName("inputlist");
     
+    console.log(listInput);
+    
     var listDivText = document.getElementsByClassName("inputlist").value;
+    
     console.log(listInput.length);
-    for (var j=0; j < listInput.length; j++) {
-        
-        var listInputValue = listInput[j].value + '\ \n';
+    for (var k=0; k < listInput.length; k++) {
+    
+        var listInputValue = listInput[k].value + '\ \n';
         console.log(listInputValue);
         }
-    
-    grocList.textContent += listInputValue;
- 
-    
-}
+
+        grocList.textContent += listInputValue;
+
+
+    }
     

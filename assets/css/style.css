@@ -607,3 +607,7 @@ background-color: #212529;
     font-style: normal;
     position: relative;
 }
+
+#groceryList {
+    height: auto;
+}
