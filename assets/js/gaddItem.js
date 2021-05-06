@@ -31,7 +31,7 @@ var del = document.getElementsByClassName("delete");
 var i;
 for (i = 0; i < del.length; i++) {
   del[i].onclick = function() {
-      
+      console.log(grocList.textContent);
     var item = this.previousSibling;
     var delItem = item.value;
     
@@ -39,8 +39,9 @@ for (i = 0; i < del.length; i++) {
      this.remove();
     /*div.style.display = "none";
     this.style.display = "none";*/
-    console.log(grocList.textContent);
+    
     var newlist = grocList.textContent.replace(delItem, " ");
+     grocList.textContent = newlist;
     console.log(newlist);
   }
   
