@@ -5,6 +5,7 @@ var new_field = document.createElement("input");
 new_field.setAttribute("type", "text");
 
 new_field.setAttribute("class", "inputlist");
+
     
 var lb = document.createElement("br");
 
@@ -22,6 +23,7 @@ var groceryItem = document.contactForm.grocery_items.value;
  
 
   x.appendChild(new_field);
+  
   x.appendChild(span1);
   x.appendChild(lb);    
 

@@ -1,18 +1,63 @@
-document.getElementById("name").addEventListener("invalid", function (event) {
-    alert ("name cannot be empty and should only contain letters. e.g. John");
-});
-document.getElementById("email").addEventListener("invalid", function (event) {
-    alert ("Email cannot be empty. please enter a valid email-ID. e.g. john@gmail.com");
-});
-document.getElementById("mobile").addEventListener("invalid", function (event) {
-    alert ("mobile cannot be empty and should only contain a 10 digit number. e.g. 0687241357");
-});
-document.getElementById("address").addEventListener("invalid", function (event) {
-    alert ("Address cannot be empty.please choose a desired location to get the corresponding address");
-});
-document.getElementById("grocList").addEventListener("invalid", function (event) {
-    alert ("Grocery List cannot be empty.Please atleast add 1 item to the list");
-});
+//Assigning each form element  to a variable
+
+    const name = document.getElementById("name");
+    const mobile = document.getElementById("mobile");
+    const email = document.getElementById("email");
+    const address = document.getElementById("address");
+    const inputItems = document.getElementsByClassName("inputlist");
+    const groceryItem = document.getElementById("grocery_items");
+
+// validation for name field on empty or invalid input
+
+    name.addEventListener("invalid", function (event) {
+        if ((!(name.value)) || (this.validity.patternMismatch)) {
+            alert ("name cannot be empty and should only contain letters. e.g. John");
+        }
+        else {
+             return false;
+        }
+    });
+
+// validation for email field on empty or invalid input
+
+    email.addEventListener("invalid", function (event) {
+        if (this.validity.patternMismatch)
+            alert ("please enter a valid email-ID. e.g. john@gmail.com");
+        else {
+        return false;
+        }
+    });
+
+// validation for mobile field on empty or invalid input
+
+    mobile.addEventListener("invalid", function (event) {
+        if (this.validity.patternMismatch)
+            alert ("mobile should only contain a 10 digit number. e.g. 0687241357");
+        else {
+        return false;
+        }
+    });
+
+// validation for address field on empty or invalid input.
+
+    address.addEventListener("invalid", function (event) {
+        if (this.validity.patternMismatch) {
+            alert ("please choose a desired location to get the corresponding address");
+        }
+        else {
+        return false;
+        }
+    });
+
+// validation for GroceryList field on empty or invalid input
+
+    groceryItem.addEventListener("invalid", function (event) {
+        if (!(groceryItem.value))
+            alert ("Grocery List cannot be empty.Please atleast add 1 item to the list");
+        else {
+            return false;
+        }
+    });
     
 
 
