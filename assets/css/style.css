@@ -244,7 +244,7 @@ body {
 
 /*---To create a blinking text- code reference-https://html-online.com/articles/blinking-text-css-animation/--- */
 
-.today td {
+.today td span {
     font-weight: 700;
      animation:blinkingText 1.2s infinite; 
 }
