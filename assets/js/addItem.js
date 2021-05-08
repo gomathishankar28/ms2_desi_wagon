@@ -52,7 +52,7 @@ function addItem() {
     var listDivText = document.getElementsByClassName("inputlist").value;
     console.log(listInput.length);
     for (let k=0; k < listInput.length; k++) {
-        let listInputValue = listInput[k].value + '\ \n';
+        var listInputValue = listInput[k].value + '\ \n';
         console.log(listInputValue);
         }
     grocList.textContent += listInputValue;
