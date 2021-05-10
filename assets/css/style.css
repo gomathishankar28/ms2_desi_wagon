@@ -139,6 +139,12 @@ body {
     }
 }
 @media (min-width: 768px) {
+    .toggler-btn {
+        margin-right: 30px;
+    }
+    .toggler-nav {
+        margin-right: 30px;
+    }
     .toggler-btn i {
         font-size: 50px;
     }
@@ -156,31 +162,18 @@ body {
    
 @media (min-width: 1024px) {
     .navbar-item a {
-    font-size: 22px;
+    font-size: 30px;
     }
     .brandname {
         font-size: 50px;
     }
+    .toggler-nav {
+        margin-right: 5px;
+    }
     .btn-order {
         font-size: x-large;   
     }
-    .carousel_caption2 h3 {
-        margin-top: 0;
-    }
-    .carousel-caption h3 {
-        font-size: 50px;
-    }
-    .jumbotron-btn {
-        font-size: xx-large;
-    }
-    #schedule-header h2 {
-        font-size: 50px;
-    }
-    #schedule-header p {
-        font-size: 34px;
-    }
 }
-
 /*------------------------carousel------------------------------*/
 
 .carousel-caption {
@@ -229,6 +222,17 @@ body {
     .carousel-caption h3 {
         font-size: 40px;
         top: -50px!important
+    }
+    .jumbotron-btn {
+        font-size: xx-large;
+    }
+}
+@media (min-width: 1024px) {
+    .carousel_caption2 h3 {
+        margin-top: 0;
+    }
+    .carousel-caption h3 {
+        font-size: 50px;
     }
     .jumbotron-btn {
         font-size: xx-large;
@@ -350,6 +354,17 @@ body {
     }
     #scheduleaccordion p {
         font-size: 22px;
+    }
+}
+@media (min-width: 1024px) {
+    #schedule-header h2 {
+        font-size: 50px;
+    }
+    #schedule-header p {
+        font-size: 34px;
+    }
+    .schedule_table td {
+        font-size: 24px;
     }
 }
 /*---------------accordion styles-----------------*/
@@ -475,6 +490,12 @@ body {
 #map-info {
         margin-top: 5px;   
     }
+ #map {
+        height: 700px;
+    }
+    .card-info img {
+        padding-left: 30px;
+    }
 }
 
 /*------------Place order------------------*/
@@ -538,21 +559,7 @@ body {
     text-decoration: none;
 }
 /*----------media queries for place order---------*/
-@media (min-width:540px) {
-    #place_order {
-    margin: 50px 50px;
-    }
-}
-@media (min-width:1024px) {
-    #place_order {
-    margin: 50px 90px;
-    }
-}
-@media (min-width:1024px) {
-    #place_order {
-    margin: 70px 150px;
-    }
-}
+
 @media (max-width: 280px) {
     .form-header {
     font-size: 18px;
@@ -560,6 +567,36 @@ body {
     .inputlist {
     font-size: medium;
     }
+}
+@media (min-width:540px) {
+    #place_order {
+    margin: 50px;
+    }
+}
+@media (min-width:768px) {
+    .form-header {
+        font-size: xxx-large;
+    }
+    .form-group {
+        font-size: 30px;
+        padding: 10px;
+    }
+    .form-control {
+        font-size: 28px;
+    }
+    .btn-add {
+        margin-top: 55px;
+    }
+    .btn-form {
+        font-size: xx-large;
+    }
+}
+@media (min-width:1024px) {
+    .form-group {
+        
+        padding: 20px;
+    }
+
 }
 /*---------media queries for acknowledgement-----------------*/
 @media (min-width: 280px) {
