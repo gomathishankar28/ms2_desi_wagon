@@ -174,6 +174,11 @@ body {
         font-size: x-large;   
     }
 }
+@media (min-width: 1200px) {
+    .btn-order {
+        font-size: large;   
+    }
+}
 /*------------------------carousel------------------------------*/
 
 .carousel-caption {
@@ -236,6 +241,17 @@ body {
     }
     .jumbotron-btn {
         font-size: xx-large;
+    }
+}
+@media (min-width: 1200px) {
+    .carousel_caption2 h3 {
+        margin-top: 0;
+    }
+    .carousel-caption h3 {
+        font-size: 40px;
+    }
+    .jumbotron-btn {
+        font-size: x-large;
     }
 }
     
@@ -357,14 +373,28 @@ body {
     }
 }
 @media (min-width: 1024px) {
-    #schedule-header h2 {
+    .schedule-heading {
         font-size: 50px;
     }
-    #schedule-header p {
+    .schedule-text {
         font-size: 34px;
     }
     .schedule_table td {
         font-size: 24px;
+    }
+}
+@media (min-width: 1200px) {
+    .schedule-heading {
+        font-size: 35px!important;
+    }
+    .schedule-text {
+        font-size: 26px!important;
+    }
+    .schedule_table th {
+        font-size: 24px!important;
+    }
+    .schedule_table td {
+        font-size: 20px!important;
     }
 }
 /*---------------accordion styles-----------------*/
@@ -391,10 +421,10 @@ body {
     
 }
 @media (min-width: 768px) {
-    #schedule-header h2 {
+    .schedule-heading {
         font-size: 50px;
     }
-    #schedule-header p {
+    .schedule-text{
         font-size: 34px;
     }
     
@@ -487,14 +517,39 @@ body {
 }
 
 @media (min-width: 1024px) {
-#map-info {
+    #map-info {
         margin-top: 5px;   
     }
- #map {
-        height: 700px;
+    #map {
+        height: 740px;
     }
     .card-info img {
         padding-left: 30px;
+    }
+    .card-text {
+        padding: 5px 10px;
+    }
+}
+@media (min-width: 1200px) {
+
+    .location-header h2 {
+        font-size: 35px;
+    }
+    .location-header p {
+        font-size: 26px;
+    }
+    #map {
+        height: 600px;
+    }
+    #map-info {
+        margin-top: 0;   
+    }
+    .card-info img {
+        padding-left: 40px;
+    }
+    .card-text {
+        padding: 5px 10px;
+        font-size: 24px!important;
     }
 }
 
@@ -543,21 +598,7 @@ body {
 #groceryList {
     height: auto;
 }
-#acknowledgement {
-    align-items: center;
-    height: 800px;
-}
-#acknowledgement h2,h3 {
-    text-align: center;
-    margin: 20px;
-}
-#acknowledgement img {
-    text-align: center;
 
-}
-.ack-schedule {
-    text-decoration: none;
-}
 /*----------media queries for place order---------*/
 
 @media (max-width: 280px) {
@@ -598,6 +639,22 @@ body {
     }
 
 }
+/*-----------styles for acknowledgement-------------------*/
+#acknowledgement {
+    align-items: center;
+    height: 800px;
+}
+#acknowledgement h2,h3 {
+    text-align: center;
+    margin: 20px;
+}
+#acknowledgement img {
+    text-align: center;
+    margin-top: 70px;
+}
+.ack-schedule {
+    text-decoration: none;
+}
 /*---------media queries for acknowledgement-----------------*/
 @media (min-width: 280px) {
     #acknowledgement img {
@@ -633,19 +690,31 @@ body {
 @media (min-width: 768px) {
     #acknowledgement img {
         margin-left: 230px;
-       
+        margin-top: 100px;
+    }
+    #acknowledgement h2 {
+        font-size: 40px;
+    }
+    #acknowledgement h3 {
+        font-size: 35px;
     }
 }
 @media (min-width: 1024px) {
     #acknowledgement img {
         margin-left: 350px;
-       
+       margin-top: 100px;
+    }
+    #acknowledgement h2 {
+        font-size: 40px;
+    }
+    #acknowledgement h3 {
+        font-size: 35px;
     }
 }
 @media (min-width: 1200px) {
     #acknowledgement img {
         margin-left: 600px;
-       
+        
     }
 }
 /*----------footer--------------------*/
@@ -752,13 +821,29 @@ background-color: #212529;
     .col-footer {
         padding-top: 30px;
     }
+    .footer-ul {
+        font-size: 24px;
+    }
+    .footer-copyright {
+        font-size: 30px;
+    }
+    .footer-details h6 {
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    .col-footer h5 {
+        font-size: 30px;
+    }
+    .social-links li {
+        font-size: 24px;
+    }
     }
 
 @media (min-width: 1200px) {
     .footer-ul {
         margin-left: 100px;
-        padding-left: 50px;
-        font-size: 20px;
+        padding-left: 70px;
+        font-size: 22px;
     }
 }
 

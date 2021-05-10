@@ -11,7 +11,7 @@ function addItem() {
 // TO create a line break element. 
     let lb = document.createElement("br");
 
-//  To create a delete button beside every item added.   
+//  To create a delete button beside every item that is added.   
     let span1 = document.createElement("span");
     span1.innerText = "X";
     span1.className = "delete";
@@ -38,6 +38,7 @@ function addItem() {
         let delItem = item.value;
         item.remove();
         this.remove();
+        newline.remove();
     let newlist = grocList.textContent.replace(delItem, " ");
     grocList.textContent = newlist;
     console.log(newlist);
