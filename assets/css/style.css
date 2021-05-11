@@ -286,7 +286,8 @@ body {
 }
 .truck {
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 20px;
+    margin-right: -50px
 }
 .schedule_table td, #schedule_table th {
   /*border: 1px solid #ddd;*/
@@ -634,10 +635,32 @@ body {
 }
 @media (min-width:1024px) {
     .form-group {
-        
         padding: 20px;
     }
 
+}
+@media (min-width: 1200px) {
+    #place_order {
+        margin: 150px;
+        padding: 50px;
+
+    }
+    .form-header {
+        font-size: xx-large;
+    }
+    .form-group {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .form-control {
+        font-size: 22px;
+    }
+    .btn-add {
+        margin-top: 55px;
+    }
+    .btn-form {
+        font-size: large;
+    }
 }
 /*-----------styles for acknowledgement-------------------*/
 #acknowledgement {
