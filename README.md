@@ -134,28 +134,30 @@ Icons have been used throughout the website to improve the efficiency of UX.
 Each page in the website features a responsive navigation bar on the right with conventional placing of Brand Name on the top left. Each page has a footer with copyright information, contact details of the Desi Wagon and links to social media.
 
 ### Home
-The Home page features 3 sections areas apart from the header and footer.
-The first section (call out section)- which features a carousel of 3 images which talks about, what this Desi Wagon does, What they deliver and a call to action for placing the orders respectively.
-The second section (Schedule Section) 
-The third section(Location Section) t
+The Home page features 3 sections apart from the header and footer.
+
+### Carousel 
+This is the  first section (call out section)- which features a carousel of 3 images which talks about, what this Desi Wagon does, What they deliver and a call to action for placing the orders respectively.
 
 ### Schedule
-This is a section of the Home page. As the wagon is scheduled to visit 1 city in a day, accounting to 5 different cities in a week. This section showcases a table that would detail the scheduled visits of th wagon on each week day. This also inlcudes timing details.
-This is displayed in a table for large and medium screens. However table is not being advised as a good UX for smaller screens, this section is displayed as accordion in smaller screens for better reponsiveness, good UX and readability.
+This is second section of the Home page. As the wagon is scheduled to visit 1 city in a day, accounting to 5 different cities in a week. This section showcases a table that would detail the scheduled visits of the wagon on each week day. This also inlcudes timing details.
+This is displayed in a table for large screens. However table not being advised as a good UX for smaller or medium screens, this section is displayed as accordion in medium and smaller screens for better reponsiveness, good UX and readability.
 
 ### Location
-This is also a section of the Home page. The wagon visit 5 cities in a week. This section gives the address details of each location at which the wagon will be stationed. This is acheived with the help of Google Maps API.
-This section contains 2 columns on large and medium screens(col-lg-6, col-md-6) on which one column displays the map with markers on 5 different cities this wagon would visit every week.
-The second column displaying a card with details of address, landmark , timings and day when each marker is clicked for better usability.
+This is third section of the Home page. The wagon visit 5 cities in a week. This section gives the address details of each location at which the wagon will be stationed. This is acheived with the help of Google Maps API.
+This section contains 2 columns on large and medium screens(col-lg-6, col-md-6) on which one column displays the map with markers on 5 different cities that this wagon would visit every week.
+The second column displaying a card with details of address, landmark , timings and day for each marker when it is clicked for better usability.
 This is done in smaller screen with 2 (col-12) columns.
 
 ### Place order
-This page presents a frm to the user which helps them to send in their grocery list in advance. An email will be sent to desiwagon and copy of it will be sent to the user as well. 
-the form has the folowing fields.
+This page presents a form to the user which helps them to send in their grocery list in advance. An email will be sent to desiwagon with user details and grocerylist. 
+The form has the folowing fields.
 1.  Name - Text input field for the name of the user initiating the request.
-2.  Email - Text input field for themaild of the user. a copy of their grocery list is sent to this mailID.
+2.  Email - Text input field for the maild of the user. A copy of their grocery list is sent to this mailID.
 3.  Mobile - Text input field for the Mobile number of the user.
-4.  Grocery List - A text area input for the grocery list with item name and quantity.
+4.  GroceryItems- A drop down that contains a list of Indian groceries grouped under four different categories like fruits, vegetables, wholegrains and spices ,for the users to choose from.
+5.  
+4.  Grocery List - A text area which contains the final set of the grocery list that would be sent to DesiWagon.
 5.  Location -  A drop down box showing 5 cities the Wagon visits.
 6.  Address  - Text Input field which auto populates the address on choosing a specific location from the above field.
 7. Send Button - A send button which sends an email with the username and thier grocery list to desiwagon and a copy of it is send to the user as well.
