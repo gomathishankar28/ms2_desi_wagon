@@ -1,10 +1,10 @@
+/*jshint esversion: 6 */
 //Assigning each form element  to a variable
 
     const name = document.getElementById("name");
     const mobile = document.getElementById("mobile");
     const email = document.getElementById("email");
     const address = document.getElementById("address");
-    const inputItems = document.getElementsByClassName("inputlist");
     const groceryItem = document.getElementById("grocery_items");
 
 // validation for name field on empty or invalid input

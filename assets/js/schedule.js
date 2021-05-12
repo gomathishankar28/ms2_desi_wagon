@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */
 // document.addEventListener("DOMContentLoaded", highlightToday);
 // Code to hightlight the row in the Schedule table to indicate where the wagon is on current date.
 

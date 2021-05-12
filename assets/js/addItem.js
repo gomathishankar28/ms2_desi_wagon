@@ -1,4 +1,5 @@
-function addItem() {
+/*jshint esversion: 6 */
+function addItem(){
 
 // To get the div element where the added list has to be displayed. 
     const divList = document.getElementById("groceryList");
@@ -8,6 +9,7 @@ function addItem() {
     new_field.setAttribute("type", "text");
     new_field.setAttribute("class", "inputlist");
     new_field.setAttribute("disabled", true);
+
 // TO create a line break element. 
     let lb = document.createElement("br");
 
@@ -19,7 +21,7 @@ function addItem() {
 // To update the input box with item name and quantity.
     let groceryItem = document.contactForm.grocery_items.value;
     let quantity = document.contactForm.quantity.value;
-    let groceryList = document.contactForm.grocerylist;
+    /*let groceryList = document.contactForm.grocerylist;*/
     let list = groceryItem + " " +  "-"  + " " + quantity; 
     new_field.value = list;
  
@@ -29,50 +31,31 @@ function addItem() {
     divList.appendChild(lb);    
 
 // To remove an item when clicked on delete span element.
-    var del = document.getElementsByClassName("delete");
+    const del = document.getElementsByClassName("delete");
     var i;
     for (i = 0; i < del.length; i++) {
-    del[i].onclick = function() {
-      console.log(grocList.textContent);
-        let item = this.previousSibling;
-        console.log(item);
-        let delItem = item.value;
-        item.remove();
-        this.nextSibling.remove();
-        this.remove();
-        
-        /*let newlist = grocList.textContent.replace(delItem, "");
-
-        grocList.textContent = newlist;*/
-        
-   /* console.log(newlist);
-    grocList.textContent = "";
-    let listInput = document.getElementsByClassName("inputlist"); // contains an array of input elements with grocery items.
-    console.log(listInput);
-    var listDivText = document.getElementsByClassName("inputlist").value;
-    console.log(listInput.length);
-    
-        for (let k=0; k < listInput.length; k++) {
-        var listInputValue = listInput[k].value + '\ \n';
-        console.log(listInputValue);
-        }
-            grocList.textContent += listInputValue;*/
-    
-    
-  }
-  
-}
+        del[i].onclick = function() {
+            let item = this.previousSibling;
+            console.log(item);
+            let delItem = item.value;
+            item.remove();
+            this.nextSibling.remove();
+            this.remove();
+            let newlist = grocList.textContent.replace(delItem, "");
+            grocList.textContent = newlist;
+        };
+    }
     
 // To add items to textarea.
     const grocList = document.getElementById("grocList");
     let listInput = document.getElementsByClassName("inputlist"); // contains an array of input elements with grocery items.
     console.log(listInput);
-    var listDivText = document.getElementsByClassName("inputlist").value;
+    /*var listDivText = document.getElementsByClassName("inputlist").value;*/
     console.log(listInput.length);
     for (let k=0; k < listInput.length; k++) {
         var listInputValue = listInput[k].value + '\ \n';
         console.log(listInputValue);
-        }
+    }
     grocList.textContent += listInputValue;
 }
     

@@ -40,7 +40,7 @@
                     </button>
                 <div class="collapse navbar-collapse toggler-nav" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto navright">
-                        <li class="navbar-item active">
+                        <li class="navbar-item">
                             <a href="index.html" class="nav-item nav-link">Home</a>
                         </li>
                         <li class="navbar-item">
@@ -90,7 +90,7 @@
                     </div>
                     <div class="form-group">
                         <label for="location">Location</label>
-                        <select class="form-control" id="location">
+                        <select class="form-control" id="location" size="1">
                             <option>Amsterdam</option>
                             <option>Uterecht</option>
                             <option>DenBosch</option>
@@ -104,8 +104,8 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-md-6 col-lg-7">
-                            <label for="items">Groceries</label>
-                            <select class="form-control" name="grocery_items" id="grocery_items" required>
+                            <label for="grocery_items">Groceries</label>
+                            <select class="form-control" name="grocery_items" id="grocery_items">
                                 <optgroup label="Fruits">
                                     <option value="Guava">Guava</option>
                                     <option value="Mango">Mango</option>
@@ -142,8 +142,8 @@
                             </select>
                         </div>
                         <div class="col-md-2 col-lg-2">
-                            <label for="items">Qty</label>
-                            <select class="form-control" id="quantity" name="quantity" required>
+                            <label for="quantity">Qty</label>
+                            <select class="form-control" id="quantity" name="quantity">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -166,7 +166,7 @@
                     </div>
                      <div class="form-group">
                         
-                        <textarea class="form-control hide" id="grocList" name="grocerylist" rows="20" required title="Grocery List cannot be empty.Please atleast add 1 item to the list"></textarea>
+                        <textarea class="form-control" id="grocList" name="grocerylist" rows="20" required title="Grocery List cannot be empty.Please atleast add 1 item to the list"></textarea>
                     </div>
                     <div class="form-btn">
                         <input type="submit" class="btn btn-form" value="submit">

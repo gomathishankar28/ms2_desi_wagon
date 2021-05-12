@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // Function to dispay the name of the city, address and additional info on click of the marker.
 
     function displayMarkerInfo(){

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 //To auto-populate the address field based on the location(city) chosen in the place order form.
 
     document.getElementById('location').addEventListener('change', function() {
