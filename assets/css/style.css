@@ -200,11 +200,12 @@ body {
 }
 /*---------------media queries for carousel--------------------*/
 
-@media (max-width: 280px) {
+@media (max-width: 320px) {
 .carousel-caption {
     top: 50px!important;
     
 }
+
 }
 @media (max-width: 540px) {
     .carousel-caption h2 {

@@ -1,56 +1,97 @@
-# Desi Wagon
+# [Desi Wagon](https://gomathishankar28.github.io/ms2_desi_wagon/)
+
+This is a presentation website for a  mobile grocery truck that delivers Indian groceries, fruits, vegetables and spices mostly
+to the Indian diaspora across 5 big cities in Netherlands.The website for this company- Desi Wagon is an educational project that serves as the **Milestone Project 2** for the **Full-Stack Software Developer programme** powered by **Code Institute**.
+
+## Table of Contents
+  - [Demo](#demo)
+  - [Introduction](#introduction)
+  - [UX](#ux)
+    - [Business Goals](#business-goals)
+    - [User Goals](#user-goals)
+    - [User Stories](#user-stories)
+    - [Strategy](#strategy)
+    - [Scope](#scope)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+    - [Surface](#surface)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
+
+## Demo 
+
+ [Link to Website](https://gomathishankar28.github.io/ms2_desi_wagon/) 
+![Am I Responsive](https://github.com/gomathishankar28/ms2_desi_wagon/blob/56afc577fd23264012de0ee9b2b1ce1382d7bf3b/assets/images/readme/amiresponsive.jpg?raw=true)
+
+
+
+# **Introduction**
+
 ## Introduction
-Desi Wagon is a mobile grocery truck which delivers indian groceries, fruits, vegetables and spices to people in Netherlands.This Wagon aims to woo Indian expats who are searching for indian stuff in affordable price.
+Desi Wagon is a mobile grocery truck that delivers Indian groceries, fruits, vegetables and spices mostly to the Indian diaspora in Netherlands. This company’s business proposition is to address the need for India items at affordable prices. Being a mobile delivery business model, this connects with the cities where the Indian population is concentrated in the Netherlands.
 
-The reason to promote this business model in Netheralands is due to the scarce availability of indian stores with a large pool of expats, 
-mostly from Indian origin.The mobility of the truck allows for outreach to multiple neighborhoods at a time.
-Mobile grocery units are more effective to deploy than storefronts, especially in vulnerable neighborhoods,
-and has lower barriers to entry and lower costs to maintain, retrofit and operate.
+The reason to promote this business model in Netherlands is due to the scarce availability of Indian stores which in turn has led to monopolies in certain cities driving up the prices of indian staples. Mobile grocery units try to address this concern by bringing down the overheads of storefronts and service personnel and passing this cost benefit directly to the customers. 
 
-The Purpose of this website is to leverage on the familiarity of this kind of offering. This site provides information about our value proposition 
-and what we deliver, their schedule, location at which the wagon is stationed.
+Also, these units work on Just-in-time philosophy by replenishing stocks of only those items that are ordered by the customers. Currently the mobile truck services one city per weekday between 6 pm to 9 pm. In the trial phases, the items were ordered directly by the customer a week in advance through whatsapp. There were some inherent limitations to this ordering method as there was no proper order trace and it also led to a non-uniform format for orders.
+
+The Purpose of this website is to comprehensively detail about the different delivery places and location itinerary of the delivery truck. Also, this site aims to provide a standardised form for the customers to place their orders.
+
 
 ## Business Goals
-*   To target the growing Indian expat community who are looking for indian stuff.
-
-*   To focus this offering to all indian people across Netherlands.
+*   To target the growing Indian expat community who are looking for Indian groceries and Veggies
 
 *   To evince interest in customers who prefer to have Indian groceries every week.
 
+*   To bring this offering to Indians residing in the 5 big cities across Netherlands.
+
+*   Provide and single, standard way to order items for all the customers.
+
+*   To comprehensively list all the items that can be ordered.
+
 *   Build a brand image for a Indian mobile grocery store.
 
-*   Showcase the Schedule that the wagon would follow every week.
+*   Clearly communicate the delivery location details of the delivery truck.
 
-*   To display the location information at which the wagon would be stationed.
-
-*   To help customers place their orders online.
-
-*   To receive an email from the customer for every order that they place.
+*   To get notified through an email, for every order that gets placed.
 
 ## user Goals
 
 As a customer, I would like 
 
-*   To know what the wagon can deliver.
+*   To know what the Desiwagon can deliver..
 
-*   To know the schedule of the wagon.
+*   To know the schedule of the delivery truck in their location.
 
-*   To know the address where the wagon would be stationed.
+*   To know the address where the Desiwagon would be stationed.
 
-*   Place my weekly orders online in advance.
+*   To place my weekly orders online in advance.
 
 ##  User stories
-*   As a prospective customer to the website, I want to easily navigate the site, so that I can easily find the required details.
+*   As a prospective customer to the website, I want to easily navigate the site, so that I can easily find the details about Desiwagon so that I am assured about their service. 
 
-*   As a prospective customer to the website, I want to precisely know what they offer so that I have enough infromation about their service.
+*   As a prospective customer to the website, I want to precisely know what items are offered so that I have enough information to avail their service
 
-*   As a new customer to the website, I want to know the schedule of the wagon so that i would know on what day is wagon in my city.
+*   As a new customer to the website, I want to know the schedule of the delivery truck so that i would know on what day Desi Wagon is in my city.
 
-*   As a customer to the website, I want to know the location or address details where the wagon would be stationed.
+*   As a customer to the website, I want to know the location or address details where the wagon would be stationed so that it will be easy to locate it.
 
-*   As a customer to the website, I would like to make a list of the grocery items that i would like to buy in advance.
+*   As a customer, I would like to visually locate the delivery address on a map so that it will assist in getting there faster.
 
-*   As a prospective customer to the website,, I also want a copy of my list in my personal mail for reference and future use.
+*   As a customer, I would like to order the grocery items through the website so that I do not have to search for other ways of placing the order
+
+*   As a customer, I would like to have an option to exactly specify the units for each item being ordered so that there is no ambiguity in my order.
+
+*   As a customer I want a provision to delete items in the order so that I can correct any erroneous items from the list.
+
+*   As a prospective customer to the website, I want a copy of my order in my personal mail so that I can use it for reference and future use.
+
+*   As a business user, I want the orders of each customer to be delivered as an email so that it is easy to fulfil them.
+
+*   As a business user, I want to list all the items that can be ordered along with the unit of measure so that it is easy to backfill the consolidated requests.
 
 ## UX
 ### Ideal client
@@ -155,12 +196,14 @@ The form has the folowing fields.
 1.  Name - Text input field for the name of the user initiating the request.
 2.  Email - Text input field for the maild of the user. A copy of their grocery list is sent to this mailID.
 3.  Mobile - Text input field for the Mobile number of the user.
-4.  GroceryItems- A drop down that contains a list of Indian groceries grouped under four different categories like fruits, vegetables, wholegrains and spices ,for the users to choose from.
-5.  
-4.  Grocery List - A text area which contains the final set of the grocery list that would be sent to DesiWagon.
-5.  Location -  A drop down box showing 5 cities the Wagon visits.
-6.  Address  - Text Input field which auto populates the address on choosing a specific location from the above field.
-7. Send Button - A send button which sends an email with the username and thier grocery list to desiwagon and a copy of it is send to the user as well.
+4.  Location -  A drop down box showing 5 cities the Wagon visits.
+5.  Address  - Text Input field which auto populates the address on choosing a specific location from the above field.
+6.  Groceries- A drop down that contains a list of Indian groceries grouped under four different categories like fruits, vegetables, wholegrains and spices ,for the users to choose from.
+7.  Quantity- A drop down that contains numbers from 1 to 10.
+8.  Add to List - Button that adds the grocery item and quantity to the grocery list
+9.  InputElement - An readonly input element conatining the added grocery item along with Quantity and a span element beside it for delete option ("X") 
+10. TextArea- A hidden text area where the final list of all grocery items along with quantity is created. The value of this field is used to send email via emailJS.
+11. Send Button - A send button which sends an email with the username and thier grocery list to desiwagon and a copy of it is send to the user as well.
     This is acheived by using EmailJs API.
 
 ### Acknowledgement
@@ -188,8 +231,7 @@ The footer displays the following:
 ## **Features to be implemented in future**
 *   A google sign in to place the  order for user validation.
 *   Autocomplete option for form fields in place_order form.
-*   Specific data validation for all the input fields in the form.
-
+ 
 ## **Technologies used**
 ### **Languages**
 *   HTML
