@@ -90,8 +90,102 @@ Functional testing was done by testing induvidual features of the website to see
      * Checked to see when an item is chosen from Groceries drop down and Quantity from QTY dropdown and "Add to List" button is clicked an inputbox is created.
      * Checked to see if there is a delete button beside very new input element being added.
      * Checked to see if each item is being created in a new line.
+     * checked to see if input item is not editable.
      * checked to see if clicking on the delete "X" button deletes the item.
      * Checked to see On successful submission of the form, an Acknowlegement message is displayed on the same page.
      * Checked to see if the mail has been sent to dw.orders123@gmail.com 
      * Checked to see if the mail contains the name and grocery List of the user.
 
+## **Responsiveness Testing**
+***Devices Testing***
+
+ Website was tested using Chrome Dev tools in the following devices to check if the pages are rendered well.The results are satisfying<br>
+    1. Galaxy Fold.<br>
+    2. Moto G4<br>
+    3. Pixel 2<br>
+    4. Pixel 2xl<br>
+    5. iphone5<br>
+    6. iphone 6/7/8<br>
+    7. iphone 6/7/8 plus<br>
+    8. iphone x<br>
+    9. surface Duo<br>
+    10. ipad<br>
+    11. ipad pro.<br>
+
+***BrowserTesting***
+
+Website was tested in browsers listed below and results were satisfying.
+1. Chrome<br>
+2. Edge.<br>
+3. Opera<br>
+4. Safari<br>
+5. Firefox<br>
+
+***Operating System Testing***
+
+Website was tested in different OS listed below and results were satisfying.
+
+1. Windows 10<br>
+2. Mac OS.<br>
+3. iOS.<br>
+4. Android<br>
+
+## **Performance Testing**
+
+Performance has been tested using the Lighthouse tool of Google Chrome. The results are shown below.
+
+>  ![Perfomance Results](https://github.com/gomathishankar28/ms1_bentovanindia/blob/e0a217198e887d5830e95666f5260264351b1a31/assets/images/testing/perfomance.jpg?raw=true)
+
+## **Accessibility Testing**
+
+The website's accessibility was also tested using Lighthouse. The result are shown below.
+>  ![Accessibility](https://github.com/gomathishankar28/ms1_bentovanindia/blob/e0a217198e887d5830e95666f5260264351b1a31/assets/images/testing/Accessibility.jpg?raw=true)
+
+## **Best Practices and SEO Results**
+>  ![BestPractices](https://github.com/gomathishankar28/ms1_bentovanindia/blob/e0a217198e887d5830e95666f5260264351b1a31/assets/images/testing/bestPractices.jpg?raw=true)
+>  ![SEO](https://github.com/gomathishankar28/ms1_bentovanindia/blob/e0a217198e887d5830e95666f5260264351b1a31/assets/images/testing/SEO.jpg?raw=true)
+
+Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/2002/01/spellchecker). The results are satisfying.
+
+## **Issues found and fixed during Coding**
+
+1. Blinking Truck icon used in the schdule section was hugging the city name. Just Setting margin and padding did not help
+    > **Solution** - Fixed by changing the Span element display property to inline block for the margin values to take effect.Span Element by default has display property set to inline.
+
+2. Schedule table did not render well on small and medium screens
+    > **solution** - Fixed by using accordions for smaller and medium screens.
+
+3. Image of the city on map-info section did not render well on the small screen.
+    >**solution** - Fixed by setting the "display: none; " for smaller screens
+
+4. Every new groery item added was not added in the new line'.
+    >**Solution**  - Fixed by creating a break element (BR) and appending it to the input element.
+
+5. When a grocery item was deleted, an empty line would be created in its place
+    >**solution** - Fixed by removing the break element(BR) along with input element.
+
+6. All Markers on the map were not displayed when map was loaded.
+    >**solution** - Fixed by changing the latitude value.
+
+7. No alerts or error message generated when the form input doesn't match th required pattern.
+    >**solution** - Fixed by adding an invalid event listener and adding the following code.
+    
+        name.addEventListener("invalid", function (event) {
+            if ((!(name.value)) || (this.validity.patternMismatch)) {
+                alert ("name cannot be empty and should only contain letters. e.g. John");
+            }
+            else {
+             return false;
+            }
+        });
+8.  There were lot of small issues related to margin,padding,width,height of the image,font-size etc
+    >**solution** - Fixed by adding media queries accordingly.
+
+## **Enhancements**
+1. Initially the Schedule section was designed to have a table for all screens displayed. As my mentor Nishant kumar suggested that table is not a preferred UX design for small screens and I was asked to find an alternative.
+    >**Enhancement** - Found accordion as an alternative from Bootstrap documentation .
+2. Map-info  window would just show  cityname, address, landmark , timings and day of the visit of the wagon when clicked on each marker. As my mentor Nishant kumar suggested to have the ma-info window's height equal to the height of the map on large screens for better presentation
+    >**Enhancement** - Added an image of the city to the map-info window so that the height of the map-window matches the height of the map on large screens.
+3. Place order form initially had an text area which requires user to manually enter the grocery item and quantity in it. Nishant kumar advised to have more features in th form to increase the use javascript.
+    >**Enhancement 1** - Created a drop down for grocery items and quantity and then created a list when the user clicks an "Add to List" button.
+    >**Enhancement 2** - Added a delete button enabling the user to delete an item from the list.
