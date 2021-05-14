@@ -10,9 +10,10 @@ body {
     font-family: 'Akaya Telivigala', cursive, sans-serif;
     font-size: 20px;  
     color: navy!important;
+}
+html, body {
+    max-width: 100%;
     overflow-x: hidden;
-    
-    
 }
 /*------title and nav bar styles----------------------*/
 .navbar {
@@ -250,7 +251,7 @@ body {
 /*------------------Schedule-------------------------------*/
 
 .schedule-container {
-    background-image: url(../images/schedule/schedule5.jpg);
+    background-image: url(../images/schedule/schedule.jpg);
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
