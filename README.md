@@ -26,7 +26,7 @@ to the Indian diaspora across 5 big cities in Netherlands.The website for this c
 
  [Link to Website](https://gomathishankar28.github.io/ms2_desi_wagon/) 
 
-![Am I Responsive](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e5e3fe0b319008adb370510d1f72549e04a39cb7/assets/images/Readme/amiresponsive.jpg?raw=true)
+![Am I Responsive](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Readme/amiresponsive.jpg?raw=true)
 
 
 

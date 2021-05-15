@@ -167,8 +167,14 @@ html, body {
     }
 }
 @media (min-width: 1200px) {
+    .navbar-item a {
+    font-size: 26px;
+    }
+    .brandname {
+        font-size: 40px;
+    }
     .btn-order {
-        font-size: large;   
+        font-size: medium;   
     }
 }
 /*------------------------carousel------------------------------*/
@@ -524,7 +530,7 @@ html, body {
         padding: 5px 10px;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
 
     .location-header h2 {
         font-size: 35px;
@@ -597,7 +603,7 @@ html, body {
 
 @media (max-width: 280px) {
     .form-header {
-    font-size: 18px;
+    font-size: 28px;
     }
     .inputlist {
     font-size: medium;

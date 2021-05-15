@@ -28,12 +28,12 @@ Js files were validated with [Jshint](https://jshint.com/)
 Results came out as follows
 
 ### **Results from HTML Validator**
-> ![HTML validator Results](https://github.com/gomathishankar28/ms2_desi_wagon/blob/bc862f648a4612c3046323ae65366070d20f7520/assets/images/Testing/HTMLValidationresults1.jpg?raw=true)
+> ![HTMLValidator results for Home page](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/HTMLValidationresults1.jpg?raw=true)
 
-> ![HTML validator Results](https://github.com/gomathishankar28/ms2_desi_wagon/blob/bc862f648a4612c3046323ae65366070d20f7520/assets/images/Testing/HTMLValidatorresults2.jpg?raw=true)
+> ![HTMLValidator results for Place order](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/HTMLValidatorresults2.jpg?raw=true)
 
 ### **Results from  W3C CSS**
-> ![CSS validator Results](https://github.com/gomathishankar28/ms2_desi_wagon/blob/bc862f648a4612c3046323ae65366070d20f7520/assets/images/Testing/CSSValidationresults.jpg?raw=true)
+> ![CSS validator Results](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/CSSValidationresults.jpg?raw=true)
 
 ### **Results from Jshint**
 1. Unused variables for function names.
@@ -166,16 +166,16 @@ Website was tested in different OS listed below and results were satisfying.
 
 Performance has been tested using the Lighthouse tool of Google Chrome. The results are shown below.
 
->  ![Perfomance Results](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e5e3fe0b319008adb370510d1f72549e04a39cb7/assets/images/Testing/perfomance.jpg?raw=true)
+>  ![Perfomance Results](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/perfomance.jpg?raw=true)
 
 ## **Accessibility Testing**
 
 The website's accessibility was also tested using Lighthouse. The result are shown below.
->  ![Accessibility](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e5e3fe0b319008adb370510d1f72549e04a39cb7/assets/images/Testing/Accessibility.jpg?raw=true)
+>  ![Accessibility](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/Accessibility.jpg?raw=true)
 
 ## **Best Practices and SEO Results**
->  ![BestPractices](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e5e3fe0b319008adb370510d1f72549e04a39cb7/assets/images/Testing/bestpractices.jpg?raw=true)
->  ![SEO](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e5e3fe0b319008adb370510d1f72549e04a39cb7/assets/images/Testing/SEO.jpg?raw=true)
+>  ![BestPractices](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/bestpractices.jpg?raw=true)
+>  ![SEO](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/SEO.jpg?raw=true)
 
 Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/2002/01/spellchecker). The results are satisfying.
 
