@@ -30,7 +30,9 @@
     for (let i=0; i<rows.length; i++) {
       if (rows[i].cells[1].innerHTML === today) {
          console.log(rows[i].cells[1].innerHTML);
-        rows[i].classList.add("today");             // add today class to it to highlight the row.
+
+// add today class to it to highlight the row.
+        rows[i].classList.add("today");  
         rows[i].cells[3].childNodes[1].classList.remove("hide"); //remove hide class from the span element having truck icon to display truck.
         }
        else {
@@ -44,7 +46,7 @@
     for (let i=0; i<accordionbuttons.length; i++) {
         if (accordionbuttons[i].name === today) {
         accordionbuttons[i].childNodes[1].classList.remove("hide"); // remove hide class from the span element having truck icon to display truck*/
-        accordionbuttons[i].parentElement.nextElementSibling.classList.add("show");    //to collapse the accordion of the current day.
+        accordionbuttons[i].parentElement.nextElementSibling.classList.add("show");    //Add show class to collapse the accordion of the current day.
         accordionbuttons[i].classList.add("today");
         }
         else {

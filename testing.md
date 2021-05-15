@@ -224,4 +224,4 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
     >**Enhancement 4** - Added a delete button enabling the user to delete an item from the list.
 
 ## **Known Bugs and yet to be Fixed**
-1. Every item of th grocery list sent in the email does not appear in a newline. I suspect the whitespace gets removed before being handled by emailjs for security reasons.
+1. Every item of the grocery list sent  does not appear in a newline in the **email**. I suspect the whitespace gets removed before being handled by emailjs for security reasons.

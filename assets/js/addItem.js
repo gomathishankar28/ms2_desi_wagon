@@ -1,10 +1,11 @@
 /*jshint esversion: 6 */
+
 function addItem(){
 
 // To get the div element where the added list has to be displayed. 
     const divList = document.getElementById("groceryList");
  
-// To create an input element for every item being added and set clas and type attribute.
+// To create an input element for every item being added and set class ,type and disabled(to avoid any editing by the user) attribute.
     let new_field = document.createElement("input"); 
     new_field.setAttribute("type", "text");
     new_field.setAttribute("class", "inputlist");
