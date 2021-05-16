@@ -26,13 +26,10 @@ to the Indian diaspora across 5 big cities in Netherlands.The website for this c
 
  [Link to Website](https://gomathishankar28.github.io/ms2_desi_wagon/) 
 
-![Am I Responsive](https://github.com/gomathishankar28/ms2_desi_wagon/blob/c78640eb465a39a733a348a694483496391e16be/assets/images/readme/amiresponsive.jpg?raw=true)
-
-
+![Am I Responive](https://github.com/gomathishankar28/ms2_desi_wagon/blob/b5364ca22aa2f2c7dbbda0339187d75856f61671/assets/images/readme/amiresponsive.jpg?raw=true)
 
 # **Introduction**
 
-## Introduction
 Desi Wagon is a mobile grocery truck that delivers Indian groceries, fruits, vegetables and spices mostly to the Indian diaspora in Netherlands. This company’s business proposition is to address the need for India items at affordable prices. Being a mobile delivery business model, this connects with the cities where the Indian population is concentrated in the Netherlands.
 
 The reason to promote this business model in Netherlands is due to the scarce availability of Indian stores which in turn has led to monopolies in certain cities driving up the prices of indian staples. Mobile grocery units try to address this concern by bringing down the overheads of storefronts and service personnel and passing this cost benefit directly to the customers. 
@@ -97,58 +94,60 @@ As a customer, I would like
 ## **UX**
 ### Ideal client
 #### The ideal client for this business is:
+*   Residing in the Netherlands.
+*   Has a truck either on his own or on lease to transport the Groceries.
+*   Has financial means to order a consignment of Indian groceries and Vegetables.
+*   Wants to compete with the brick and Mortar stores selling Indian groceries in the identified cities.
 *   English speaking.
-*   Has a truck on his own to carry all the groceries
-*   Lives in the Netherlands.
-*   Has finances to buy big stock of indian groceries.
 
 #### Visitors to this website are searching for:
-*   A one-stop place where they can buy indian veggies, fruits, spices and other groceries
-*   A place where they can make prior orders for the same.
-*   An option in the website to place an order.
-*   A specific time and place from where they could pick their orders.
+*   Indian groceries at competitive prices when compared to conventional stores.
+*   A one-stop place where they can buy indian veggies, fruits, spices and other groceries.
+*   A business model similar to a fast-food truck but delivering Indian groceries.
+*   Information on the delivery details and location for customers to pick their orders.
+*   An option in the website to place orders.
 
 #### This Website is the best way to help the user and the owner because:
-The whole service is organised via watsapp group  wherein users message their grocery list in the group which invades privacy. 
-Time and day of arrival is also posted in  the group, which requires  the users t keep checking on every message from the group being posted.
-There will be lot of phone calls for information about their location, pick up points which can be avoided by creating a website and having a single source of information.
+Currently the whole service is managed through Whatsapp group where customers message their grocery list. This invades privacy and is very awkward to let others know what each one is ordering. The time and place of order delivery is also messaged in the group. Each city has its own whatsapp group and is difficult to manage for the owner and sometimes leads to misinformation. This causes a lot of uncertainty which can be avoided by having this information in a central place. This transparency will be appreciated and will lead to better customer retention.
 
-### **Strategy**
-Build brand awareness for an Indian mobile grocery store..
+## **Strategy**
+Build brand awareness for an Indian mobile grocery store.
+Through this website , clearly communicate the items that are offered
+Provide an easy option for users to send in their grocery list in advance
+Maintain one website where all the information is available about Desiwagon
+Aim to increase the subscriber base by attracting current customers of traditional Indian stores.
 
-Through this website , aim to increase the number of subscriber.
-
-Provide an easy option for users to  send in their grocery list in advance
-
-### **Scope**
+## **Scope**
 **Functional requirements:**
 *   A Navigation bar to guide the user experience across the website;
-*   A section to show the schedule of the wagon displaying info about day, time and city.
-*   A section to show th Location or address of the wagon where it would be stationed
-*   An Option to send their grocery list online
+*   A Schedule section to display information about the day, time and city visited by Desiwagon.
+*   A section to show the Location or address where Desiwagon would be stationed.
+*   An Option to send the grocery list online.
 
 
 **Content requirements:**
 
-*   Content categorization based on offerings, Schedule, Location and Placing order.
+*   Content categorization based on offerings, Schedule, Location and Placing an order.
 *   Use of Text and images to make things easy to understand.
-*   A truck icon to show where the wagon is on a particular day.
+*   A truck icon in the schedule section to show where the wagon is on a particular day.
+*   A map with the markers to pinpoint the exact delivery location.
+*   A list of items that can be ordered along with their corresponding quantity.
+*   A simple order form that provides an option to choose the preferred delivery location for each order.
+*   An order form that captures the ordering party information like Name, email, phone number.
 
-### **Structure**
+## **Structure**
 
 The website was designed to deliver an intuitive experience with a consistent information flow.
 
 **Interaction design**
 
-The interface responds to the user actions as expected. The scroll behavior is standard and the buttons respond instantly when actioned.
-In order to increase the sense of interaction, subtle effects of zooming in, highlighting and transition effects are used wherever appropriate.
+The interface responds to the user actions as expected. The scroll behavior is standard and the buttons respond instantly when actioned. In order to increase the sense of interaction, subtle effects of zooming in, carousel, highlighting and transition effects are used wherever appropriate.
 
 **Information architecture**
 
-The content is organized and segregated into sections from top to bottom
-The navigation bar is also categorized accordingly.
+The content is organized and segregated into sections from top to bottom. The navigation bar is also categorized accordingly.
 
-### **Skeleton**
+## **Skeleton**
 
 **Wireframe mockups**
 
@@ -162,16 +161,17 @@ Please find attached Wireframe for Home page , place order form and acknowledgem
 
 [Acknowledgement](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e5e3fe0b319008adb370510d1f72549e04a39cb7/assets/images/wireframes/Acknowledgement.pdf)
 
-### **Surface**
+## **Surface**
 
 **Colors**
 
-The color palette chosen, symbolically references to the Indian Flag which emphasises on color orange, green, white and navy.
- This aims to establish a connect with the target Indian clientele and serve as a metaphor for Indian Grocery store, as this Wagon carries only ALL Indian stuff.
+The color palette identifies itself with the colors of the Indian flag i.e. orange, green, white and blue. This is in line with the name of the store which colloquially means a wagon from India. This aims to establish a connect with the target Indian clientele and serve as a metaphor for an Indian Grocery store, as this Wagon only carries items from India.  
 
 **Typography**
 
-Two fonts were used for this project, Akaya Telivigala', cursive, and sans-serif with a sans-serif being fallback font. The cursive style fonts are a well-known typography choice, and are particularly popular on the web. Cursive writing fonts can give the website a more personal feel and approach
+Two fonts were used for this project, Akaya Telivigala', cursive, and sans-serif with a sans-serif being fallback font. The cursive style fonts are a well-known typography choice, and are particularly popular on the web. Cursive writing fonts can give the website a more personal feel and approach media.
+
+The Hero image displays a carousel with the colors of the Indian flag as a background and the wagon icon replacing the blue wheel that represents the Ashok chakra in the flag. All the other images used throughout the website are relative to our service. All images have been resized and compressed in order to boost the UX flow.
 
 **Media**
 
@@ -181,33 +181,30 @@ All images have been resized and compressed in order to boost the UX flow.
 
 **Iconography**
 
-Icons have been used throughout the website to improve the efficiency of UX.
+Icons like the wagon and shopping cart have been used throughout the website to improve the efficiency of UX.
 
 ## **Features**
 Each page in the website features a responsive navigation bar on the right with conventional placing of Brand Name on the top left. Each page has a footer with copyright information, contact details of the Desi Wagon and links to social media.
 
 ### **Home**
-The Home page features 3 sections apart from the header and footer.
+The Home page features 3 sections areas apart from the header and footer.
+
 
 ### **Carousel**
 This is the  first section (call out section)- which features a carousel of 3 images which talks about, what this Desi Wagon does, What they deliver and a call to action for placing the orders respectively.
 
 ### **Schedule**
-This is second section of the Home page. As the wagon is scheduled to visit 1 city in a day, accounting to 5 different cities in a week. This section showcases a table that would detail the scheduled visits of the wagon on each week day. This also inlcudes timing details.
-This is displayed in a table for large screens. However table not being advised as a good UX for smaller or medium screens, this section is displayed as accordion in medium and smaller screens for better reponsiveness, good UX and readability.
+This is second section of the Home page. This section elaborates on the delivery schedule of the Desi Wagon. The wagon is scheduled to visit 1 city a day, accounting to 5 different cities in a week. This section showcases a table that would detail the scheduled visits of the wagon on each week day including the visit timing. This is displayed in a table for large and medium screens. However table is not advised as a good UX for smaller screens, so this section is displayed as an accordion in smaller screens for better reponsiveness, good UX and readability. Also, to indicate the wagon’s location on any given weekeday, there is a flashing wagon in the schedule for better interpretation.
 
 ### **Location**
-This is third section of the Home page. The wagon visit 5 cities in a week. This section gives the address details of each location at which the wagon will be stationed. This is acheived with the help of Google Maps API.
-This section contains 2 columns on large and medium screens(col-lg-6, col-md-6) on which one column displays the map with markers on 5 different cities that this wagon would visit every week.
-The second column displaying a card with details of address, landmark , timings and day for each marker when it is clicked for better usability.
-This is done in smaller screen with 2 (col-12) columns.
+This is third section of the Home page. The wagon visits 5 cities in a week and this section gives the address details of each location at which the wagon will be stationed. This is achieved with the help of Google Maps API. This section contains 2 columns on large and medium screens(col-lg-6, col-md-6) on which the first column displays the map with markers on 5 different cities this wagon would visit every week. The second column displaying a card with details of address, landmark , timings and day when each marker is clicked for better usability. This is done in smaller screen with 2 (col-12) columns.
 
 ### **Place order**
-This page presents a form to the user which helps them to send in their grocery list in advance. An email will be sent to desiwagon with user details and grocerylist. 
-The form has the folowing fields.
+This page presents a form to the user which helps them to send in their grocery list in advance. An email will be sent to Desi wagon and copy of it will be sent to the user as well.
+The form has the following fields.
 1.  **Name** - Text input field for the name of the user initiating the request.
-2.  **Email** - Text input field for the maild of the user. A copy of their grocery list is sent to this mailID.
-3.  **Mobile** - Text input field for the Mobile number of the user.
+2.  **Email** - Text input field for the mail ID of the user. a copy of their grocery list is sent to this mail ID.
+3.  **Mobile** - Number input field for the Mobile number of the user.
 4.  **Location** -  A drop down box showing 5 cities the Wagon visits.
 5.  **Address**  - Text Input field which auto populates the address on choosing a specific location from the above field.
 6.  **Groceries** - A drop down that contains a list of Indian groceries grouped under four different categories like fruits, vegetables, wholegrains and spices ,for the users to choose from.
@@ -219,14 +216,13 @@ The form has the folowing fields.
     This is acheived by using EmailJs API.
 
 ### **Acknowledgement**
-This page is seen on successful completion of placing the order. It displays a Thankyou image from Desi Wagon to the user for placing the order with them.
-It also contains text to say that order has been received successfully and the user needs to check the schedule to pick his orders up. A link to the schedule is also provided for convenience.
+This page is seen on successful completion of placing the order. It displays a Thank you image from Desi Wagon to the user for placing the order with them. It also contains text to say that order has been received successfully and the user needs to check the schedule to pick the order. A link to the schedule is also provided for convenience.
 
 ### **Footer**
 The footer displays the following:
 *   copyright information 
 *   additional details to say that they are closed on weekends and timings they ar availale on weekdays.
-*   Contact Information - with mobilenumber, e-mail and country details.
+*   Contact Information  with mobilenumber, e-mail and country details.
 *   links Social media like facebook, linkedln, twitter , instagram and pinInterest.
 
 ##  **Existing Features**
@@ -242,6 +238,7 @@ The footer displays the following:
 
 ## **Features to be implemented in future**
 *   A google sign in to place the  order for user validation.
+*   Auto populate items based on order history.
 *   Autocomplete option for form fields in place_order form.
  
 ## **Technologies used**
