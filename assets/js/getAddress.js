@@ -5,19 +5,19 @@
     let location = this.value;
 
     if(location === "Eindhoven") {
-        document.getElementById("address").value = "Wilhelminaplein, 5611 JC Eindhoven";
+        document.getElementById("address").value = "Sliffertsestraat 304, 5657 AS Eindhoven";
     } 
-    else if(location === "Uterecht") {
-        document.getElementById("address").value = "Vredenburg, 3511 CW Utrecht";
+    else if(location === "Utrecht") {
+        document.getElementById("address").value = "Vleutensevaart 50, 3532 AD Utrecht";
     } 
     else if(location === "Amsterdam") {
-        document.getElementById("address").value = "Jan van Galenstraat 4, 1051 KM Amsterdam";
+        document.getElementById("address").value = "Markelerbergpad 1, 1105 AW Amsterdam";
     }
     else if(location === "DenBosch") {
-        document.getElementById("address").value = "Markt, 5211 GA 's-Hertogenbosch";
+        document.getElementById("address").value = "Hofvijver 2, 5223 MB 's-Hertogenbosch";
     } 
     else {
-        document.getElementById("address").value = "Mosae Forum 99, 6211 DW Maastricht";
+        document.getElementById("address").value = "P. de Coubertinweg 3, 6224 AJ Maastricht";
     } 
 
 // change color of the address field when the location is chosen.

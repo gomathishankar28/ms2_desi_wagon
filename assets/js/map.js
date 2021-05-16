@@ -29,19 +29,19 @@
 // Add marker locations and name of the city.
 
     var markerList = [
-        {'location': { lat: 52.377956, lng: 4.897070 }, 
+        {'location': { lat: 52.2973478, lng: 4.9560379 }, 
          'city': 'Amsterdam'
         },
-        {'location': { lat: 52.092876, lng: 5.104480 }, 
-        'city': 'Uterecht'
+        {'location': { lat: 52.1005185, lng: 5.051333 }, 
+        'city': 'Utrecht'
         },
-        {'location': { lat: 51.69917, lng: 5.30417 }, 
+        {'location': { lat: 51.6862173, lng: 5.2889867 }, 
         'city': 'DenBosch'
         },
-        {'location': { lat: 51.44083, lng: 5.47778 }, 
+        {'location': { lat: 51.4352433, lng: 5.4060191 }, 
         'city': 'Eindhoven'
         },
-        {'location': { lat: 50.851368, lng: 5.690973 }, 
+        {'location': { lat: 50.8581894, lng: 5.7086025 }, 
         'city': 'Maastricht'
         }
     ];
