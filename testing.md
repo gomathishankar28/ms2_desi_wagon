@@ -19,7 +19,7 @@ Following testcases were tested as part of smoke testing.
 3.	To Check if “Place order” button on the Jumbotron directs to the form page. –Tested Pass
 4.	To check if the website launches with a home page on all  different devices as per the wireframe. –Tested Pass
 5.	To check if the successful submission of the form displays an acknowledgement message. –Tested Pass
-6.  To check if the mail was sent to desiwagon123@gmail.com with username and grocery list.
+6.  To check if the mail was sent to dw.orders123@gmail.com with username and grocery list.
 
 ##  **Code Testing**
 Html was validated with [W3C Validator](https://validator.w3.org/) by direct input. 
