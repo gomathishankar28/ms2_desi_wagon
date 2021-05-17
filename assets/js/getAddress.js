@@ -24,7 +24,7 @@
 
     document.getElementById("address").style.backgroundColor = "lightblue"; 
     
-/*There is no need to test for empty string here as the default value is set to "Amsterdam" and
-the corresponding address is populated in the address field. On change of Location the following code will execute*/
+/*Default value for Location field is set to "Amsterdam" and
+the corresponding address is populated in the address field. On change of Location the above code will execute*/
     });
 

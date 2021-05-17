@@ -1,5 +1,4 @@
 /*jshint esversion: 6 */
-// document.addEventListener("DOMContentLoaded", highlightToday);
 // Code to hightlight the row in the Schedule table to indicate where the wagon is on current date.
 
     function highlightToday(event) {
@@ -33,7 +32,7 @@
 
 // add today class to it to highlight the row.
         rows[i].classList.add("today");  
-        rows[i].cells[3].childNodes[1].classList.remove("hide"); //remove hide class from the span element having truck icon to display truck.
+        rows[i].cells[3].childNodes[1].classList.remove("hide"); //remove hide class from the span element to display truck.
         }
        else {
            console.log("we are closed on weekends"); // No updates made on weekends.
@@ -45,7 +44,7 @@
     let accordionbuttons = document.getElementById("schedule-rtable").getElementsByTagName("button");
     for (let i=0; i<accordionbuttons.length; i++) {
         if (accordionbuttons[i].name === today) {
-        accordionbuttons[i].childNodes[1].classList.remove("hide"); // remove hide class from the span element having truck icon to display truck*/
+        accordionbuttons[i].childNodes[1].classList.remove("hide"); // remove hide class from the span element to display truck*/
         accordionbuttons[i].parentElement.nextElementSibling.classList.add("show");    //Add show class to collapse the accordion of the current day.
         accordionbuttons[i].classList.add("today");
         }
