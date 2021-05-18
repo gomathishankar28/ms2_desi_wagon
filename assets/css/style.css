@@ -582,7 +582,9 @@ html, body {
 #groceryList {
     height: auto;
 }
-
+.hideList {
+    opacity: 0;
+}
 /*----------media queries for place order---------*/
 
 @media (max-width: 280px) {

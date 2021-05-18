@@ -5,7 +5,9 @@
     const mobile = document.getElementById("mobile");
     const email = document.getElementById("email");
     const address = document.getElementById("address");
-    const groceryItem = document.getElementById("grocery_items");
+    var groceryList = document.getElementById("grocList");
+    const groceryItem = document.getElementsByClassName("inputList");
+    const delIcon = document.getElementsByClassName("delete");
 
 // validation for name field on empty or invalid input
 
@@ -34,7 +36,7 @@
         if (this.validity.patternMismatch)
             alert ("mobile should only contain a 10 digit number. e.g. 0687241357");
         else {
-        return false;
+            return false;
         }
     });
 
@@ -49,25 +51,33 @@
         }
     });
 
-// validation for GroceryList field on empty or invalid input
 
-    groceryItem.addEventListener("invalid", function (event) {
-        if (!(groceryItem.value))
-            alert ("Grocery List cannot be empty.Please atleast add 1 item to the list");
+//  validation for GroceryList field on empty or invalid input
+
+    groceryList.addEventListener("invalid", function (event) {
+        if (!(groceryList.value))
+            alert ("Grocery List cannot be empty.Please add atleast 1 item to the list");
         else {
             return false;
         }
     });
-    
-
-
-
+   /* function checkList() {
+        console.log(groceryItem.length);
+        if (groceryItem.length === 0) {
+            alert ("Grocery Listssss cannot be empty.Please add atleast 1 item to the list");
+            
+        }
+        else {
+            sendMail();
+        }
+    }*/
 // code reference code institute and  emailJS documentation with modifications
 // To send email using emailJs API
 
 function sendMail(contactForm) {
-    emailjs.send("send_list", "desi_wagon", {
+    emailjs.send("send_lis", "desi_wago", {
         "from_name": contactForm.fname.value,
+        "from_mobile": contactForm.mobileno.value,
         "from_email": contactForm.emailaddress.value,
         "grocerylist": contactForm.grocerylist.value
         })
@@ -86,7 +96,6 @@ function sendMail(contactForm) {
     
     return false;  // To block from loading a new page
 }
-
 //To display acknowledgement after successfull completion of placing the order.
 
 function acknowledgement() {

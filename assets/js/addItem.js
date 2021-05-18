@@ -22,7 +22,6 @@ function addItem(){
 // To update the input box with item name and quantity.
     let groceryItem = document.contactForm.grocery_items.value;
     let quantity = document.contactForm.quantity.value;
-    /*let groceryList = document.contactForm.grocerylist;*/
     let list = groceryItem + " " +  "-"  + " " + quantity; 
     new_field.value = list;
  
@@ -44,7 +43,9 @@ function addItem(){
             this.remove();
             let newlist = grocList.textContent.replace(delItem, "");
             grocList.textContent = newlist;
+            
         };
+        
     }
     
 // To add items to textarea.
@@ -60,3 +61,4 @@ function addItem(){
     grocList.textContent += listInputValue;
 }
     
+
