@@ -46,7 +46,7 @@ The Purpose of this website is to comprehensively detail about the different del
 
 *   To bring this offering to Indians residing in the 5 big cities across Netherlands.
 
-*   Provide and single, standard way to order items for all the customers.
+*   Provide a single, standard way to order items for all the customers.
 
 *   To comprehensively list all the items that can be ordered.
 
@@ -272,7 +272,7 @@ The footer displays the following:
 ### **Media**
 * **[BeFunky](https://www.befunky.com/ )** for **resizing and editing images**. 
 * **[unsplash](https://unsplash.com/)** for **carousel image** in Home page.
-
+* **[TinyPNG](https://tinypng.com/)** for **Compressing images**.
 ## **Testing**
 Please find the testing document in [testing.md](https://github.com/gomathishankar28/ms2_desi_wagon/blob/b6bf96e53080af6e9b2a99caac3c3126421a4890/testing.md) file.
 

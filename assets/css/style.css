@@ -592,6 +592,8 @@ html, body {
     .inputlist {
     font-size: medium;
     }
+}
+@media (max-width: 320px) {
     .delete {
         margin-left: 10px;
         padding: 2px;

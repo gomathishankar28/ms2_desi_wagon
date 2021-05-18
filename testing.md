@@ -22,20 +22,20 @@ Following testcases were tested as part of smoke testing.
 6.  To check if the mail was sent to dw.orders123@gmail.com with username and grocery list.
 
 ##  **Code Testing**
-Html was validated with [W3C Validator](https://validator.w3.org/) by direct input. 
-CSS was validated with [W3C CSS](https://jigsaw.w3.org/css-validator/) by direct input. 
-Js files were validated with [Jshint](https://jshint.com/)
-Results came out as follows
-
 ### **Results from HTML Validator**
+HTML was validated with [W3C Validator](https://validator.w3.org/) by direct input. Results came out as follows.
+
 > ![HTMLValidator results for Home page](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/HTMLValidationresults1.jpg?raw=true)
 
 > ![HTMLValidator results for Place order](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/HTMLValidatorresults2.jpg?raw=true)
 
 ### **Results from  W3C CSS**
+CSS was validated with [W3C CSS](https://jigsaw.w3.org/css-validator/) by direct input.Results came out as follows.
+
 > ![CSS validator Results](https://github.com/gomathishankar28/ms2_desi_wagon/blob/e73bba2942c61209e9600d41068fe3a600950920/assets/images/Testing/CSSValidationresults.jpg?raw=true)
 
 ### **Results from Jshint**
+Js files were validated with [Jshint](https://jshint.com/). Only 3 warnings occured which were handled as follows.
 1. Unused variables for function names.
 
         Because jshint is only reading that file and doesn't know about the file which is calling this function. and it thinks the function is being unused and hence the error.
@@ -58,7 +58,7 @@ Results came out as follows
     >   This is acheived by the Schedule section of the Home page which has a table displaying the day, time and place . It also highlights row of  the current day by a blinking truck icon.
 
 4.  ***As a customer to the website, I want to know the location or address details where the wagon would be stationed so that it will be easy to locate it.***
-    >   This is acheieved by an information card which displays the address detals with landmark where the Wagon would be stationed for each city marker
+    >   This is acheieved by an information card in location section which displays the address details and landmark where the Wagon would be stationed for each city marker
 
 5.  ***As a customer, I would like to visually locate the delivery address on a map so that it will assist in getting there faster.***
     >   This is acheieved by Google Maps API wherein markers are placed in 5 different city, clicking on which gives the address details.
@@ -181,8 +181,8 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 
 ## **Issues found and fixed during Coding**
 
-1. Blinking Truck icon used in the schdule section was hugging the city name. Just Setting margin and padding did not help
-    > **Solution** - Fixed by changing the Span element display property to inline block for the margin values to take effect.Span Element by default has display property set to inline.
+1. Blinking Truck icon used in the schedule section was hugging the city name. Just Setting margin and padding did not help
+    > **Solution** - Span Element by default has display property set to inline.Fixed by changing the Span element display property to inline block for the margin values to take effect.
 
 2. Schedule table did not render well on small and medium screens
     > **solution** - Fixed by using accordions for smaller and medium screens.
@@ -194,7 +194,7 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
     >**Solution**  - Fixed by creating a break element (BR) and appending it to the input element.
 
 5. When a grocery item was deleted, an empty line would be created in its place
-    >**solution** - When the grocery tem is being deleted , only the item and the delete con was being removed.Fixed by removing the break element(BR) as well salong with input element.
+    >**solution** - When the grocery tem is being deleted , only the item and the delete icon was being removed.Fixed by removing the break element(BR) along with input element.
 
 6. All Markers on the map were not displayed when map was loaded.
     >**solution** - Fixed by changing the latitude value for the center attribute of the map object.
@@ -216,9 +216,9 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 ## **Enhancements**
 1. Initially the Schedule section was designed to have a table for all screens displayed. As my mentor Nishant kumar suggested that table is not a preferred UX design for small screens and I was asked to find an alternative.
     >**Enhancement 1** - Found accordion as an alternative from Bootstrap documentation .
-2. Map-info  window would just show  cityname, address, landmark , timings and day of the visit of the wagon when clicked on each marker. As my mentor Nishant kumar suggested to have the ma-info window's height equal to the height of the map on large screens for better presentation
+2. Map-info  window would just show  cityname, address, landmark , timings and day of the visit of the wagon when clicked on each marker. As my mentor Nishant kumar suggested to have the map-info window's height equal to the height of the map on large screens for better presentation
     >**Enhancement 2** - Added an image of the city to the map-info window so that the height of the map-window matches the height of the map on large screens.
-3. Place order form initially had an text area which requires user to manually enter the grocery item and quantity in it. Nishant kumar advised to have more features in th form to increase the use javascript.
+3. Place order form initially had an text area which requires user to manually enter the grocery item and quantity in it. Nishant kumar suggested additional features to increase the use javascript in the project.
     >**Enhancement 3** - Created a drop down for grocery items and quantity and then created a list when the user clicks an "Add to List" button.
     
     >**Enhancement 4** - Added a delete button enabling the user to delete an item from the list.
