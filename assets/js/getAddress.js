@@ -3,23 +3,18 @@
 
     document.getElementById('location').addEventListener('change', function() {
     let location = this.value;
+    const address = document.getElementById("address");
 
-    if(location === "Eindhoven") {
-        document.getElementById("address").value = "Sliffertsestraat 304, 5657 AS Eindhoven";
-    } 
-    else if(location === "Utrecht") {
-        document.getElementById("address").value = "Vleutensevaart 50, 3532 AD Utrecht";
-    } 
-    else if(location === "Amsterdam") {
-        document.getElementById("address").value = "Markelerbergpad 1, 1105 AW Amsterdam";
+    const locationMap = {
+        "Eindhoven": "Sliffertsestraat 304, 5657 AS Eindhoven",
+        "Utrecht": "Vleutensevaart 50, 3532 AD Utrecht",
+        "Amsterdam": "Markelerbergpad 1, 1105 AW Amsterdam",
+        "DenBosch": "Hofvijver 2, 5223 MB 's-Hertogenbosch",
+        "Maastricht": "P. de Coubertinweg 3, 6224 AJ Maastricht"
     }
-    else if(location === "DenBosch") {
-        document.getElementById("address").value = "Hofvijver 2, 5223 MB 's-Hertogenbosch";
-    } 
-    else {
-        document.getElementById("address").value = "P. de Coubertinweg 3, 6224 AJ Maastricht";
-    } 
 
+     address.value = locationMap[location];
+     
 // change color of the address field when the location is chosen.
 
     document.getElementById("address").style.backgroundColor = "lightblue"; 

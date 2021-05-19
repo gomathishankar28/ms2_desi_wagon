@@ -1,6 +1,5 @@
 /*jshint esversion: 6 */
 //Assigning each form element  to a variable
-    var sendEmail 
     const name = document.getElementById("name");
     const mobile = document.getElementById("mobile");
     const email = document.getElementById("email");
@@ -55,8 +54,8 @@
 
 //  validation for GroceryList field on empty or invalid input
 
-    groceryItem.addEventListener("remove", function (event) {
-        if (groceryItem.length === 0)
+    groceryList.addEventListener("invalid", function (event) {
+        if ((!(groceryList.value)) || (groceryList.value.length === 0))
             alert ("Grocery List cannot be empty.Please add atleast 1 item to the list");
         else {
             return false;
@@ -77,10 +76,11 @@
 // To send email using emailJs API
 
 function sendMail(contactForm) {
-        emailjs.send("send_list", "desi_wagon", {
+        emailjs.send("send_lis", "desi_wago", {
         "from_name": contactForm.fname.value,
         "from_mobile": contactForm.mobileno.value,
         "from_email": contactForm.emailaddress.value,
+        "from_location": contactForm.location.value,
         "grocerylist": contactForm.grocerylist.value
         })
         .then(
@@ -93,6 +93,7 @@ function sendMail(contactForm) {
         }, 
         function(error) {
             console.log("FAILED", error);
+            acknowledgement ();
         }
         );
     return false;  // To block from loading a new page
