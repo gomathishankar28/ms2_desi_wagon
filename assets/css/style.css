@@ -537,10 +537,12 @@ html, body {
 
 /*------------Place order------------------*/
 
-#place_order {
+
+.form-container {
     margin: 50px 10px;
     padding: 10px;
     background-color: #fae1c9 ;
+    width: 100%;
 }
 
 .form-btn {
@@ -589,16 +591,27 @@ html, body {
 
 @media (max-width: 280px) {
     .form-header {
-    font-size: 28px;
+        font-size: 28px;
     }
     .inputlist {
-    font-size: medium;
+        font-size: medium;
+    }
+    .address-control {
+        font-size: 12px!important;
     }
 }
 @media (max-width: 320px) {
     .delete {
         margin-left: 10px;
         padding: 2px;
+    }
+    .address-control {
+        font-size: 14px;
+    }
+}
+@media (max-width: 414px) {
+    .address-control {
+        font-size: 14px;
     }
 }
 @media (min-width:540px) {

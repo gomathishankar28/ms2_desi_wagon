@@ -28,7 +28,7 @@ function addItem(){
 // Appending div elements with input box and delete span element and linebreak
     divList.appendChild(new_field);
     divList.appendChild(span1);
-    divList.appendChild(lb);    
+    divList.appendChild(lb);              
 
 // To remove an item when clicked on delete span element.
     const del = document.getElementsByClassName("delete");
