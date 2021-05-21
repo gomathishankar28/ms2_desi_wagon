@@ -4,7 +4,7 @@ function addItem(){
 
 // To get the div element where the added list has to be displayed. 
     const divList = document.getElementById("groceryList");
- 
+    
 // To create an input element for every item being added and set class ,type and disabled(to avoid any editing by the user) attribute.
     let new_field = document.createElement("input"); 
     new_field.setAttribute("type", "text");
@@ -28,12 +28,12 @@ function addItem(){
 // Appending div elements with input box and delete span element and linebreak
     divList.appendChild(new_field);
     divList.appendChild(span1);
-    divList.appendChild(lb);              
+    divList.appendChild(lb);    
+
 
 // To remove an item when clicked on delete span element.
     const del = document.getElementsByClassName("delete");
-    var i;
-    for (i = 0; i < del.length; i++) {
+    for (let i = 0; i < del.length; i++) {
         del[i].onclick = function() {
             let item = this.previousSibling;
             console.log(item);
@@ -43,7 +43,7 @@ function addItem(){
             this.remove();
             let newlist = grocList.textContent.replace(delItem, "");
             grocList.textContent = newlist;
-            
+            checkList();
         };
         
     }
@@ -52,13 +52,24 @@ function addItem(){
     const grocList = document.getElementById("grocList");
     let listInput = document.getElementsByClassName("inputlist"); // contains an array of input elements with grocery items.
     console.log(listInput);
-    /*var listDivText = document.getElementsByClassName("inputlist").value;*/
     console.log(listInput.length);
     for (let k=0; k < listInput.length; k++) {
         var listInputValue = listInput[k].value + '\ \n';
         console.log(listInputValue);
     }
     grocList.textContent += listInputValue;
+    document.getElementById("submit-btn").disabled = false; // submit button enabled when there is atleast 1 item added to grocery list
 }
-    
+   
+// To display en error message when all the items are deleted from the list.
+    function checkList() {
+        let groceryItem = document.getElementsByClassName("inputlist");
+        if (groceryItem.length === 0) {
+            alert ("Grocery List cannot be empty.Please add atleast 1 item to the list"); 
+            document.getElementById("submit-btn").disabled = true; // To prevent the form with empty grocery list being submitted.
+        }
+        else {
+            return true;
+        }
+    }
 

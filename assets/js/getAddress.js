@@ -1,4 +1,8 @@
 /*jshint esversion: 6 */
+    
+/* Default value for Location field is set to "Amsterdam" and the corresponding address is populated in the address field.
+   On change of Location the above code will execute */
+   
 //To auto-populate the address field based on the location(city) chosen in the place order form.
 
     document.getElementById('location').addEventListener('change', function() {
@@ -17,9 +21,7 @@
      
 // change color of the address field when the location is chosen.
 
-    document.getElementById("address").style.backgroundColor = "lightblue"; 
-    
-/*Default value for Location field is set to "Amsterdam" and
-the corresponding address is populated in the address field. On change of Location the above code will execute*/
+    address.style.backgroundColor = "lightblue"; 
+
     });
 

@@ -5,8 +5,6 @@
     const email = document.getElementById("email");
     const address = document.getElementById("address");
     let groceryList = document.getElementById("grocList");
-    var groceryItem = document.getElementsByClassName("inputList");
-    /*const delIcon = document.getElementsByClassName("delete");*/
 
 // validation for name field on empty or invalid input
 
@@ -55,28 +53,18 @@
 //  validation for GroceryList field on empty or invalid input
 
     groceryList.addEventListener("invalid", function (event) {
-        if ((!(groceryList.value)) || (groceryList.value.length === 0))
+        if (groceryList.value.length === 0) 
             alert ("Grocery List cannot be empty.Please add atleast 1 item to the list");
         else {
             return false;
         }
     });
-
-    /*function checkList() {
-        console.log(groceryItem.length);
-        if (groceryItem.value.length === 0) {
-            alert ("Grocery Listssss cannot be empty.Please add atleast 1 item to the list");
-            sendEmail = false;
-        }
-        else {
-            sendEmail = true;
-        }
-    }*/
+   
 // code reference code institute and  emailJS documentation with modifications
 // To send email using emailJs API
 
 function sendMail(contactForm) {
-        emailjs.send("send_lis", "desi_wago", {
+        emailjs.send("gmai", "desi_wago", {
         "from_name": contactForm.fname.value,
         "from_mobile": contactForm.mobileno.value,
         "from_email": contactForm.emailaddress.value,
@@ -87,9 +75,6 @@ function sendMail(contactForm) {
            function(response) {
             console.log("SUCCESS", response);
             acknowledgement ();
-            //reset form
-            resetForm();
-            
         }, 
         function(error) {
             console.log("FAILED", error);
@@ -106,10 +91,4 @@ function acknowledgement() {
     document.getElementById("place_order").classList.add("hide"); /* hide the place_order form*/
     document.getElementById("acknowledgement").classList.remove("hide");/* display the acknowledgement div*/
     
-}
-
-// To reset the form after the order is placed.
-
-function resetForm() {
-    document.getElementById("orderForm").reset();
 }

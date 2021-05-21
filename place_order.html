@@ -89,7 +89,7 @@
                         <input type="tel" class="form-control" id="mobile" name="mobileno" placeholder="0655541357" pattern="[0-9]{10}" required title="mobile cannot be empty and should only contain a 10 digit number. e.g. 0687241357">
                     </div>
                     <div class="form-group">
-                        <label for="location">Location</label>
+                        <label for="location">Select Location</label>
                         <select class="form-control" id="location" name="location" size="1">
                             <option>Amsterdam</option>
                             <option>Utrecht</option>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-md-6 col-lg-7">
-                            <label for="grocery_items">Groceries</label>
+                            <label for="grocery_items">Select Groceries</label>
                             <select class="form-control" name="grocery_items" id="grocery_items">
                                 <optgroup label="Fruits">
                                     <option value="Guava">Guava</option>
@@ -161,15 +161,14 @@
                         </div>
                     </div>
                     <div class="form-group">
-                    <label for="grocList">Grocery List</label>
+                        <label for="grocList">Grocery List</label>
                     <div id="groceryList">
                     </div>
                      <div class="form-group">
-                        
                         <textarea class="form-control hideList" id="grocList" name="grocerylist" required title="Grocery List cannot be empty.Please atleast add 1 item to the list"></textarea>
                     </div>
                     <div class="form-btn">
-                        <input type="submit" class="btn btn-form" value="submit">
+                        <input type="submit" class="btn btn-form" id="submit-btn" value="submit">
                     </div>
                 </div>
                 </form>

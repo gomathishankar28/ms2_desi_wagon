@@ -210,7 +210,24 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
              return false;
             }
         });
-8.  There were lot of small issues related to margin,padding,width,height of the image,font-size etc
+
+8.  Initially when the grocery list is empty, there would be an alert to notify that. But when the grocery items are added to the list
+     and when all of them are deleted, there was no alert and it allowed the form to submit with empty grocerylist.
+    >**solution** -  Fixed by adding a function CheckList() which displays an alert to notify that "grocery list cannot be empty" and disabled the
+     submit button to prevent it from submitting with an empty grocery list. Submit button is enabled when an item is added again to the grocery list.
+
+        function checkList() {
+        let groceryItem = document.getElementsByClassName("inputlist");
+        if (groceryItem.length === 0) {
+            alert ("Grocery List cannot be empty.Please add atleast 1 item to the list"); 
+            document.getElementById("submit-btn").disabled = true; // To prevent the form with empty grocery list being submitted.
+        }
+        else {
+            return true;
+        }
+    }
+
+9.  There were lot of small issues related to margin,padding,width,height of the image,font-size etc
     >**solution** - Fixed by adding media queries accordingly.
 
 ## **Enhancements**
