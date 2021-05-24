@@ -190,7 +190,7 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 3. Image of the city on map-info section did not render well on the small screen.
     >**solution** - Fixed by setting the "display: none; " for smaller screens so that image is not displayed for small screens and is seen only on medium and large screens.
 
-4. Every new groery item added was not added in the new line'.
+4. Every new grocery item added was not added in the new line'.
     >**Solution**  - Fixed by creating a break element (BR) and appending it to the input element.
 
 5. When a grocery item was deleted, an empty line would be created in its place
