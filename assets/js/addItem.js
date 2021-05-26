@@ -6,10 +6,10 @@ function addItem(){
     const divList = document.getElementById("groceryList");
     
 // To create an input element for every item being added and set class ,type and disabled(to avoid any editing by the user) attribute.
-    let new_field = document.createElement("input"); 
-    new_field.setAttribute("type", "text");
-    new_field.setAttribute("class", "inputlist");
-    new_field.setAttribute("disabled", true);
+    let newItem = document.createElement("input"); 
+    newItem.setAttribute("type", "text");
+    newItem.setAttribute("class", "inputlist");
+    newItem.setAttribute("disabled", true);
 
 // TO create a line break element. 
     let lb = document.createElement("br");
@@ -23,10 +23,10 @@ function addItem(){
     let groceryItem = document.contactForm.grocery_items.value;
     let quantity = document.contactForm.quantity.value;
     let list = groceryItem + " " +  "-"  + " " + quantity; 
-    new_field.value = list;
+    newItem.value = list;
  
 // Appending div elements with input box and delete span element and linebreak
-    divList.appendChild(new_field);
+    divList.appendChild(newItem);
     divList.appendChild(span1);
     divList.appendChild(lb);    
 
