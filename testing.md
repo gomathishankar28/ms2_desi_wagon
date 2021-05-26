@@ -49,10 +49,10 @@ Js files were validated with [Jshint](https://jshint.com/). Only 3 warnings occu
 
 ##  **User Stories Testing**
 1.  ***As a prospective customer to the website, I want to easily navigate the site, so that I can easily find the details about Desiwagon so that I am assured about their service.***
-    >   As the Website is launched, On the Top left is the Navigation bar which is categorized to show different details about the website that the customer is looking for.
+    >   As the Website is launched, On the Top right is the Navigation bar which is categorized to show different details about the website that the customer is looking for.
 
 2.  ***As a prospective customer to the website, I want to precisely know what items are offered so that I have enough information to avail their service.***
-    >   This is acheieved by the Carousel section of the Home page which has three slides with each slide talking about who they are, what they offer and how to place the order.  
+    >   This is acheieved by the  "grocery items" drop down field in the place order form.  
 
 3.  ***As a new customer to the website, I want to know the schedule of the delivery truck so that i would know on what day Desi Wagon is in my city.***
     >   This is acheived by the Schedule section of the Home page which has a table displaying the day, time and place . It also highlights row of  the current day by a blinking truck icon.
@@ -95,7 +95,7 @@ Functional testing was done by testing induvidual features of the website to see
 3. **Home Page**
 
     ***Call out Section***
-    * checked to see if each slide on the carousel gets displayed for the time that can help user to read the information on it.
+    * Checked to see if each slide on the carousel gets displayed for the time that can help user to read the information on it.
     * Checked to see if prev button on the carousel takes to the desired slide.
     * Checked to see if next button on the carousel takes to the desired slide.
 
@@ -103,27 +103,27 @@ Functional testing was done by testing induvidual features of the website to see
     * Checked to see if the truck icon appears on the row of the current day in large screen.
     * Checked to see if the truck appears on the accordion of the current day in small and medium screens.
     * Checked to see if the truck is blinking.
-    * Checked to see if the accordion of the currnt day is collapsed.
+    * Checked to see if the accordion of the current day is collapsed.
     * Checked to see if the address button the accordion leads to Location section of the page
 
 4.  ***Location Section***  
-    * checked to see if the google map is displayed with 5 markers.
+    * Checked to see if the google map is displayed with 5 markers.
     * Checked to see if the clicking on each markers displays the city name, address, landmark and day and timing details.
     * Checked to see if there is image displayed for each city only on large and medium screens.
-    * checked to see if the zooming out of the map creates clusters.
-    * checked to see if hovering on each marker displays the city name.
+    * Checked to see if the zooming out of the map creates clusters.
+    * Checked to see if hovering on each marker displays the city name.
 
 5.   ***Place Order***
      * Checked to see if name field takes only alphabets and prompts an error when left empty or given an invalid input.
-     * checked to see if there is an error for an invalid email field.
+     * Checked to see if there is an error for an invalid email field.
      * Checked to see if the mobile number field does not take more than 10 digits.
-     * checked to see if the mobile number field takes only numbers.
+     * Checked to see if the mobile number field takes only numbers.
      * Checked to see the if the form has an address field which gets auto-populated based on the Location field.
      * Checked to see when an item is chosen from Groceries drop down and Quantity from QTY dropdown and "Add to List" button is clicked an inputbox is created.
      * Checked to see if there is a delete button beside very new input element being added.
      * Checked to see if each item is being created in a new line.
-     * checked to see if input item is not editable.
-     * checked to see if clicking on the delete "X" button deletes the item.
+     * Checked to see if input item is not editable.
+     * Checked to see if clicking on the delete "X" button deletes the item.
      * Checked to see On successful submission of the form, an Acknowlegement message is displayed on the same page.
      * Checked to see if the mail has been sent to dw.orders123@gmail.com 
      * Checked to see if the mail contains the name and grocery List of the user.

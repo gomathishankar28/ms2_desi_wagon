@@ -227,7 +227,7 @@ The footer displays the following:
 
 ##  **Existing Features**
 
-*   **Title** - Allows the user to easily recognise the brand of “Voyage”. If the user clicks on the logo, it will return the users to the “Home” section as they would expect.
+*   **Title** - Allows the user to easily recognise the brand of “Desi Wagon”. If the user clicks on the logo, it will return the users to the “Home” section as they would expect.
 *   **Navigation Bar** - Allows the user to easily navigate the website's sections and find what they are looking for with ease 
 *   **Landing Page** - Allows the user to know about Desiwagon. carousel with 3 slides showing who they are, what they offer and a CTA button to place the order respectively.
 *   **Schedule** - Allows user to know the Schedule of the wagon for a week.
@@ -407,6 +407,5 @@ Use the code from the given url(https://www.emailjs.com/docs/tutorial/creating-c
 ### **Acknowledgements**
     
 * **My mentor: Nishant kumar** by giving lot of inputs and useful tips to improve.
-* **The Slack community** of Code Institute for a peer code review
-* **My partner Shankar** for creating the text content for the website.
+* **The Slack community** of Code Institute for a peer code review.
 * **My Family and Friends** who provided their honest feedback by testing the website across different devices and different OS.
