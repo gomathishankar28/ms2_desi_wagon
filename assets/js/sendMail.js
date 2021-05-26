@@ -64,7 +64,7 @@
 // To send email using emailJs API
 
 function sendMail(contactForm) {
-        emailjs.send("gmai", "desi_wago", {
+        emailjs.send("gmail", "desi_wagon", {
         "from_name": contactForm.fname.value,
         "from_mobile": contactForm.mobileno.value,
         "from_email": contactForm.emailaddress.value,

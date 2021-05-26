@@ -242,3 +242,4 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 
 ## **Known Bugs and yet to be Fixed**
 1. Every item of the grocery list sent  does not appear in a newline in the **email**. I suspect the whitespace gets removed before being handled by emailjs for security reasons.
+2. Drop down field in the form goes out of form container when it is collapsed on medium screens. 

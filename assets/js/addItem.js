@@ -51,11 +51,11 @@ function addItem(){
 // To add items to textarea.
     const grocList = document.getElementById("grocList");
     let listInput = document.getElementsByClassName("inputlist"); // contains an array of input elements with grocery items.
-    console.log(listInput);
-    console.log(listInput.length);
+    //console.log(listInput);
+    //console.log(listInput.length);
     for (let k=0; k < listInput.length; k++) {
         var listInputValue = listInput[k].value + '\ \n';
-        console.log(listInputValue);
+        //console.log(listInputValue);
     }
     grocList.textContent += listInputValue;
     document.getElementById("submit-btn").disabled = false; // submit button enabled when there is atleast 1 item added to grocery list

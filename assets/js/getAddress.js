@@ -9,6 +9,7 @@
     let location = this.value;
     const address = document.getElementById("address");
 
+//Address of a huge parking area mapped to each city.
     const locationMap = {
         "Eindhoven": "Sliffertsestraat 304, 5657 AS Eindhoven",
         "Utrecht": "Vleutensevaart 50, 3532 AD Utrecht",

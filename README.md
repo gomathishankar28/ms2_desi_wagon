@@ -1,7 +1,7 @@
 # [Desi Wagon](https://gomathishankar28.github.io/ms2_desi_wagon/)
 
 This is a presentation website for a  mobile grocery truck that delivers Indian groceries, fruits, vegetables and spices mostly
-to the Indian diaspora across 5 big cities in Netherlands.The website for this company- Desi Wagon is an educational project that serves as the **Milestone Project 2** for the **Full-Stack Software Developer programme** powered by **Code Institute**.
+to the Indian diaspora across 5 big cities in Netherlands.The website for this company- **Desi Wagon** is an educational project that serves as the **Milestone Project 2** for the **Full-Stack Software Developer programme** powered by **Code Institute**.
 
 ## **Table of Contents**
   - [Demo](#demo)
@@ -30,7 +30,7 @@ to the Indian diaspora across 5 big cities in Netherlands.The website for this c
 
 # **Introduction**
 
-Desi Wagon is a mobile grocery truck that delivers Indian groceries, fruits, vegetables and spices mostly to the Indian diaspora in Netherlands. This company’s business proposition is to address the need for India items at affordable prices. Being a mobile delivery business model, this connects with the cities where the Indian population is concentrated in the Netherlands.
+Desi Wagon is a mobile grocery truck that delivers Indian groceries, fruits, vegetables and spices mostly to the Indian diaspora in Netherlands. This company’s business proposition is to address the need for Indian items at affordable prices. Being a mobile delivery business model, this connects with the cities where the Indian population is concentrated in the Netherlands.
 
 The reason to promote this business model in Netherlands is due to the scarce availability of Indian stores which in turn has led to monopolies in certain cities driving up the prices of indian staples. Mobile grocery units try to address this concern by bringing down the overheads of storefronts and service personnel and passing this cost benefit directly to the customers. 
 
