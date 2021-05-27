@@ -36,7 +36,7 @@ function addItem(){
     for (let i = 0; i < del.length; i++) {
         del[i].onclick = function() {
             let item = this.previousSibling;
-            console.log(item);
+            //console.log(item);
             let delItem = item.value;
             item.remove();
             this.nextSibling.remove();
